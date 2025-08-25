@@ -1,0 +1,24 @@
+[
+  {
+    "timestamp": "2025-08-25T15:49:20.674697",
+    "type": "regression",
+    "model_config": "Medium_GPU",
+    "baseline_rtf": 0.736,
+    "current_rtf": 1.3383789539337159,
+    "change_percent": 81.84496656708097,
+    "severity": "high",
+    "commit_hash": "fbd026f4",
+    "branch": "main"
+  },
+  {
+    "timestamp": "2025-08-25T15:50:39.343215",
+    "type": "regression",
+    "model_config": "Medium_GPU",
+    "baseline_rtf": 0.736,
+    "current_rtf": 1.3325220108032227,
+    "change_percent": 81.04918625043787,
+    "severity": "high",
+    "commit_hash": "fbd026f4",
+    "branch": "main"
+  }
+]
