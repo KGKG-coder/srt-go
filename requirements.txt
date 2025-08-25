@@ -1,0 +1,46 @@
+# Core dependencies for SRT Whisper Turbo
+# Tested with Python 3.8-3.11
+
+# Core transcription engine
+faster-whisper>=1.0.3
+ctranslate2>=4.4.0
+
+# Audio processing
+librosa>=0.10.2
+soundfile>=0.12.1
+scipy>=1.10.0
+numpy>=1.24.0
+webrtcvad>=2.0.10
+
+# Chinese conversion
+opencc-python-reimplemented>=0.1.7
+
+# Utilities
+tqdm>=4.66.0
+requests>=2.31.0
+
+# Standard library modules (built-in, no installation needed)
+# - argparse
+# - json
+# - logging
+# - sys
+# - pathlib
+# - os
+# - hashlib
+# - shutil
+# - time
+# - zipfile
+# - subprocess
+# - urllib.parse
+# - dataclasses
+# - typing
+
+# Optional GPU support (install if CUDA is available)
+# torch>=2.0.0
+
+# Optional for HuggingFace model downloads (will fallback gracefully)
+# huggingface-hub>=0.19.0
+
+# Development and testing dependencies (optional)
+# pyinstaller>=6.0.0  # for packaging
+# pytest>=7.4.0       # for testing
