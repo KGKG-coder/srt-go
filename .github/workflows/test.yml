@@ -1,0 +1,368 @@
+name: Commercial Grade Testing Pipeline
+
+on:
+  push:
+    branches: [main, develop, release/*]
+  pull_request:
+    branches: [main]
+  schedule:
+    # 每天凌晨2點執行完整測試
+    - cron: '0 2 * * *'
+
+env:
+  PYTHON_VERSION: '3.11'
+  NODE_VERSION: '18'
+  CACHE_KEY: v1
+
+jobs:
+  # ========== 程式碼品質檢查 ==========
+  code-quality:
+    name: Code Quality Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install linting tools
+        run: |
+          pip install flake8 black isort mypy pylint
+      
+      - name: Run Black formatter check
+        run: black --check srt_whisper_lite/electron-react-app/python/
+      
+      - name: Run isort import check
+        run: isort --check-only srt_whisper_lite/electron-react-app/python/
+      
+      - name: Run Flake8 linter
+        run: flake8 srt_whisper_lite/electron-react-app/python/ --max-line-length=120
+      
+      - name: Run type checking with mypy
+        run: mypy srt_whisper_lite/electron-react-app/python/ --ignore-missing-imports
+
+  # ========== 單元測試 ==========
+  unit-tests:
+    name: Unit Tests
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        python-version: ['3.9', '3.10', '3.11']
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ env.CACHE_KEY }}-${{ hashFiles('**/requirements*.txt') }}
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-cov pytest-xdist pytest-benchmark
+      
+      - name: Run unit tests with coverage
+        run: |
+          pytest tests/unit/ \
+            --cov=srt_whisper_lite \
+            --cov-report=xml \
+            --cov-report=html \
+            --cov-report=term-missing \
+            -n auto \
+            --benchmark-skip
+      
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage.xml
+          flags: unittests
+          name: codecov-${{ matrix.os }}-${{ matrix.python-version }}
+
+  # ========== 整合測試 ==========
+  integration-tests:
+    name: Integration Tests
+    runs-on: windows-latest
+    needs: unit-tests
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.npm
+            electron-react-app/node_modules
+          key: ${{ runner.os }}-deps-${{ env.CACHE_KEY }}-${{ hashFiles('**/*lock*') }}
+      
+      - name: Install Python dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest pytest-asyncio pytest-mock
+      
+      - name: Install Node dependencies
+        working-directory: ./srt_whisper_lite/electron-react-app
+        run: npm ci
+      
+      - name: Run integration tests
+        run: pytest tests/integration/ -v --tb=short
+      
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: integration-test-results
+          path: |
+            test_report.json
+            test_report.html
+
+  # ========== E2E 測試 ==========
+  e2e-tests:
+    name: End-to-End Tests
+    runs-on: windows-latest
+    needs: integration-tests
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install playwright pytest-playwright
+          cd srt_whisper_lite/electron-react-app && npm ci
+      
+      - name: Install Playwright browsers
+        run: playwright install chromium
+      
+      - name: Build application
+        working-directory: ./srt_whisper_lite/electron-react-app
+        run: |
+          npm run react:build
+          npm run build:installer-dir
+      
+      - name: Run E2E tests
+        run: pytest tests/e2e/ -v --headed
+      
+      - name: Upload screenshots on failure
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: e2e-screenshots
+          path: tests/e2e/screenshots/
+
+  # ========== 效能測試 ==========
+  performance-tests:
+    name: Performance Tests
+    runs-on: windows-latest
+    needs: unit-tests
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest pytest-benchmark memory_profiler line_profiler
+      
+      - name: Download test models
+        run: |
+          python -c "from faster_whisper import WhisperModel; WhisperModel('medium', device='cpu')"
+      
+      - name: Run performance tests
+        run: |
+          pytest tests/performance/ \
+            --benchmark-only \
+            --benchmark-json=benchmark.json \
+            --benchmark-autosave
+      
+      - name: Analyze performance results
+        run: python tests/analyze_performance.py benchmark.json
+      
+      - name: Upload performance report
+        uses: actions/upload-artifact@v3
+        with:
+          name: performance-report
+          path: |
+            benchmark.json
+            performance_report.html
+
+  # ========== 安全測試 ==========
+  security-tests:
+    name: Security Tests
+    runs-on: ubuntu-latest
+    needs: unit-tests
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install security tools
+        run: |
+          pip install safety bandit
+          pip install -r requirements.txt
+      
+      - name: Run safety check
+        run: safety check --json > safety_report.json
+        continue-on-error: true
+      
+      - name: Run bandit security linter
+        run: bandit -r srt_whisper_lite/electron-react-app/python/ -f json -o bandit_report.json
+        continue-on-error: true
+      
+      - name: Run security tests
+        run: pytest tests/security/ -v
+      
+      - name: Upload security reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: security-reports
+          path: |
+            safety_report.json
+            bandit_report.json
+
+  # ========== 發布測試 ==========
+  release-tests:
+    name: Release Package Tests
+    runs-on: windows-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [unit-tests, integration-tests, e2e-tests, performance-tests, security-tests]
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      
+      - name: Build release package
+        working-directory: ./srt_whisper_lite/electron-react-app
+        run: |
+          npm ci
+          npm run dist:nsis
+      
+      - name: Test installer
+        run: |
+          # 測試安裝程式
+          Start-Process -FilePath "dist\*.exe" -ArgumentList "/S" -Wait
+          
+          # 測試已安裝的應用
+          $installPath = "${env:ProgramFiles}\SRT GO"
+          Test-Path "$installPath\SRT GO - AI Subtitle Generator.exe"
+      
+      - name: Run smoke tests
+        run: |
+          # 執行基本功能測試
+          pytest tests/smoke/ -v
+
+  # ========== 測試報告匯總 ==========
+  test-summary:
+    name: Test Summary Report
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [code-quality, unit-tests, integration-tests, e2e-tests, performance-tests, security-tests]
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Download all artifacts
+        uses: actions/download-artifact@v3
+      
+      - name: Generate summary report
+        run: |
+          python tests/generate_summary_report.py
+      
+      - name: Post results to PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync('test_summary.json', 'utf8'));
+            
+            const comment = `## 🧪 測試報告
+            
+            ### 📊 測試覆蓋率
+            - 單元測試: ${report.unit_coverage}%
+            - 整合測試: ${report.integration_coverage}%
+            - E2E測試: ${report.e2e_coverage}%
+            
+            ### ⚡ 效能指標
+            - RTF (CPU): ${report.rtf_cpu}
+            - RTF (GPU): ${report.rtf_gpu}
+            - 記憶體使用: ${report.memory_usage}MB
+            
+            ### 🔒 安全掃描
+            - 高危漏洞: ${report.high_vulnerabilities}
+            - 中危漏洞: ${report.medium_vulnerabilities}
+            - 低危漏洞: ${report.low_vulnerabilities}
+            
+            ### ✅ 測試結果
+            - 總測試數: ${report.total_tests}
+            - 通過: ${report.passed_tests}
+            - 失敗: ${report.failed_tests}
+            - 跳過: ${report.skipped_tests}
+            
+            詳細報告: [查看完整報告](${report.full_report_url})`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+      
+      - name: Upload final report
+        uses: actions/upload-artifact@v3
+        with:
+          name: final-test-report
+          path: |
+            test_summary.json
+            test_summary.html
+            coverage/

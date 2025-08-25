@@ -1,0 +1,335 @@
+name: SRT GO CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run nightly tests at 2 AM UTC
+    - cron: '0 2 * * *'
+
+env:
+  PYTHON_VERSION: '3.11'
+  NODE_VERSION: '18'
+
+jobs:
+  # Unit Tests Job
+  unit-tests:
+    name: Unit Tests
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest pytest-asyncio numpy librosa soundfile scikit-learn
+        
+    - name: Run unit tests
+      run: |
+        cd tests
+        python -m pytest unit/ -v --tb=short
+        
+    - name: Upload unit test results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: unit-test-results
+        path: tests/unit/test-results.xml
+
+  # Integration Tests Job
+  integration-tests:
+    name: Integration Tests
+    runs-on: windows-latest
+    needs: unit-tests
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest pytest-asyncio numpy librosa soundfile scikit-learn
+        pip install faster-whisper ctranslate2
+        
+    - name: Run integration tests
+      run: |
+        cd tests
+        python debug_test_integration.py
+        python debug_test_integration_low_vad.py
+        
+    - name: Upload integration test results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: integration-test-results
+        path: tests/integration/test-results.xml
+
+  # Performance Benchmarks Job
+  performance-tests:
+    name: Performance Benchmarks
+    runs-on: windows-latest
+    needs: integration-tests
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest numpy librosa soundfile scikit-learn
+        pip install faster-whisper ctranslate2
+        
+    - name: Run RTF performance benchmarks
+      run: |
+        cd tests/performance
+        python quick_rtf_test.py
+        
+    - name: Upload performance results
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-benchmark-results
+        path: tests/performance/RTF_PERFORMANCE_BASELINE_REPORT.md
+
+  # E2E Tests Job
+  e2e-tests:
+    name: End-to-End Tests
+    runs-on: windows-latest
+    needs: performance-tests
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest pytest-asyncio numpy librosa soundfile scikit-learn
+        pip install faster-whisper ctranslate2
+        
+    - name: Run E2E automation suite
+      run: |
+        cd tests/e2e
+        python test_automation_suite.py
+        
+    - name: Upload E2E test results
+      uses: actions/upload-artifact@v3
+      with:
+        name: e2e-test-results
+        path: tests/e2e/test_data/E2E_TEST_AUTOMATION_REPORT.md
+
+  # Build Application Job
+  build-app:
+    name: Build Application
+    runs-on: windows-latest
+    needs: e2e-tests
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install Node dependencies
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        npm install
+        
+    - name: Build React app
+      run: |
+        cd srt_whisper_lite/electron-react-app/react-app
+        npm install
+        npm run build
+        
+    - name: Build Electron app
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        npm run build
+        
+    - name: Create installer
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        npm run dist
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: application-build
+        path: srt_whisper_lite/electron-react-app/dist/
+
+  # Security Scan Job
+  security-scan:
+    name: Security Scan
+    runs-on: windows-latest
+    needs: unit-tests
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Run security scan
+      uses: github/super-linter@v4
+      env:
+        DEFAULT_BRANCH: main
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        VALIDATE_PYTHON: true
+        VALIDATE_JAVASCRIPT_ES: true
+        
+    - name: Python security check
+      run: |
+        pip install safety bandit
+        safety check
+        bandit -r srt_whisper_lite/ -f json -o security-report.json
+        
+    - name: Upload security results
+      uses: actions/upload-artifact@v3
+      with:
+        name: security-scan-results
+        path: security-report.json
+
+  # Code Quality Job
+  code-quality:
+    name: Code Quality Check
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install quality tools
+      run: |
+        pip install flake8 black pylint mypy
+        
+    - name: Run code quality checks
+      run: |
+        flake8 srt_whisper_lite/ tests/ --max-line-length=120
+        black --check srt_whisper_lite/ tests/
+        pylint srt_whisper_lite/
+        
+    - name: Type checking with mypy
+      run: |
+        mypy srt_whisper_lite/ --ignore-missing-imports
+
+  # Deployment Job (only on main branch)
+  deploy:
+    name: Deploy Release
+    runs-on: windows-latest
+    needs: [build-app, security-scan, code-quality]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Download build artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: application-build
+        path: ./build/
+        
+    - name: Create release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v2.2.1-${{ github.run_number }}
+        release_name: SRT GO v2.2.1 Build ${{ github.run_number }}
+        body: |
+          ## SRT GO v2.2.1 Automated Release
+          
+          ### Features
+          - AI-powered subtitle generation with Whisper Large-v3
+          - Adaptive Voice Detection System  
+          - SubEasy 5-layer filtering
+          - Multi-language support (Chinese, English, Japanese, Korean)
+          - GPU acceleration support
+          
+          ### Quality Assurance
+          - ✅ All unit tests passed
+          - ✅ Integration tests completed  
+          - ✅ Performance benchmarks met
+          - ✅ E2E automation validated
+          - ✅ Security scan clean
+          - ✅ Code quality approved
+          
+          ### Installation
+          Download the installer for Windows below.
+          
+        draft: false
+        prerelease: false
+        
+    - name: Upload release assets
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./build/srt-go-setup.exe
+        asset_name: SRT-GO-v2.2.1-Setup.exe
+        asset_content_type: application/octet-stream
+
+  # Notification Job
+  notify:
+    name: Notify Results
+    runs-on: windows-latest
+    needs: [unit-tests, integration-tests, performance-tests, e2e-tests, build-app]
+    if: always()
+    
+    steps:
+    - name: Notify success
+      if: needs.unit-tests.result == 'success' && needs.integration-tests.result == 'success' && needs.performance-tests.result == 'success' && needs.e2e-tests.result == 'success' && needs.build-app.result == 'success'
+      run: |
+        echo "🎉 All CI/CD pipeline jobs completed successfully!"
+        echo "✅ Unit Tests: PASSED"
+        echo "✅ Integration Tests: PASSED" 
+        echo "✅ Performance Tests: PASSED"
+        echo "✅ E2E Tests: PASSED"
+        echo "✅ Build: PASSED"
+        
+    - name: Notify failure
+      if: needs.unit-tests.result == 'failure' || needs.integration-tests.result == 'failure' || needs.performance-tests.result == 'failure' || needs.e2e-tests.result == 'failure' || needs.build-app.result == 'failure'
+      run: |
+        echo "❌ CI/CD pipeline has failures:"
+        echo "Unit Tests: ${{ needs.unit-tests.result }}"
+        echo "Integration Tests: ${{ needs.integration-tests.result }}"
+        echo "Performance Tests: ${{ needs.performance-tests.result }}"
+        echo "E2E Tests: ${{ needs.e2e-tests.result }}"
+        echo "Build: ${{ needs.build-app.result }}"

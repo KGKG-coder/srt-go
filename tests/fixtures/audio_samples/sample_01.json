@@ -1,0 +1,13 @@
+{
+  "name": "Sample 01 - English Speech",
+  "description": "3-second English speech sample for basic testing",
+  "language": "en",
+  "duration": 3.0,
+  "expected_segments": [
+    {
+      "start": 0.0,
+      "end": 3.0,
+      "text": "This is a test audio sample"
+    }
+  ]
+}

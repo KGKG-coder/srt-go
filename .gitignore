@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+electron_backend.log
+subtitle_generator.log
+
+# Test results
+coverage/
+reports/
+.pytest_cache/
+test-results.xml
+*.coverage
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Electron build artifacts
+electron-react-app/dist/
+electron-react-app/build/
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.rpm
+*.zip
+*.7z
+*.tar.gz
+
+# AI Models (too large for git)
+models/*.bin
+models/*.safetensors
+*.gguf
+*.onnx
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Cache
+.cache/
+*/.cache/
+
+# System files
+desktop.ini
+.DS_Store
