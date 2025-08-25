@@ -1,0 +1,14 @@
+name: Initialize Actions
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Initialize GitHub Actions
+        run: echo "GitHub Actions initialized for SRT GO!"
