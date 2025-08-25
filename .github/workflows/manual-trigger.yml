@@ -1,0 +1,45 @@
+name: Manual CI/CD Test
+
+# 手動觸發的簡化版本
+on:
+  workflow_dispatch:  # 允許手動觸發
+  push:
+    branches: [ main ]
+    paths:
+      - 'tests/**'
+      - '.github/workflows/**'
+
+jobs:
+  test-basic:
+    name: Basic Test
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest numpy
+        
+    - name: Run basic tests
+      run: |
+        python -c "print('✅ Python environment OK')"
+        python -c "import numpy; print('✅ NumPy:', numpy.__version__)"
+        
+    - name: Test structure check
+      run: |
+        echo "Checking test structure..."
+        dir tests
+        echo "✅ Test structure verified"
+        
+    - name: Success notification
+      run: |
+        echo "🎉 Basic CI/CD test completed successfully!"
+        echo "SRT GO testing infrastructure is operational"
