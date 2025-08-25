@@ -1,0 +1,46 @@
+name: Force Enable Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '*/5 * * * *'  # Every 5 minutes (will be disabled automatically)
+
+jobs:
+  force-test:
+    name: Force Enable Actions
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Force Actions Enable Test
+      run: |
+        echo "🚀 SRT GO Actions Force Enable Test"
+        echo "Repository: ${{ github.repository }}"
+        echo "Actor: ${{ github.actor }}"
+        echo "Ref: ${{ github.ref }}"
+        echo "SHA: ${{ github.sha }}"
+        echo "✅ If you see this, GitHub Actions is working!"
+        
+    - name: System Info
+      run: |
+        echo "Runner OS: $(uname -a)"
+        echo "Python version: $(python3 --version)"
+        echo "Available space: $(df -h)"
+        
+    - name: Test Structure
+      run: |
+        echo "📁 Repository structure:"
+        ls -la
+        echo "📁 Tests directory:"
+        ls -la tests/ || echo "Tests directory not found"
+        echo "📁 GitHub workflows:"
+        ls -la .github/workflows/
+        
+    - name: Success Message
+      run: |
+        echo "🎉 SUCCESS: GitHub Actions is now enabled!"
+        echo "🎯 Ready for full CI/CD pipeline activation"
