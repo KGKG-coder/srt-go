@@ -213,39 +213,39 @@ class SRTGOTestRunner:
         failed = [r for r in self.results.values() if not r["success"]]
         total_tests = sum(r["test_count"] for r in self.results.values())
         
-        print(f"總執行時間: {self.total_time:.2f}秒")
-        print(f"測試類別數量: {len(self.results)}")
-        print(f"成功類別: {len(successful)}")
-        print(f"失敗類別: {len(failed)}")
-        print(f"總測試數量: {total_tests}")
-        print(f"成功率: {len(successful)/len(self.results)*100:.1f}%" if self.results else "0%")
+        print(f"Total execution time: {self.total_time:.2f}s")
+        print(f"Test categories: {len(self.results)}")
+        print(f"Successful categories: {len(successful)}")
+        print(f"Failed categories: {len(failed)}")
+        print(f"Total test count: {total_tests}")
+        print(f"Success rate: {len(successful)/len(self.results)*100:.1f}%" if self.results else "0%")
         
         if successful:
-            print("\\n[SUCCESS] 成功的測試類別:")
+            print("\\n[SUCCESS] Successful test categories:")
             for result in successful:
-                print(f"  • {result['category']} ({result['test_count']}個測試, {result['duration']:.1f}秒)")
+                print(f"  • {result['category']} ({result['test_count']} tests, {result['duration']:.1f}s)")
         
         if failed:
-            print("\\n[FAILED] 失敗的測試類別:")  
+            print("\\n[FAILED] Failed test categories:")  
             for result in failed:
-                error_msg = result.get('error', '未知錯誤')
-                print(f"  • {result['category']}: {error_msg}")
+                error_msg = result.get('error', 'Unknown error')
+                print(f"  - {result['category']}: {error_msg}")
         
-        # 效能統計
-        print("\\n[PERF] 效能統計:")
+        # Performance statistics
+        print("\\n[PERF] Performance statistics:")
         perf_results = [r for r in self.results.values() if "效能測試" in r["category"] and r["success"]]
         if perf_results:
             avg_duration = sum(r["duration"] for r in perf_results) / len(perf_results)
-            print(f"  平均效能測試時間: {avg_duration:.2f}秒")
+            print(f"  Average performance test time: {avg_duration:.2f}s")
         
         # 生成JSON報告
         self.save_json_report()
         
         print("\\n" + "="*60)
         if self.is_overall_success():
-            print("🎉 所有測試執行完成 - 整體狀態: 成功")
+            print("SUCCESS: All tests completed successfully")
         else:
-            print("⚠️  測試執行完成 - 發現問題需要處理")
+            print("WARNING: Tests completed with issues")
         print("="*60)
     
     def save_json_report(self):
@@ -265,7 +265,7 @@ class SRTGOTestRunner:
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(report_data, f, indent=2, ensure_ascii=False)
         
-        print(f"\\n📄 詳細報告已儲存: {report_file}")
+        print(f"\\nDetailed report saved: {report_file}")
     
     def is_overall_success(self) -> bool:
         """判斷整體測試是否成功"""
@@ -276,6 +276,12 @@ class SRTGOTestRunner:
 
 def main():
     """主函數"""
+    # Fix Windows console encoding
+    if sys.platform == "win32":
+        import locale
+        if locale.getpreferredencoding().lower() != 'utf-8':
+            os.environ["PYTHONIOENCODING"] = "utf-8"
+    
     parser = argparse.ArgumentParser(description="SRT GO v2.2.1 統一測試執行器")
     parser.add_argument(
         "--categories", "-c", 
@@ -313,9 +319,9 @@ def main():
     runner = SRTGOTestRunner()
     
     if args.list:
-        print("可用的測試類別:")
+        print("Available test categories:")
         categories = [
-            "單元測試", "整合測試", "效能測試", "E2E測試"
+            "Unit Tests", "Integration Tests", "Performance Tests", "E2E Tests"
         ]
         for i, category in enumerate(categories, 1):
             print(f"  {i}. {category}")
