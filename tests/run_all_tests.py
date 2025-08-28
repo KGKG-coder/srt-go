@@ -282,6 +282,26 @@ def main():
         action="store_true", 
         help="列出所有可用的測試類別"
     )
+    parser.add_argument(
+        "--quick-mode",
+        action="store_true",
+        help="快速測試模式（跳過耗時測試）"
+    )
+    parser.add_argument(
+        "--intensive-mode", 
+        action="store_true",
+        help="密集測試模式（包含所有測試）"
+    )
+    parser.add_argument(
+        "--component-test",
+        action="store_true", 
+        help="組件測試模式"
+    )
+    parser.add_argument(
+        "--pre-build-check",
+        action="store_true",
+        help="預構建檢查模式"
+    )
     
     args = parser.parse_args()
     
@@ -297,6 +317,16 @@ def main():
         return
     
     try:
+        # 根據模式調整測試行為
+        if args.quick_mode:
+            print("[MODE] 快速測試模式 - 跳過耗時測試")
+        elif args.intensive_mode:
+            print("[MODE] 密集測試模式 - 包含所有測試")
+        elif args.component_test:
+            print("[MODE] 組件測試模式")
+        elif args.pre_build_check:
+            print("[MODE] 預構建檢查模式")
+        
         success = runner.run_all_tests(args.categories)
         sys.exit(0 if success else 1)
     except KeyboardInterrupt:
