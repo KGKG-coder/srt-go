@@ -58,6 +58,8 @@ jobs:
         cd srt_whisper_lite/electron-react-app
         npm ci
         pip install -r python/requirements.txt
+        cd ../../tests
+        pip install -r requirements-ci.txt
 
     - name: Cache AI Models
       uses: actions/cache@v3
@@ -99,11 +101,13 @@ jobs:
         echo "Testing Smart Backend Selector..."
         python python/smart_backend_selector.py
 
-    - name: Test Performance Monitor
+    - name: Test Performance Monitor using unified runner
       if: ${{ github.event.inputs.test_component == 'performance-monitor' || github.event.inputs.test_component == 'all' }}
       run: |
-        cd tests/performance
-        echo "Testing Performance Monitoring..."
+        cd tests
+        echo "Testing Performance Monitoring via unified runner..."
+        python run_all_tests.py --categories 性能測試 --component-test
+        cd performance
         python quick_rtf_test.py --component-test
 
     - name: Test UI Integration

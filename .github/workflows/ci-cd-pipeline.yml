@@ -33,9 +33,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r tests/requirements-ci.txt
         
-    - name: Run unit tests
+    - name: Run unit tests using unified runner
       run: |
         cd tests
+        python run_all_tests.py --categories 單元測試
         python -m pytest unit/ -v --tb=short --junitxml=unit/test-results.xml
         
     - name: Upload unit test results
@@ -65,12 +66,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r tests/requirements-ci.txt
         
-    - name: Run integration tests
+    - name: Run integration tests using unified runner
       run: |
         cd tests
-        echo "Running integration tests..." > integration-test-results.log
-        python debug_test_integration.py >> integration-test-results.log 2>&1
-        python debug_test_integration_low_vad.py >> integration-test-results.log 2>&1
+        python run_all_tests.py --categories 整合測試
+        python -m pytest integration/ -v --tb=short --junitxml=integration/test-results.xml
         
     - name: Upload integration test results
       uses: actions/upload-artifact@v3
@@ -100,9 +100,11 @@ jobs:
         pip install pytest numpy librosa soundfile scikit-learn
         pip install faster-whisper ctranslate2
         
-    - name: Run RTF performance benchmarks
+    - name: Run performance tests using unified runner
       run: |
-        cd tests/performance
+        cd tests
+        python run_all_tests.py --categories 性能測試
+        cd performance
         python quick_rtf_test.py
         
     - name: Upload performance results
@@ -132,9 +134,11 @@ jobs:
         pip install pytest pytest-asyncio numpy librosa soundfile scikit-learn
         pip install faster-whisper ctranslate2
         
-    - name: Run E2E automation suite
+    - name: Run E2E tests using unified runner
       run: |
-        cd tests/e2e
+        cd tests
+        python run_all_tests.py --categories E2E測試
+        cd e2e
         python test_automation_suite.py
         
     - name: Upload E2E test results

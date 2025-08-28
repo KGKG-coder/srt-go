@@ -1,11 +1,11 @@
 # GitHub Actions Workflows
 
-This directory contains the CI/CD pipeline configuration for SRT GO Enhanced v2.2.1.
+This directory contains the streamlined CI/CD pipeline configuration for SRT GO v2.2.1.
 
-## 🚀 Available Workflows
+## 🚀 Optimized Workflows (5 Essential)
 
 ### 1. `ci-cd-pipeline.yml` - Complete CI/CD Pipeline
-**Trigger**: Push to main/release branches, Pull requests
+**Trigger**: Push to main/develop branches, Pull requests, Nightly schedule
 **Duration**: ~60-90 minutes
 
 **7-Stage Pipeline**:
@@ -26,14 +26,14 @@ This directory contains the CI/CD pipeline configuration for SRT GO Enhanced v2.
 - `full`: Complete test suite in quick mode  
 - `performance`: RTF benchmarks only
 
-### 3. `release-builder.yml` - Release Creation
-**Trigger**: Manual dispatch only
-**Duration**: ~60 minutes
+### 3. `performance-monitoring.yml` - Continuous Monitoring
+**Trigger**: Daily schedule (2 AM UTC), Manual dispatch
+**Duration**: ~60-120 minutes
 
-**Options**:
-- Version specification (e.g., v2.2.1)
-- Release type (stable/beta/alpha)
-- AI models bundling toggle
+**Monitoring Types**:
+- `standard`: Daily performance benchmarks
+- `intensive`: Comprehensive system stress testing
+- `regression`: Performance comparison with baseline
 
 ### 4. `manual-testing.yml` - Component Testing
 **Trigger**: Manual dispatch only
@@ -46,14 +46,14 @@ This directory contains the CI/CD pipeline configuration for SRT GO Enhanced v2.
 - `performance-monitor` - RTF monitoring system
 - `ui-integration` - Electron + React integration
 
-### 5. `performance-monitoring.yml` - Continuous Monitoring
-**Trigger**: Daily schedule (2 AM UTC), Manual dispatch
-**Duration**: ~60-120 minutes
+### 5. `release-builder.yml` - Release Creation
+**Trigger**: Manual dispatch only
+**Duration**: ~60 minutes
 
-**Monitoring Types**:
-- `standard`: Daily performance benchmarks
-- `intensive`: Comprehensive system stress testing
-- `regression`: Performance comparison with baseline
+**Options**:
+- Version specification (e.g., v2.2.1)
+- Release type (stable/beta/alpha)
+- AI models bundling toggle
 
 ## 📊 Workflow Status Badges
 

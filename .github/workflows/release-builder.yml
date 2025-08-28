@@ -49,11 +49,19 @@ jobs:
         cd srt_whisper_lite/electron-react-app
         npm ci
         pip install -r python/requirements.txt
+        cd ../../tests
+        pip install -r requirements-ci.txt
 
     - name: Update Version Info
       run: |
         cd srt_whisper_lite/electron-react-app
         npm version ${{ github.event.inputs.version }} --no-git-tag-version
+
+    - name: Pre-build Validation using unified runner
+      run: |
+        cd tests
+        echo "Running pre-build validation tests..."
+        python run_all_tests.py --categories 單元測試 --quick-mode --pre-build-check
 
     - name: Build Application (with models)
       if: ${{ github.event.inputs.include_models == 'true' }}

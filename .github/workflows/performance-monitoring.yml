@@ -61,16 +61,20 @@ jobs:
         path: ~/.cache/huggingface/hub
         key: performance-models-${{ hashFiles('**/requirements.txt') }}
 
-    - name: Run Standard Benchmarks
+    - name: Run Standard Benchmarks using unified runner
       if: ${{ github.event.inputs.benchmark_type == 'standard' || github.event.inputs.benchmark_type == '' }}
       run: |
-        cd tests/performance
+        cd tests
+        python run_all_tests.py --categories 性能測試
+        cd performance
         python comprehensive_performance_suite.py --standard
 
-    - name: Run Intensive Benchmarks
+    - name: Run Intensive Benchmarks using unified runner
       if: ${{ github.event.inputs.benchmark_type == 'intensive' }}
       run: |
-        cd tests/performance
+        cd tests
+        python run_all_tests.py --categories 性能測試 --intensive-mode
+        cd performance
         python comprehensive_performance_suite.py --intensive
 
     - name: Run Regression Tests

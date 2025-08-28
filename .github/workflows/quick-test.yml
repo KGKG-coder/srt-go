@@ -38,23 +38,31 @@ jobs:
       run: |
         cd srt_whisper_lite/electron-react-app
         pip install -r python/requirements.txt
+        cd ../../tests
+        pip install -r requirements-ci.txt
 
-    - name: Run Basic Tests
+    - name: Run Basic Tests using unified runner
       if: ${{ github.event.inputs.test_level == 'basic' || github.event.inputs.test_level == '' }}
       run: |
-        cd tests/performance
+        cd tests
+        python run_all_tests.py --categories 單元測試 --quick-mode
+        cd performance
         python quick_rtf_test.py --basic-only
 
-    - name: Run Full Test Suite
+    - name: Run Full Test Suite using unified runner
       if: ${{ github.event.inputs.test_level == 'full' }}
       run: |
-        cd tests/e2e
+        cd tests
+        python run_all_tests.py --categories 單元測試,整合測試,E2E測試 --quick-mode
+        cd e2e
         python test_automation_suite.py --quick-mode
 
-    - name: Run Performance Benchmarks
+    - name: Run Performance Benchmarks using unified runner
       if: ${{ github.event.inputs.test_level == 'performance' }}
       run: |
-        cd tests/performance
+        cd tests
+        python run_all_tests.py --categories 性能測試
+        cd performance
         python quick_rtf_test.py
         python monitor_processing_performance.py
 
