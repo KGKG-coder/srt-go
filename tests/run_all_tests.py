@@ -19,6 +19,10 @@ import argparse
 # Add project paths
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
+# Add SRT Whisper Lite Python modules path
+srt_python_path = project_root / "srt_whisper_lite" / "electron-react-app" / "python"
+if srt_python_path.exists():
+    sys.path.insert(0, str(srt_python_path))
 
 
 class SRTGOTestRunner:
@@ -66,7 +70,8 @@ class SRTGOTestRunner:
                 capture_output=True,
                 text=True,
                 encoding='utf-8',
-                cwd=str(self.test_root)
+                cwd=str(self.test_root),
+                timeout=300  # 5 minutes per test category
             )
             
             duration = time.time() - start_time
