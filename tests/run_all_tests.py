@@ -132,66 +132,80 @@ class SRTGOTestRunner:
         
         self.start_time = time.time()
         
-        # 測試配置 - 按功能分類
+        # 測試配置 - 按功能分類 (支持中英文類別)
         test_configs = {
-            # 1. 單元測試
+            # 1. 單元測試 / Unit Tests
             "單元測試 - 音頻處理器": {
                 "path": "unit/test_audio_processor.py",
-                "args": ["-v"]
+                "args": ["-v"],
+                "categories": ["單元測試", "Unit Tests"]
             },
             "單元測試 - 音頻處理器簡化版": {
                 "path": "unit/test_audio_processor_simple.py", 
-                "args": ["-v"]
+                "args": ["-v"],
+                "categories": ["單元測試", "Unit Tests"]
             },
             
-            # 2. 整合測試
+            # 2. 整合測試 / Integration Tests
             "整合測試 - 完整工作流程": {
                 "path": "integration/test_complete_workflow.py",
-                "args": ["-v"]
+                "args": ["-v"],
+                "categories": ["整合測試", "Integration Tests"]
             },
             "整合測試 - 標準除錯": {
                 "path": "debug_test_integration.py",
-                "args": []
+                "args": [],
+                "categories": ["整合測試", "Integration Tests"]
             },
             "整合測試 - 低VAD除錯": {
                 "path": "debug_test_integration_low_vad.py",
-                "args": []
+                "args": [],
+                "categories": ["整合測試", "Integration Tests"]
             },
             
-            # 3. 效能測試
+            # 3. 效能測試 / Performance Tests
             "效能測試 - 快速RTF測試": {
                 "path": "performance/quick_rtf_test.py",
-                "args": []
+                "args": [],
+                "categories": ["性能測試", "Performance Tests"]
             },
             "效能測試 - RTF基準測試": {
                 "path": "performance/test_rtf_benchmarks.py",
-                "args": ["-v"]
+                "args": ["-v"],
+                "categories": ["性能測試", "Performance Tests"]
             },
             "效能測試 - RTF監控系統": {
                 "path": "performance/rtf_monitoring_system.py",
-                "args": []
+                "args": [],
+                "categories": ["性能測試", "Performance Tests"]
             },
             "效能測試 - 綜合效能套件": {
                 "path": "performance/comprehensive_performance_suite.py",
-                "args": []
+                "args": [],
+                "categories": ["性能測試", "Performance Tests"]
             },
             
-            # 4. E2E測試  
+            # 4. E2E測試 / E2E Tests
             "E2E測試 - 自動化測試套件": {
                 "path": "e2e/test_automation_suite.py",
-                "args": []
+                "args": [],
+                "categories": ["E2E測試", "E2E Tests"]
             },
         }
         
-        # 如果指定了特定類別，只執行那些
+        # 如果指定了特定類別，只執行那些 (支持中英文類別匹配)
+        filtered_configs = {}
         if categories:
-            test_configs = {k: v for k, v in test_configs.items() if any(cat in k for cat in categories)}
+            for category_name, config in test_configs.items():
+                # 檢查是否匹配任何指定的類別
+                config_categories = config.get("categories", [category_name])
+                if any(any(specified_cat.lower() in config_cat.lower() for config_cat in config_categories) 
+                      for specified_cat in categories):
+                    filtered_configs[category_name] = config
+            test_configs = filtered_configs
         
         # 執行測試
         for category, config in test_configs.items():
-            if categories and not any(cat in category for cat in categories):
-                continue
-                
             result = self.run_test_category(category, config["path"], config.get("args", []))
             self.results[category] = result
         
