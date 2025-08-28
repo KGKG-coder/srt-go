@@ -1,0 +1,155 @@
+name: Manual Testing Suite
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_component:
+        description: 'Component to Test'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+        - all
+        - fp16-model
+        - voice-detection
+        - backend-selector
+        - performance-monitor
+        - ui-integration
+      test_files:
+        description: 'Test Files (comma-separated)'
+        required: false
+        default: 'hutest.mp4,DRLIN.mp4'
+        type: string
+      gpu_mode:
+        description: 'GPU Mode'
+        required: true
+        default: 'auto'
+        type: choice
+        options:
+        - auto
+        - force-gpu
+        - force-cpu
+
+jobs:
+  manual-test-execution:
+    name: "Manual Test: ${{ github.event.inputs.test_component }}"
+    runs-on: windows-latest
+    timeout-minutes: 60
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4  
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: srt_whisper_lite/electron-react-app/package-lock.json
+
+    - name: Install Dependencies
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        npm ci
+        pip install -r python/requirements.txt
+
+    - name: Cache AI Models
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/huggingface/hub
+        key: ${{ runner.os }}-huggingface-models-${{ hashFiles('**/requirements.txt') }}
+
+    - name: Test FP16 Model Manager
+      if: ${{ github.event.inputs.test_component == 'fp16-model' || github.event.inputs.test_component == 'all' }}
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        echo "Testing FP16 Model Manager..."
+        python -c "
+        import sys
+        sys.path.insert(0, 'python')
+        from large_v3_fp16_performance_manager import LargeV3FP16PerformanceManager
+        manager = LargeV3FP16PerformanceManager()
+        config = manager.get_optimized_whisper_config()
+        print(f'FP16 Config: {config}')
+        "
+
+    - name: Test Voice Detection System
+      if: ${{ github.event.inputs.test_component == 'voice-detection' || github.event.inputs.test_component == 'all' }}
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        echo "Testing Adaptive Voice Detection..."
+        python -c "
+        import sys
+        sys.path.insert(0, 'python')
+        from adaptive_voice_detector import AdaptiveVoiceDetector
+        detector = AdaptiveVoiceDetector()
+        print('Voice Detection System: OK')
+        "
+
+    - name: Test Backend Selector
+      if: ${{ github.event.inputs.test_component == 'backend-selector' || github.event.inputs.test_component == 'all' }}
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        echo "Testing Smart Backend Selector..."
+        python python/smart_backend_selector.py
+
+    - name: Test Performance Monitor
+      if: ${{ github.event.inputs.test_component == 'performance-monitor' || github.event.inputs.test_component == 'all' }}
+      run: |
+        cd tests/performance
+        echo "Testing Performance Monitoring..."
+        python quick_rtf_test.py --component-test
+
+    - name: Test UI Integration
+      if: ${{ github.event.inputs.test_component == 'ui-integration' || github.event.inputs.test_component == 'all' }}
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        echo "Testing UI Integration..."
+        npm run react:build
+        echo "UI build completed successfully"
+
+    - name: Run End-to-End Test with Specified Files
+      if: ${{ github.event.inputs.test_files != '' }}
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        $files = "${{ github.event.inputs.test_files }}" -split ","
+        $gpu_setting = if ("${{ github.event.inputs.gpu_mode }}" -eq "force-gpu") { "true" } elseif ("${{ github.event.inputs.gpu_mode }}" -eq "force-cpu") { "false" } else { "false" }
+        
+        foreach ($file in $files) {
+          $file = $file.Trim()
+          if ($file) {
+            echo "Testing with file: $file"
+            python python/electron_backend.py --files "[\`"test_VIDEO/$file\`"]" --settings "{\`"model\`":\`"large\`",\`"language\`":\`"auto\`",\`"outputFormat\`":\`"srt\`",\`"customDir\`":\`"C:/temp/manual_test_output\`",\`"enable_gpu\`":$gpu_setting}" --corrections "[]"
+          }
+        }
+
+    - name: Generate Test Report
+      if: always()
+      run: |
+        echo "# Manual Test Report" > test_report.md
+        echo "" >> test_report.md
+        echo "## Test Configuration" >> test_report.md
+        echo "- **Component**: ${{ github.event.inputs.test_component }}" >> test_report.md
+        echo "- **GPU Mode**: ${{ github.event.inputs.gpu_mode }}" >> test_report.md
+        echo "- **Test Files**: ${{ github.event.inputs.test_files }}" >> test_report.md
+        echo "- **Runner**: ${{ runner.os }}" >> test_report.md
+        echo "- **Timestamp**: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" >> test_report.md
+        echo "" >> test_report.md
+        echo "## Results" >> test_report.md
+        echo "Test execution completed. Check individual step outputs for detailed results." >> test_report.md
+
+    - name: Upload Test Results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: manual-test-${{ github.event.inputs.test_component }}-${{ github.run_number }}
+        path: |
+          test_report.md
+          C:/temp/manual_test_output/
+          srt_whisper_lite/electron-react-app/logs/

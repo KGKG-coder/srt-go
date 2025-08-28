@@ -1,0 +1,190 @@
+name: Performance Monitoring
+
+on:
+  schedule:
+    # Run performance tests daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      benchmark_type:
+        description: 'Benchmark Type'
+        required: true
+        default: 'standard'
+        type: choice
+        options:
+        - standard
+        - intensive
+        - regression
+      comparison_baseline:
+        description: 'Comparison Baseline (commit hash or tag)'
+        required: false
+        type: string
+
+jobs:
+  performance-benchmarks:
+    name: "Performance Benchmarks"
+    runs-on: windows-latest
+    timeout-minutes: 120
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 100  # Need history for comparison
+
+    - name: Checkout Baseline (if specified)
+      if: ${{ github.event.inputs.comparison_baseline != '' }}
+      run: |
+        git fetch origin
+        git checkout ${{ github.event.inputs.comparison_baseline }}
+        mkdir baseline_build
+        cd srt_whisper_lite/electron-react-app
+        pip install -r python/requirements.txt
+        cd ../../baseline_build
+        git checkout ${{ github.sha }}
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install Dependencies
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        pip install -r python/requirements.txt
+        pip install matplotlib seaborn pandas  # For performance visualization
+
+    - name: Cache Models for Consistent Testing
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/huggingface/hub
+        key: performance-models-${{ hashFiles('**/requirements.txt') }}
+
+    - name: Run Standard Benchmarks
+      if: ${{ github.event.inputs.benchmark_type == 'standard' || github.event.inputs.benchmark_type == '' }}
+      run: |
+        cd tests/performance
+        python comprehensive_performance_suite.py --standard
+
+    - name: Run Intensive Benchmarks
+      if: ${{ github.event.inputs.benchmark_type == 'intensive' }}
+      run: |
+        cd tests/performance
+        python comprehensive_performance_suite.py --intensive
+
+    - name: Run Regression Tests
+      if: ${{ github.event.inputs.benchmark_type == 'regression' }}
+      run: |
+        cd tests/performance
+        python regression_performance_test.py
+
+    - name: Generate Performance Visualizations
+      run: |
+        cd tests/performance
+        python generate_performance_charts.py
+
+    - name: Compare with Baseline
+      if: ${{ github.event.inputs.comparison_baseline != '' }}
+      run: |
+        cd tests/performance
+        python compare_performance_baseline.py --baseline ${{ github.event.inputs.comparison_baseline }}
+
+    - name: Create Performance Summary
+      run: |
+        cd tests/performance
+        python create_performance_summary.py > performance_summary.md
+
+    - name: Upload Performance Data
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-data-${{ github.run_number }}
+        path: |
+          tests/performance/results/
+          tests/performance/charts/
+          tests/performance/performance_summary.md
+
+    - name: Update Performance History
+      if: github.event_name == 'schedule'
+      run: |
+        # Commit performance history to a separate branch
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git checkout -b performance-history || git checkout performance-history
+        mkdir -p performance_history/$(date +%Y-%m)
+        cp tests/performance/results/summary.json "performance_history/$(date +%Y-%m)/$(date +%Y-%m-%d).json"
+        git add performance_history/
+        git commit -m "Performance data for $(date +%Y-%m-%d)" || echo "No changes to commit"
+        git push origin performance-history
+
+    - name: Comment on PR (if applicable)
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const summary = fs.readFileSync('tests/performance/performance_summary.md', 'utf8');
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: `## 📊 Performance Test Results\n\n${summary}`
+          });
+
+  performance-regression-check:
+    name: "Regression Detection"
+    runs-on: windows-latest
+    needs: performance-benchmarks
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Download Performance Data
+      uses: actions/download-artifact@v3
+      with:
+        name: performance-data-${{ github.run_number }}
+        path: ./performance_results
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install Analysis Tools
+      run: pip install numpy scipy pandas
+
+    - name: Analyze Performance Regression
+      run: |
+        python -c "
+        import json
+        import sys
+        
+        # Load current results
+        with open('performance_results/results/summary.json', 'r') as f:
+            current = json.load(f)
+        
+        # Check for significant regressions
+        rtf_current = current.get('average_rtf', 1.0)
+        accuracy_current = current.get('average_accuracy', 0.95)
+        
+        # Define thresholds
+        RTF_THRESHOLD = 1.2  # 20% slower is a regression
+        ACCURACY_THRESHOLD = 0.93  # Below 93% is concerning
+        
+        if rtf_current > RTF_THRESHOLD:
+            print(f'❌ Performance regression detected: RTF {rtf_current} > threshold {RTF_THRESHOLD}')
+            sys.exit(1)
+        
+        if accuracy_current < ACCURACY_THRESHOLD:
+            print(f'❌ Accuracy regression detected: {accuracy_current} < threshold {ACCURACY_THRESHOLD}')
+            sys.exit(1)
+            
+        print('✅ No significant performance regression detected')
+        print(f'RTF: {rtf_current} (threshold: {RTF_THRESHOLD})')
+        print(f'Accuracy: {accuracy_current} (threshold: {ACCURACY_THRESHOLD})')
+        "
+
+    - name: Performance Gate Status
+      run: echo "Performance gate passed successfully"

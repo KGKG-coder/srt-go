@@ -1,0 +1,68 @@
+name: Quick Test Suite
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_level:
+        description: 'Test Level'
+        required: true
+        default: 'basic'
+        type: choice
+        options:
+        - basic
+        - full
+        - performance
+  push:
+    branches: [ develop ]
+    paths:
+      - 'srt_whisper_lite/electron-react-app/python/**'
+      - 'tests/**'
+
+jobs:
+  quick-validation:
+    name: "Quick Validation Test"
+    runs-on: windows-latest
+    timeout-minutes: 20
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install Dependencies
+      run: |
+        cd srt_whisper_lite/electron-react-app
+        pip install -r python/requirements.txt
+
+    - name: Run Basic Tests
+      if: ${{ github.event.inputs.test_level == 'basic' || github.event.inputs.test_level == '' }}
+      run: |
+        cd tests/performance
+        python quick_rtf_test.py --basic-only
+
+    - name: Run Full Test Suite
+      if: ${{ github.event.inputs.test_level == 'full' }}
+      run: |
+        cd tests/e2e
+        python test_automation_suite.py --quick-mode
+
+    - name: Run Performance Benchmarks
+      if: ${{ github.event.inputs.test_level == 'performance' }}
+      run: |
+        cd tests/performance
+        python quick_rtf_test.py
+        python monitor_processing_performance.py
+
+    - name: Upload Results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: quick-test-results-${{ github.run_number }}
+        path: |
+          tests/**/results/
+          tests/**/logs/
