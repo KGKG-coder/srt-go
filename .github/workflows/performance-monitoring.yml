@@ -65,7 +65,7 @@ jobs:
       if: ${{ github.event.inputs.benchmark_type == 'standard' || github.event.inputs.benchmark_type == '' }}
       run: |
         cd tests
-        python run_all_tests.py --categories 性能測試
+        python run_all_tests.py --categories "Performance Tests"
         cd performance
         python comprehensive_performance_suite.py --standard
 
@@ -73,7 +73,7 @@ jobs:
       if: ${{ github.event.inputs.benchmark_type == 'intensive' }}
       run: |
         cd tests
-        python run_all_tests.py --categories 性能測試 --intensive-mode
+        python run_all_tests.py --categories "Performance Tests" --intensive-mode
         cd performance
         python comprehensive_performance_suite.py --intensive
 

@@ -45,7 +45,7 @@ jobs:
       if: ${{ github.event.inputs.test_level == 'basic' || github.event.inputs.test_level == '' }}
       run: |
         cd tests
-        python run_all_tests.py --categories 單元測試 --quick-mode
+        python run_all_tests.py --categories "Unit Tests" --quick-mode
         cd performance
         python quick_rtf_test.py --basic-only
 
@@ -53,7 +53,7 @@ jobs:
       if: ${{ github.event.inputs.test_level == 'full' }}
       run: |
         cd tests
-        python run_all_tests.py --categories 單元測試,整合測試,E2E測試 --quick-mode
+        python run_all_tests.py --categories "Unit Tests" "Integration Tests" "E2E Tests" --quick-mode
         cd e2e
         python test_automation_suite.py --quick-mode
 
@@ -61,7 +61,7 @@ jobs:
       if: ${{ github.event.inputs.test_level == 'performance' }}
       run: |
         cd tests
-        python run_all_tests.py --categories 性能測試
+        python run_all_tests.py --categories "Performance Tests"
         cd performance
         python quick_rtf_test.py
         python monitor_processing_performance.py

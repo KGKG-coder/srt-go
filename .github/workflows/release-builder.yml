@@ -61,7 +61,7 @@ jobs:
       run: |
         cd tests
         echo "Running pre-build validation tests..."
-        python run_all_tests.py --categories 單元測試 --quick-mode --pre-build-check
+        python run_all_tests.py --categories "Unit Tests" --quick-mode --pre-build-check
 
     - name: Build Application (with models)
       if: ${{ github.event.inputs.include_models == 'true' }}
