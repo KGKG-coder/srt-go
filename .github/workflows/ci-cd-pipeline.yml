@@ -212,7 +212,7 @@ jobs:
       run: |
         pip install safety bandit
         safety check
-        bandit -r srt_whisper_lite/ -f json -o security-report.json
+        bandit -r srt_whisper_lite/electron-react-app/python/ -f json -o security-report.json
         
     - name: Upload security results
       uses: actions/upload-artifact@v3
@@ -240,13 +240,13 @@ jobs:
         
     - name: Run code quality checks
       run: |
-        flake8 srt_whisper_lite/ tests/ --max-line-length=120
-        black --check srt_whisper_lite/ tests/
-        pylint srt_whisper_lite/
+        flake8 srt_whisper_lite/electron-react-app/python/ tests/ --max-line-length=120 --exclude=cleanup_backup/
+        black --check srt_whisper_lite/electron-react-app/python/ tests/ --exclude='cleanup_backup/'
+        pylint srt_whisper_lite/electron-react-app/python/ --ignore=cleanup_backup
         
     - name: Type checking with mypy
       run: |
-        mypy srt_whisper_lite/ --ignore-missing-imports
+        mypy srt_whisper_lite/electron-react-app/python/ --ignore-missing-imports --exclude-files=cleanup_backup
 
   # Deployment Job (only on main branch)
   deploy:
