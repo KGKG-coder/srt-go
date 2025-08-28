@@ -1,6 +1,9 @@
 """
-商用級測試配置檔案
-pytest 全域配置和共用 fixtures
+SRT GO v2.2.1 統一測試配置
+Unified Test Configuration - pytest 全域配置和共用 fixtures
+
+提供所有測試的共用fixtures、配置和工具函數
+Provides shared fixtures, configurations, and utility functions for all tests.
 """
 
 import pytest
