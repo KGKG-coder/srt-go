@@ -31,12 +31,12 @@ jobs:
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest pytest-asyncio numpy librosa soundfile scikit-learn
+        pip install -r tests/requirements-ci.txt
         
     - name: Run unit tests
       run: |
         cd tests
-        python -m pytest unit/ -v --tb=short
+        python -m pytest unit/ -v --tb=short --junitxml=unit/test-results.xml
         
     - name: Upload unit test results
       uses: actions/upload-artifact@v3
@@ -63,21 +63,21 @@ jobs:
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest pytest-asyncio numpy librosa soundfile scikit-learn
-        pip install faster-whisper ctranslate2
+        pip install -r tests/requirements-ci.txt
         
     - name: Run integration tests
       run: |
         cd tests
-        python debug_test_integration.py
-        python debug_test_integration_low_vad.py
+        echo "Running integration tests..." > integration-test-results.log
+        python debug_test_integration.py >> integration-test-results.log 2>&1
+        python debug_test_integration_low_vad.py >> integration-test-results.log 2>&1
         
     - name: Upload integration test results
       uses: actions/upload-artifact@v3
       if: always()
       with:
         name: integration-test-results
-        path: tests/integration/test-results.xml
+        path: tests/integration-test-results.log
 
   # Performance Benchmarks Job
   performance-tests:
