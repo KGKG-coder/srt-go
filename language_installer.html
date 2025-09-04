@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRT GO - Language Selection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .language-selection {
+            margin-bottom: 40px;
+        }
+
+        .language-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .language-desc {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .language-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .language-option {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .language-option:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
+        }
+
+        .language-option.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .language-flag {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .language-name {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .language-native {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+
+        .selected .language-native {
+            opacity: 0.9;
+        }
+
+        .install-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 16px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .install-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .install-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .browser-detect {
+            font-size: 12px;
+            color: #999;
+            margin-top: 15px;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #667eea;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .selected .checkmark {
+            opacity: 1;
+            color: #667eea;
+            background: white;
+        }
+    </style>
+    
+    <!-- 語言配置腳本參考 -->
+    <!-- Uses: setup_language_config_fixed.js for backend configuration -->
+</head>
+<body>
+    <div class="container">
+        <div class="logo">SRT GO</div>
+        <div class="subtitle" id="subtitle">AI Subtitle Generator</div>
+        
+        <div class="language-selection">
+            <div class="language-title" id="languageTitle">Choose Interface Language</div>
+            <div class="language-desc" id="languageDesc">Select your preferred interface language. This cannot be changed later.</div>
+            
+            <div class="language-grid">
+                <div class="language-option" data-lang="en">
+                    <div class="language-flag">🇺🇸</div>
+                    <div class="language-name">English</div>
+                    <div class="language-native">English</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                
+                <div class="language-option" data-lang="zh-TW">
+                    <div class="language-flag">🇹🇼</div>
+                    <div class="language-name">Traditional Chinese</div>
+                    <div class="language-native">繁體中文</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                
+                <div class="language-option" data-lang="zh-CN">
+                    <div class="language-flag">🇨🇳</div>
+                    <div class="language-name">Simplified Chinese</div>
+                    <div class="language-native">简体中文</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                
+                <div class="language-option" data-lang="ja">
+                    <div class="language-flag">🇯🇵</div>
+                    <div class="language-name">Japanese</div>
+                    <div class="language-native">日本語</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                
+                <div class="language-option" data-lang="ko">
+                    <div class="language-flag">🇰🇷</div>
+                    <div class="language-name">Korean</div>
+                    <div class="language-native">한국어</div>
+                    <div class="checkmark">✓</div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="install-button" id="installButton" onclick="proceedInstall()">
+            Continue Installation
+        </button>
+        
+        <div class="browser-detect" id="browserDetect"></div>
+    </div>
+
+    <script>
+        // 語言內容定義
+        const translations = {
+            'en': {
+                subtitle: 'AI Subtitle Generator',
+                languageTitle: 'Choose Interface Language',
+                languageDesc: 'Select your preferred interface language. This cannot be changed later.',
+                installButton: 'Continue Installation',
+                browserDetect: 'Browser language detected:'
+            },
+            'zh-TW': {
+                subtitle: 'AI 字幕生成工具',
+                languageTitle: '選擇介面語言',
+                languageDesc: '選擇您偏好的介面語言。安裝後無法更改。',
+                installButton: '繼續安裝',
+                browserDetect: '偵測到瀏覽器語言：'
+            },
+            'zh-CN': {
+                subtitle: 'AI 字幕生成工具',
+                languageTitle: '选择界面语言',
+                languageDesc: '选择您偏好的界面语言。安装后无法更改。',
+                installButton: '继续安装',
+                browserDetect: '检测到浏览器语言：'
+            },
+            'ja': {
+                subtitle: 'AI字幕生成ツール',
+                languageTitle: 'インターフェース言語を選択',
+                languageDesc: '希望するインターフェース言語を選択してください。インストール後は変更できません。',
+                installButton: 'インストール続行',
+                browserDetect: 'ブラウザ言語検出：'
+            },
+            'ko': {
+                subtitle: 'AI 자막 생성 도구',
+                languageTitle: '인터페이스 언어 선택',
+                languageDesc: '원하는 인터페이스 언어를 선택하세요. 설치 후에는 변경할 수 없습니다.',
+                installButton: '설치 계속',
+                browserDetect: '브라우저 언어 감지：'
+            }
+        };
+
+        let selectedLanguage = null;
+        let currentUILanguage = 'en'; // 預設介面語言
+
+        // 獲取瀏覽器語言
+        function getBrowserLanguage() {
+            const lang = navigator.language || navigator.userLanguage;
+            
+            if (lang.startsWith('zh')) {
+                if (lang.includes('TW') || lang.includes('HK') || lang.includes('MO')) {
+                    return 'zh-TW';
+                }
+                return 'zh-CN';
+            } else if (lang.startsWith('ja')) {
+                return 'ja';
+            } else if (lang.startsWith('ko')) {
+                return 'ko';
+            }
+            
+            return 'en';
+        }
+
+        // 更新介面語言
+        function updateUILanguage(lang) {
+            const t = translations[lang];
+            if (!t) return;
+
+            document.getElementById('subtitle').textContent = t.subtitle;
+            document.getElementById('languageTitle').textContent = t.languageTitle;
+            document.getElementById('languageDesc').textContent = t.languageDesc;
+            document.getElementById('installButton').textContent = t.installButton;
+            document.getElementById('browserDetect').textContent = t.browserDetect + ' ' + getLanguageName(lang);
+        }
+
+        // 獲取語言顯示名稱
+        function getLanguageName(lang) {
+            const names = {
+                'en': 'English',
+                'zh-TW': '繁體中文',
+                'zh-CN': '简体中文',
+                'ja': '日本語',
+                'ko': '한국어'
+            };
+            return names[lang] || 'English';
+        }
+
+        // 初始化
+        function init() {
+            const browserLang = getBrowserLanguage();
+            
+            // 設置介面語言為瀏覽器語言
+            currentUILanguage = browserLang;
+            updateUILanguage(currentUILanguage);
+            
+            // 預選瀏覽器語言
+            selectLanguage(browserLang);
+            
+            // 綁定語言選項點擊事件
+            document.querySelectorAll('.language-option').forEach(option => {
+                option.addEventListener('click', () => {
+                    const lang = option.dataset.lang;
+                    selectLanguage(lang);
+                    // 即時更新介面語言
+                    currentUILanguage = lang;
+                    updateUILanguage(lang);
+                });
+            });
+        }
+
+        // 選擇語言
+        function selectLanguage(lang) {
+            // 移除所有選中狀態
+            document.querySelectorAll('.language-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            
+            // 添加選中狀態
+            const option = document.querySelector(`[data-lang="${lang}"]`);
+            if (option) {
+                option.classList.add('selected');
+                selectedLanguage = lang;
+            }
+        }
+
+        // 繼續安裝
+        function proceedInstall() {
+            if (!selectedLanguage) {
+                alert('Please select a language first / 請先選擇語言 / 请先选择语言 / まず言語を選択してください / 먼저 언어를 선택하세요');
+                return;
+            }
+
+            // 創建語言配置檔案
+            const config = {
+                selectedLanguage: selectedLanguage,
+                installTime: new Date().toISOString(),
+                browserLanguage: navigator.language
+            };
+
+            // 保存到文件（實際實現中會調用 Electron API）
+            if (window.electron) {
+                window.electron.saveLanguageConfig(config);
+            } else {
+                // 測試模式 - 使用 localStorage
+                localStorage.setItem('srtgo_language_config', JSON.stringify(config));
+                console.log('Language configuration saved:', config);
+                
+                // 調用語言配置腳本
+                console.log('Language setup will use: setup_language_config_fixed.js');
+            }
+
+            // 顯示安裝進度
+            showInstallProgress();
+        }
+
+        // 顯示安裝進度
+        function showInstallProgress() {
+            const container = document.querySelector('.container');
+            container.innerHTML = `
+                <div class="logo">SRT GO</div>
+                <div class="subtitle">${translations[currentUILanguage].subtitle}</div>
+                
+                <div style="margin: 40px 0;">
+                    <div style="font-size: 20px; font-weight: 600; margin-bottom: 20px;">
+                        ${getInstallText()}
+                    </div>
+                    
+                    <div style="background: #f0f0f0; border-radius: 20px; height: 8px; overflow: hidden; margin-bottom: 20px;">
+                        <div id="progressBar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 100%; width: 0%; transition: width 0.5s ease;"></div>
+                    </div>
+                    
+                    <div id="installStep" style="color: #666; font-size: 14px;">
+                        ${getInitText()}
+                    </div>
+                </div>
+            `;
+
+            // 模擬安裝進度
+            simulateInstall();
+        }
+
+        function getInstallText() {
+            const texts = {
+                'en': 'Installing SRT GO...',
+                'zh-TW': '正在安裝 SRT GO...',
+                'zh-CN': '正在安装 SRT GO...',
+                'ja': 'SRT GO をインストール中...',
+                'ko': 'SRT GO 설치 중...'
+            };
+            return texts[currentUILanguage] || texts['en'];
+        }
+
+        function getInitText() {
+            const texts = {
+                'en': 'Initializing installation...',
+                'zh-TW': '初始化安裝程序...',
+                'zh-CN': '初始化安装程序...',
+                'ja': 'インストールを初期化中...',
+                'ko': '설치 초기화 중...'
+            };
+            return texts[currentUILanguage] || texts['en'];
+        }
+
+        // 模擬安裝進度
+        function simulateInstall() {
+            const steps = [
+                { progress: 20, text: getStepText('dependencies') },
+                { progress: 40, text: getStepText('models') },
+                { progress: 60, text: getStepText('frontend') },
+                { progress: 80, text: getStepText('backend') },
+                { progress: 100, text: getStepText('complete') }
+            ];
+
+            let currentStep = 0;
+
+            function nextStep() {
+                if (currentStep < steps.length) {
+                    const step = steps[currentStep];
+                    document.getElementById('progressBar').style.width = step.progress + '%';
+                    document.getElementById('installStep').textContent = step.text;
+                    
+                    currentStep++;
+                    setTimeout(nextStep, 1500);
+                } else {
+                    // 安裝完成
+                    setTimeout(() => {
+                        if (window.electron) {
+                            window.electron.completeInstall();
+                        } else {
+                            alert('Installation completed! / 安裝完成！ / 安装完成！ / インストール完了！ / 설치 완료!');
+                        }
+                    }, 1000);
+                }
+            }
+
+            nextStep();
+        }
+
+        function getStepText(step) {
+            const texts = {
+                'en': {
+                    'dependencies': 'Installing dependencies...',
+                    'models': 'Setting up AI models...',
+                    'frontend': 'Configuring interface...',
+                    'backend': 'Setting up backend...',
+                    'complete': 'Installation completed!'
+                },
+                'zh-TW': {
+                    'dependencies': '安裝依賴項目...',
+                    'models': '設置 AI 模型...',
+                    'frontend': '配置介面...',
+                    'backend': '設置後端...',
+                    'complete': '安裝完成！'
+                },
+                'zh-CN': {
+                    'dependencies': '安装依赖项目...',
+                    'models': '设置 AI 模型...',
+                    'frontend': '配置界面...',
+                    'backend': '设置后端...',
+                    'complete': '安装完成！'
+                },
+                'ja': {
+                    'dependencies': '依存関係をインストール中...',
+                    'models': 'AI モデルを設定中...',
+                    'frontend': 'インターフェースを設定中...',
+                    'backend': 'バックエンドを設定中...',
+                    'complete': 'インストール完了！'
+                },
+                'ko': {
+                    'dependencies': '종속성 설치 중...',
+                    'models': 'AI 모델 설정 중...',
+                    'frontend': '인터페이스 구성 중...',
+                    'backend': '백엔드 설정 중...',
+                    'complete': '설치 완료!'
+                }
+            };
+            return texts[currentUILanguage][step] || texts['en'][step];
+        }
+
+        // 頁面載入後初始化
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

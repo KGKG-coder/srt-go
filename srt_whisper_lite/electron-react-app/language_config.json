@@ -1,0 +1,13 @@
+{
+  "selectedLanguage": "ja",
+  "supportedLanguages": {
+    "en": "English",
+    "zh-TW": "繁體中文",
+    "zh-CN": "简体中文",
+    "ja": "日本語",
+    "ko": "한국어"
+  },
+  "setupTime": "2025-09-04T03:30:59.947Z",
+  "version": "2.2.1",
+  "languageChangeable": false
+}

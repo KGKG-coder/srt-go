@@ -1,0 +1,141 @@
+{
+  "test_type": "end_to_end_language_test",
+  "timestamp": "2025-09-04 11:30:59",
+  "total_steps": 22,
+  "successful_steps": 22,
+  "success_rate": 100.0,
+  "detailed_results": [
+    {
+      "step": 1,
+      "message": "語言安裝器文件存在",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 2,
+      "message": "瀏覽器語言檢測功能存在",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 3,
+      "message": "語言配置腳本引用正確",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 1,
+      "message": "語言配置腳本存在",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": "2",
+      "message": "語言 zh-TW 配置設置成功",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": "2a",
+      "message": "語言 zh-TW 配置驗證成功",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": "3",
+      "message": "語言 en 配置設置成功",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": "3a",
+      "message": "語言 en 配置驗證成功",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": "4",
+      "message": "語言 ja 配置設置成功",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": "4a",
+      "message": "語言 ja 配置驗證成功",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 1,
+      "message": "Main.js IPC 語言配置處理已實現",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 2,
+      "message": "多重配置文件備援機制存在",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 3,
+      "message": "Preload.js 語言配置 API 已暴露",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 1,
+      "message": "FixedLanguageContext 組件存在",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 2,
+      "message": "多重語言載入機制完整 (4/4)",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 3,
+      "message": "所有語言翻譯完整 (5/5)",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 1,
+      "message": "主配置存在",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": "1a",
+      "message": "主配置格式正確",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 2,
+      "message": "Public配置存在",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": "2a",
+      "message": "Public配置格式正確",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": 3,
+      "message": "Build配置存在",
+      "success": true,
+      "timestamp": "11:30:59"
+    },
+    {
+      "step": "3a",
+      "message": "Build配置格式正確",
+      "success": true,
+      "timestamp": "11:30:59"
+    }
+  ]
+}
