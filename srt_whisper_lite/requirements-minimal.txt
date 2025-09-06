@@ -1,0 +1,26 @@
+# SRT GO - 最小化依賴清單
+# 只包含核心 AI 字幕生成功能必須的庫
+
+# 核心 AI 依賴
+faster-whisper>=1.0.0
+numpy>=1.24.0
+soundfile>=0.12.0
+
+# 音頻處理核心
+scipy>=1.10.0
+
+# 進度顯示
+tqdm>=4.65.0
+
+# 配置和工具
+pathlib2>=2.3.7
+
+# 不包含：
+# - librosa (太大，可以用 soundfile 替代)
+# - noisereduce (可選功能)
+# - customtkinter (Electron 不需要)
+# - Pillow (Electron 不需要)
+# - matplotlib (不需要)
+# - pandas (不需要)
+# - jupyter (不需要)
+# - pytest (不需要)

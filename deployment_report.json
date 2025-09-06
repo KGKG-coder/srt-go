@@ -1,0 +1,110 @@
+{
+  "timestamp": "2025-08-27T12:01:26.749700",
+  "version": "2.2.1",
+  "checks": {
+    "github_workflows": {
+      "status": "PASS",
+      "total_workflows": 8,
+      "valid_workflows": 8,
+      "workflows": [
+        {
+          "file": "ci-cd-pipeline.yml",
+          "valid": true
+        },
+        {
+          "file": "force-enable.yml",
+          "valid": true
+        },
+        {
+          "file": "init-actions.yml",
+          "valid": true
+        },
+        {
+          "file": "manual-trigger.yml",
+          "valid": true
+        },
+        {
+          "file": "quick-start.yml",
+          "valid": true
+        },
+        {
+          "file": "simple-test.yml",
+          "valid": true
+        },
+        {
+          "file": "test-minimal.yml",
+          "valid": true
+        },
+        {
+          "file": "test.yml",
+          "valid": true
+        }
+      ]
+    },
+    "test_suite": {
+      "status": "PASS",
+      "has_conftest": true,
+      "categories": {
+        "unit": {
+          "exists": true,
+          "test_files": 2
+        },
+        "integration": {
+          "exists": true,
+          "test_files": 1
+        },
+        "performance": {
+          "exists": true,
+          "test_files": 1
+        },
+        "e2e": {
+          "exists": true,
+          "test_files": 1
+        }
+      },
+      "total_categories": 4,
+      "existing_categories": 4
+    },
+    "application_structure": {
+      "status": "PASS",
+      "critical_files": {
+        "main.js": true,
+        "package.json": true,
+        "electron_backend.py": true,
+        "smart_backend_selector.py": true
+      },
+      "app_directory_exists": true
+    },
+    "ai_models": {
+      "status": "PASS",
+      "cached_models": [
+        "deepdml/faster-whisper-large-v3-turbo-ct2",
+        "h2oai/faster-whisper-large-v3-turbo",
+        "openai/whisper-large-v3-turbo",
+        "openai/whisper-medium",
+        "Systran/faster-distil-whisper-large-v3",
+        "Systran/faster-whisper-base",
+        "Systran/faster-whisper-large-v2",
+        "Systran/faster-whisper-large-v3",
+        "Systran/faster-whisper-medium",
+        "Systran/faster-whisper-tiny",
+        "Zoont/faster-whisper-large-v3-turbo-int8-ct2"
+      ],
+      "has_local_models": true,
+      "total_models": 11
+    },
+    "dependencies": {
+      "status": "PASS",
+      "required_packages": [
+        "numpy",
+        "pytest"
+      ],
+      "missing_packages": []
+    },
+    "git_status": {
+      "status": "ERROR",
+      "error": "'NoneType' object has no attribute 'strip'"
+    }
+  },
+  "ready_for_deployment": true
+}

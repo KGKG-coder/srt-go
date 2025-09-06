@@ -1,0 +1,54 @@
+{
+  "test_timestamp": "2025-08-26 18:00:05",
+  "performance_modes_test": [
+    {
+      "mode": "智能自動",
+      "mode_key": "auto",
+      "processing_time": 6.0,
+      "audio_duration": 30.0,
+      "rtf": 0.2,
+      "performance_tier": {
+        "tier": "良好級",
+        "color": "blue"
+      },
+      "meets_expectation": true
+    },
+    {
+      "mode": "GPU加速",
+      "mode_key": "gpu",
+      "processing_time": 2.0,
+      "audio_duration": 30.0,
+      "rtf": 0.06666666666666667,
+      "performance_tier": {
+        "tier": "優秀級",
+        "color": "green"
+      },
+      "meets_expectation": true
+    },
+    {
+      "mode": "CPU優化",
+      "mode_key": "cpu",
+      "processing_time": 12.0,
+      "audio_duration": 30.0,
+      "rtf": 0.4,
+      "performance_tier": {
+        "tier": "可接受級",
+        "color": "yellow"
+      },
+      "meets_expectation": true
+    }
+  ],
+  "rtf_calculation_test": true,
+  "tier_classification_test": true,
+  "real_time_monitoring": {
+    "final_rtf": 0.06679472128550211,
+    "performance_tier": {
+      "tier": "優秀級",
+      "color": "green"
+    }
+  },
+  "audio_duration_estimation": {
+    "total_estimated_duration": 330
+  },
+  "overall_status": "PASSED"
+}

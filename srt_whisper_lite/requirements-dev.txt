@@ -1,0 +1,36 @@
+# SRT Whisper Lite - 開發依賴
+# 僅在開發時需要的套件
+
+# 基礎依賴
+-r requirements-minimal.txt
+
+# 開發工具
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=22.0.0
+flake8>=5.0.0
+pylint>=2.15.0
+
+# 打包工具
+pyinstaller>=5.13.0
+wheel>=0.38.0
+setuptools>=65.0.0
+
+# 調試工具
+ipython>=8.0.0
+pdb++>=0.10.3
+
+# 文檔
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+
+# 額外的音頻處理（用於測試）
+librosa>=0.10.0
+noisereduce>=3.0.0
+
+# GUI 開發（如果需要）
+tkinterdnd2>=0.3.0
+
+# 性能分析
+memory-profiler>=0.60.0
+line-profiler>=4.0.0

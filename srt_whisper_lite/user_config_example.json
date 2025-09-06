@@ -1,0 +1,91 @@
+{
+  "model": {
+    "size": "medium",
+    "device": "auto",
+    "compute_type": "auto",
+    "num_workers": 4
+  },
+  "transcription": {
+    "beam_size": 5,
+    "best_of": 5,
+    "temperature": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "condition_on_previous_text": true,
+    "word_timestamps": true
+  },
+  "vad": {
+    "enabled": true,
+    "threshold": 0.35,
+    "min_speech_duration_ms": 250,
+    "max_speech_duration_s": Infinity,
+    "min_silence_duration_ms": 1000,
+    "speech_pad_ms": 400
+  },
+  "audio_processing": {
+    "target_sample_rate": 16000,
+    "enable_normalize": true,
+    "enable_denoise": true,
+    "enable_enhancement": true,
+    "noise_reduce_strength": 0.7,
+    "dynamic_range_ratio": 0.3,
+    "speech_freq_boost": 2.0,
+    "high_freq_cut": 8000,
+    "low_freq_cut": 80,
+    "compressor_threshold": -20,
+    "compressor_ratio": 4.0,
+    "limiter_threshold": 0.95,
+    "audio_sync_offset": 0.0
+  },
+  "semantic": {
+    "enabled": true,
+    "auto_detect_language": true,
+    "sentence_min_length": 5,
+    "sentence_max_length": 80,
+    "merge_short_segments": true,
+    "split_long_segments": true
+  },
+  "post_processing": {
+    "remove_duplicates": true,
+    "clean_filler_words": true,
+    "smooth_timestamps": true,
+    "adjust_reading_speed": true,
+    "apply_custom_corrections": true,
+    "similarity_threshold": 0.85,
+    "min_segment_duration": 0.5,
+    "max_segment_duration": 8.0,
+    "min_chars_per_second": 8,
+    "max_chars_per_second": 20
+  },
+  "output": {
+    "default_format": "srt",
+    "max_line_length": 42,
+    "max_lines_per_subtitle": 2,
+    "include_timestamps_in_txt": false,
+    "custom_output_directory": null
+  },
+  "ui": {
+    "theme": "light",
+    "language": "zh-TW",
+    "interface_language": "zh-TW",
+    "auto_save_settings": true,
+    "show_advanced_options": false,
+    "remember_last_directory": false,
+    "last_input_directory": null,
+    "last_output_directory": null
+  },
+  "performance": {
+    "enable_gpu": true,
+    "max_memory_usage": "auto",
+    "enable_parallel_processing": true,
+    "cache_models": true,
+    "cleanup_temp_files": true
+  }
+}

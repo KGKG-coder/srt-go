@@ -1,0 +1,29 @@
+# Faster-Whisper 字幕生成工具依賴 - 完整版
+# 包含所有功能的依賴
+
+# 核心依賴
+faster-whisper>=1.0.0
+numpy>=1.24.0
+soundfile>=0.12.0
+
+# GUI 依賴
+customtkinter>=5.2.0
+Pillow>=10.0.0
+
+# 音頻處理
+scipy>=1.10.0
+noisereduce>=3.0.0
+librosa>=0.10.0
+
+# 中文處理
+opencc-python-reimplemented>=0.1.7  # 簡繁轉換
+
+# 工具庫
+tqdm>=4.65.0
+
+# Web 界面（可選）
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Electron 後端（可選）
+psutil>=5.9.0

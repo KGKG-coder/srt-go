@@ -1,0 +1,53 @@
+# 測試相關依賴套件
+
+# 核心測試框架
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-xdist>=3.3.0
+pytest-benchmark>=4.0.0
+pytest-mock>=3.11.0
+pytest-asyncio>=0.21.0
+pytest-timeout>=2.1.0
+pytest-html>=3.2.0
+
+# E2E 測試
+playwright>=1.39.0
+pytest-playwright>=0.4.0
+
+# 效能和記憶體分析
+memory-profiler>=0.60.0
+line-profiler>=4.0.0
+psutil>=5.9.0
+locust>=2.16.0
+
+# 安全測試
+safety>=2.3.0
+bandit>=1.7.5
+
+# 程式碼品質
+flake8>=6.0.0
+black>=23.0.0
+isort>=5.12.0
+mypy>=1.5.0
+pylint>=2.17.0
+
+# 測試工具
+faker>=19.6.0
+freezegun>=1.2.2
+responses>=0.23.0
+httpx>=0.24.0
+
+# 音頻處理測試
+librosa>=0.10.1
+soundfile>=0.12.0
+scipy>=1.11.0
+
+# 報告生成
+jinja2>=3.1.0
+markdown>=3.5.0
+
+# 其他工具
+tqdm>=4.66.0
+rich>=13.5.0
+click>=8.1.0
+pydantic>=2.3.0

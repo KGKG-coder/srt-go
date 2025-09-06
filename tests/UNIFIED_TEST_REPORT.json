@@ -1,0 +1,29 @@
+{
+  "test_run_time": "2025-08-28 18:11:33",
+  "total_duration": 0.33435773849487305,
+  "total_categories": 2,
+  "successful_categories": 2,
+  "failed_categories": 0,
+  "total_tests": 0,
+  "overall_success": true,
+  "results": {
+    "單元測試 - 音頻處理器": {
+      "category": "單元測試 - 音頻處理器",
+      "success": true,
+      "duration": 0.1696634292602539,
+      "test_count": 0,
+      "return_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "單元測試 - 音頻處理器簡化版": {
+      "category": "單元測試 - 音頻處理器簡化版",
+      "success": true,
+      "duration": 0.16451358795166016,
+      "test_count": 0,
+      "return_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  }
+}

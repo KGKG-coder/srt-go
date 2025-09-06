@@ -1,0 +1,72 @@
+{
+  "last_updated": "2025-08-25T15:50:49.974524",
+  "total_tests": 6,
+  "results": [
+    {
+      "timestamp": "2025-08-25T15:49:13.982327",
+      "model_config": "Medium_CPU",
+      "gpu_enabled": false,
+      "rtf_score": 2.213887405395508,
+      "processing_time": 11.069437026977539,
+      "audio_duration": 5.0,
+      "success": true,
+      "commit_hash": "fbd026f4",
+      "branch": "main"
+    },
+    {
+      "timestamp": "2025-08-25T15:49:20.674697",
+      "model_config": "Medium_GPU",
+      "gpu_enabled": true,
+      "rtf_score": 1.3383789539337159,
+      "processing_time": 6.691894769668579,
+      "audio_duration": 5.0,
+      "success": true,
+      "commit_hash": "fbd026f4",
+      "branch": "main"
+    },
+    {
+      "timestamp": "2025-08-25T15:49:31.163945",
+      "model_config": "Small_CPU",
+      "gpu_enabled": false,
+      "rtf_score": 2.097740125656128,
+      "processing_time": 10.48870062828064,
+      "audio_duration": 5.0,
+      "success": true,
+      "commit_hash": "fbd026f4",
+      "branch": "main"
+    },
+    {
+      "timestamp": "2025-08-25T15:50:32.680136",
+      "model_config": "Medium_CPU",
+      "gpu_enabled": false,
+      "rtf_score": 2.2257596015930177,
+      "processing_time": 11.128798007965088,
+      "audio_duration": 5.0,
+      "success": true,
+      "commit_hash": "fbd026f4",
+      "branch": "main"
+    },
+    {
+      "timestamp": "2025-08-25T15:50:39.343215",
+      "model_config": "Medium_GPU",
+      "gpu_enabled": true,
+      "rtf_score": 1.3325220108032227,
+      "processing_time": 6.662610054016113,
+      "audio_duration": 5.0,
+      "success": true,
+      "commit_hash": "fbd026f4",
+      "branch": "main"
+    },
+    {
+      "timestamp": "2025-08-25T15:50:49.967850",
+      "model_config": "Small_CPU",
+      "gpu_enabled": false,
+      "rtf_score": 2.1248354434967043,
+      "processing_time": 10.62417721748352,
+      "audio_duration": 5.0,
+      "success": true,
+      "commit_hash": "fbd026f4",
+      "branch": "main"
+    }
+  ]
+}

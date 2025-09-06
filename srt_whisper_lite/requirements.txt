@@ -1,0 +1,32 @@
+# SRT GO Python Backend Dependencies
+# Core AI and Audio Processing
+
+faster-whisper>=1.0.0
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+librosa>=0.10.0
+soundfile>=0.12.0
+av>=12.0.0
+
+# CTranslate2 for model optimization
+ctranslate2>=4.0.0
+
+# ONNX Runtime for performance
+onnxruntime>=1.16.0
+
+# Text processing and i18n
+opencc-python-reimplemented>=0.1.7
+charset-normalizer>=3.0.0
+
+# Utility libraries
+pathlib
+json5>=0.9.0
+requests>=2.31.0
+certifi>=2023.0.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-timeout>=2.1.0

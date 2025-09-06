@@ -1,0 +1,70 @@
+{
+  "cleanup_timestamp": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\python",
+  "project_cleanup_results": {
+    "files_removed": [
+      "calculate_int16_package_size.py",
+      "check_model_sizes.py",
+      "compare_results.py",
+      "create_ultimate_pr_version.py",
+      "direct_srt_comparison.py",
+      "download_standard_int8.py",
+      "enhanced_detector_comparison_analysis.py",
+      "final_comparison_report.py",
+      "segment_12_analysis_simple.py",
+      "simple_interlude_corrector.py",
+      "simple_srt_analysis.py",
+      "subtitle_comparison_analysis.py",
+      "subtitle_comparison_simple.py",
+      "threshold_optimization_analysis.py",
+      "test_existing_model.py",
+      "test_fixed_timestamps.py",
+      "test_int16_comparison.py",
+      "test_int8_model.py",
+      "test_large_video.py",
+      "test_real_differences.py",
+      "test_standard_model.py",
+      "test_video_processing.py",
+      "test_video_simple.py"
+    ],
+    "files_backed_up": [
+      "calculate_int16_package_size.py",
+      "check_model_sizes.py",
+      "compare_results.py",
+      "create_ultimate_pr_version.py",
+      "direct_srt_comparison.py",
+      "download_standard_int8.py",
+      "enhanced_detector_comparison_analysis.py",
+      "final_comparison_report.py",
+      "segment_12_analysis_simple.py",
+      "simple_interlude_corrector.py",
+      "simple_srt_analysis.py",
+      "subtitle_comparison_analysis.py",
+      "subtitle_comparison_simple.py",
+      "threshold_optimization_analysis.py",
+      "test_existing_model.py",
+      "test_fixed_timestamps.py",
+      "test_int16_comparison.py",
+      "test_int8_model.py",
+      "test_large_video.py",
+      "test_real_differences.py",
+      "test_standard_model.py",
+      "test_video_processing.py",
+      "test_video_simple.py"
+    ],
+    "space_saved_mb": 0.18452072143554688,
+    "errors": []
+  },
+  "summary": {
+    "files_removed": 23,
+    "space_saved_mb": 0.18,
+    "backup_location": "cleanup_backup",
+    "essential_files_preserved": 14,
+    "errors_encountered": 0
+  },
+  "next_steps": [
+    "Test the system to ensure functionality is preserved",
+    "Run integration tests to verify Enhanced Voice Detector v2.0",
+    "Package the cleaned system for distribution",
+    "Remove backup directory after confirming system works"
+  ]
+}

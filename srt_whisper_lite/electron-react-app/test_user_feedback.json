@@ -1,0 +1,37 @@
+{
+  "embeds": [{
+    "title": "🎯 SRT GO 用戶回報",
+    "color": 3447003,
+    "fields": [
+      {
+        "name": "📝 標題",
+        "value": "介面語言切換功能建議",
+        "inline": false
+      },
+      {
+        "name": "👤 聯絡人",
+        "value": "測試用戶",
+        "inline": true
+      },
+      {
+        "name": "📧 聯絡信箱",
+        "value": "user@example.com",
+        "inline": true
+      },
+      {
+        "name": "💬 詳細內容",
+        "value": "希望能夠在主介面上增加快速切換語言的按鈕，現在需要進入設定頁面才能切換，使用上不夠方便。建議可以在右上角增加語言選擇下拉選單，讓用戶能快速切換介面語言。\\n\\n另外，建議增加更多語言支援，例如德語、法語等。\\n\\n整體來說軟體很好用，AI轉錄效果很棒！",
+        "inline": false
+      },
+      {
+        "name": "⚙️ 系統資訊",
+        "value": "語言: zh-TW\\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "inline": false
+      }
+    ],
+    "timestamp": "2025-09-05T15:52:00.000Z",
+    "footer": {
+      "text": "SRT GO v2.2.1 用戶回報系統"
+    }
+  }]
+}

@@ -1,0 +1,37 @@
+{
+  "embeds": [{
+    "title": "🧪 SRT GO 測試訊息",
+    "color": 3447003,
+    "fields": [
+      {
+        "name": "📝 標題",
+        "value": "測試回報功能",
+        "inline": false
+      },
+      {
+        "name": "👤 測試者",
+        "value": "Claude Code Assistant",
+        "inline": true
+      },
+      {
+        "name": "📧 聯絡信箱",
+        "value": "test@example.com",
+        "inline": true
+      },
+      {
+        "name": "💬 詳細內容",
+        "value": "這是一個測試訊息，用於驗證SRT GO的Discord webhook回報功能是否正常運作。\\n\\n測試項目：\\n✅ Webhook連接\\n✅ Embed格式化\\n✅ 中文顯示\\n✅ 系統整合",
+        "inline": false
+      },
+      {
+        "name": "⚙️ 系統資訊", 
+        "value": "測試時間: 2025-09-05 23:47\\n版本: SRT GO v2.2.1\\n測試環境: Windows",
+        "inline": false
+      }
+    ],
+    "timestamp": "2025-09-05T15:47:00.000Z",
+    "footer": {
+      "text": "SRT GO v2.2.1 用戶回報系統 - 測試模式"
+    }
+  }]
+}

@@ -1,0 +1,142 @@
+{
+  "name": "srt-go-minimalist",
+  "version": "2.2.1",
+  "description": "SRT GO - Enhanced v2.2.1 with Real AI Processing & Smart Backend",
+  "author": "SRT GO Team",
+  "main": "main_simplified.js",
+  "scripts": {
+    "start": "electron .",
+    "start:simplified": "electron main_simplified.js",
+    "dev": "concurrently \"npm run react:start\" \"wait-on http://localhost:3000 && electron .\"",
+    "dev:simplified": "concurrently \"npm run react:start\" \"wait-on http://localhost:3000 && electron main_simplified.js\"",
+    "react:start": "cd react-app && npm start",
+    "react:build": "cd react-app && npm run build",
+    "electron:dev": "electron .",
+    "build": "npm run react:build && electron-builder",
+    "build:simplified": "npm run react:build && electron-builder --config electron-builder-simplified.yml",
+    "dist": "npm run react:build && electron-builder --publish=never",
+    "install:all": "npm install && cd react-app && npm install",
+    "setup": "npm run install:all",
+    "build:with-models": "node create_model_package_system.js && npm run build",
+    "prepare-models": "python ../model_manager.py",
+    "build:installer": "npm run react:build && electron-builder --win",
+    "build:installer-dir": "npm run react:build && electron-builder --win --dir",
+    "dist:nsis": "npm run react:build && electron-builder --win nsis",
+    "dist:portable": "npm run react:build && electron-builder --win portable",
+    "build:complete": "node build-complete-release.js",
+    "build:production": "npm run build:complete"
+  },
+  "build": {
+    "appId": "com.srtgo.ai-subtitle-generator",
+    "productName": "SRT GO - AI Subtitle Generator",
+    "copyright": "Copyright © 2025 SRT GO Team",
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "compression": "maximum",
+    "removePackageScripts": true,
+    "files": [
+      "main_simplified.js",
+      "preload.js",
+      "react-app/build/**/*",
+      "icon.ico",
+      "!react-app/build/static/**/*.map",
+      "!react-app/build/static/**/*.txt",
+      "!react-app/build/**/*.LICENSE.txt",
+      "!**/node_modules/**/test/**",
+      "!**/node_modules/**/tests/**",
+      "!**/node_modules/**/*.md",
+      "!**/node_modules/**/README*",
+      "!**/node_modules/**/LICENSE*",
+      "!**/node_modules/**/CHANGELOG*",
+      "!**/node_modules/**/*.d.ts",
+      "!**/node_modules/**/examples/**",
+      "!**/node_modules/**/docs/**",
+      "!**/node_modules/**/*.map"
+    ],
+    "extraResources": [
+      {
+        "from": "python",
+        "to": "resources/python",
+        "filter": [
+          "**/*",
+          "!**/*.pyc",
+          "!**/__pycache__/**",
+          "!**/test/**",
+          "!**/tests/**",
+          "!**/*.md"
+        ]
+      },
+      {
+        "from": "mini_python",
+        "to": "resources/mini_python",
+        "filter": [
+          "**/*",
+          "!**/*.pyc",
+          "!**/__pycache__/**",
+          "!**/test/**",
+          "!**/tests/**",
+          "!**/Doc/**",
+          "!**/tcl/**",
+          "!**/*.md"
+        ]
+      },
+      {
+        "from": "models",
+        "to": "resources/models",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icon.ico",
+      "requestedExecutionLevel": "asInvoker",
+      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "verifyUpdateCodeSignature": false,
+      "signAndEditExecutable": false,
+      "forceCodeSigning": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "installerHeaderIcon": "icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "SRT GO - AI Subtitle Generator",
+      "differentialPackage": false,
+      "deleteAppDataOnUninstall": false,
+      "unicode": true,
+      "runAfterFinish": false
+    },
+    "asar": {
+      "smartUnpack": true
+    },
+    "asarUnpack": [
+      "resources/mini_python/**/*",
+      "resources/python/**/*",
+      "resources/models/**/*"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "27.1.3",
+    "electron-builder": "^24.6.4",
+    "wait-on": "^7.2.0"
+  },
+  "dependencies": {
+    "electron-store": "^8.2.0"
+  }
+}

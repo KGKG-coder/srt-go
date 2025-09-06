@@ -1,0 +1,3986 @@
+{
+  "created_at": "2025-08-25 18:30:00",
+  "total_files": 370,
+  "categories": {
+    "short": {
+      "count": 205,
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\C0485.MP4_temp.wav",
+          "name": "C0485.MP4_temp.wav",
+          "size": 4500738,
+          "size_mb": 4.29,
+          "estimated_duration": 0.42922382354736327,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\DRLIN.mp4_temp.wav",
+          "name": "DRLIN.mp4_temp.wav",
+          "size": 1288952,
+          "size_mb": 1.23,
+          "estimated_duration": 0.12292404174804687,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\hutest.mp4",
+          "name": "hutest.mp4",
+          "size": 14548215,
+          "size_mb": 13.87,
+          "estimated_duration": 30,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\hutest.mp4_temp.wav",
+          "name": "hutest.mp4_temp.wav",
+          "size": 361208,
+          "size_mb": 0.34,
+          "estimated_duration": 2.75579833984375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\C0485_TEST.mp3",
+          "name": "C0485_TEST.mp3",
+          "size": 971740,
+          "size_mb": 0.93,
+          "estimated_duration": 7.413787841796875,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\hutest.mp3",
+          "name": "hutest.mp3",
+          "size": 194528,
+          "size_mb": 0.19,
+          "estimated_duration": 1.484130859375,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\hutest.mp4",
+          "name": "hutest.mp4",
+          "size": 14548215,
+          "size_mb": 13.87,
+          "estimated_duration": 30,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\特助鈴聲語音包.mp4",
+          "name": "特助鈴聲語音包.mp4",
+          "size": 303141,
+          "size_mb": 0.29,
+          "estimated_duration": 0.5781955718994141,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\剪輯素材\\眼科LOGO_片尾.mp4",
+          "name": "眼科LOGO_片尾.mp4",
+          "size": 8036067,
+          "size_mb": 7.66,
+          "estimated_duration": 15.327581405639648,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE\\ReLEx 30-second dissection.mp4",
+          "name": "ReLEx 30-second dissection.mp4",
+          "size": 15193498,
+          "size_mb": 14.49,
+          "estimated_duration": 28.979297637939453,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\smart_robotics_centralign_animation_4x3.mp4",
+          "name": "smart_robotics_centralign_animation_4x3.mp4",
+          "size": 900402,
+          "size_mb": 0.86,
+          "estimated_duration": 1.7173805236816406,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\smart_robotics_easy-patient-access_animation_4x3-1.mp4",
+          "name": "smart_robotics_easy-patient-access_animation_4x3-1.mp4",
+          "size": 2273474,
+          "size_mb": 2.17,
+          "estimated_duration": 4.336307525634766,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\smart_robotics_oclign_animation_4x3.mp4",
+          "name": "smart_robotics_oclign_animation_4x3.mp4",
+          "size": 768361,
+          "size_mb": 0.73,
+          "estimated_duration": 1.4655323028564453,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\smart_robotics_tracking_distances_animation_4x3.mp4",
+          "name": "smart_robotics_tracking_distances_animation_4x3.mp4",
+          "size": 1815350,
+          "size_mb": 1.73,
+          "estimated_duration": 3.462505340576172,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\VM800 中心導航影片.mp4",
+          "name": "VM800 中心導航影片.mp4",
+          "size": 2006003,
+          "size_mb": 1.91,
+          "estimated_duration": 3.8261470794677734,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\VM800 散光軸調整影片.mp4",
+          "name": "VM800 散光軸調整影片.mp4",
+          "size": 1905386,
+          "size_mb": 1.82,
+          "estimated_duration": 3.634235382080078,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\老花雷射\\LBV原理.mp4",
+          "name": "LBV原理.mp4",
+          "size": 10275459,
+          "size_mb": 9.8,
+          "estimated_duration": 19.5988826751709,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\老花雷射\\monovision原理.mp4",
+          "name": "monovision原理.mp4",
+          "size": 6759467,
+          "size_mb": 6.45,
+          "estimated_duration": 12.892660140991211,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\IOS信息2.mp4",
+          "name": "IOS信息2.mp4",
+          "size": 13649,
+          "size_mb": 0.01,
+          "estimated_duration": 0.026033401489257812,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\IOS短信.mp4",
+          "name": "IOS短信.mp4",
+          "size": 17694,
+          "size_mb": 0.02,
+          "estimated_duration": 0.033748626708984375,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\LASIK.mp4",
+          "name": "LASIK.mp4",
+          "size": 9076258,
+          "size_mb": 8.66,
+          "estimated_duration": 17.311588287353516,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\TV NoiseWB.mp4",
+          "name": "TV NoiseWB.mp4",
+          "size": 12678121,
+          "size_mb": 12.09,
+          "estimated_duration": 24.181596755981445,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Martin Scaglia - Keyboard - PC Keyboard Single Keys.wav",
+          "name": "Martin Scaglia - Keyboard - PC Keyboard Single Keys.wav",
+          "size": 1714746,
+          "size_mb": 1.64,
+          "estimated_duration": 0.16353092193603516,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Soundkrampf - Gaming Keyboards - Mechanical Keyboard Blue Switch Single Key Strokes Strong.wav",
+          "name": "Soundkrampf - Gaming Keyboards - Mechanical Keyboard Blue Switch Single Key Strokes Strong.wav",
+          "size": 2845128,
+          "size_mb": 2.71,
+          "estimated_duration": 0.2713325500488281,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\simple_test.wav",
+          "name": "simple_test.wav",
+          "size": 96044,
+          "size_mb": 0.09,
+          "estimated_duration": 0.732757568359375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\test_audio.wav",
+          "name": "test_audio.wav",
+          "size": 160044,
+          "size_mb": 0.15,
+          "estimated_duration": 1.221038818359375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\tests\\e2e\\test_data\\audio\\ultra_realistic_english.wav",
+          "name": "ultra_realistic_english.wav",
+          "size": 160044,
+          "size_mb": 0.15,
+          "estimated_duration": 0.015262985229492187,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\tests\\e2e\\test_data\\audio\\ultra_realistic_short.wav",
+          "name": "ultra_realistic_short.wav",
+          "size": 64044,
+          "size_mb": 0.06,
+          "estimated_duration": 0.488616943359375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-1234Hz-le-1ch-10S-20bit-extra.wav",
+          "name": "test-1234Hz-le-1ch-10S-20bit-extra.wav",
+          "size": 74,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005645751953125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-be.wav",
+          "name": "test-44100Hz-2ch-32bit-float-be.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-le.wav",
+          "name": "test-44100Hz-2ch-32bit-float-le.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-be-1ch-4bytes.wav",
+          "name": "test-44100Hz-be-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "size": 72,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00054931640625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "size": 1024,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-rf64.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-rf64.wav",
+          "size": 17756,
+          "size_mb": 0.02,
+          "estimated_duration": 0.135467529296875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes.wav",
+          "name": "test-44100Hz-le-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "name": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "size": 7792,
+          "size_mb": 0.01,
+          "estimated_duration": 0.0594482421875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-be-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-be-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "name": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "size": 70,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005340576171875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-2ch-1byteu.wav",
+          "name": "test-8000Hz-le-2ch-1byteu.wav",
+          "size": 1644,
+          "size_mb": 0.0,
+          "estimated_duration": 0.012542724609375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+          "size": 126,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0009613037109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-36bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-36bit.wav",
+          "size": 120,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00091552734375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-45bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-45bit.wav",
+          "size": 134,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0010223388671875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-53bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-53bit.wav",
+          "size": 150,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0011444091796875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-64bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-64bit.wav",
+          "size": 164,
+          "size_mb": 0.0,
+          "estimated_duration": 0.001251220703125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-4ch-9S-12bit.wav",
+          "name": "test-8000Hz-le-4ch-9S-12bit.wav",
+          "size": 116,
+          "size_mb": 0.0,
+          "estimated_duration": 0.000885009765625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-5ch-9S-5bit.wav",
+          "name": "test-8000Hz-le-5ch-9S-5bit.wav",
+          "size": 89,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00067901611328125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-1234Hz-le-1ch-10S-20bit-extra.wav",
+          "name": "test-1234Hz-le-1ch-10S-20bit-extra.wav",
+          "size": 74,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005645751953125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-be.wav",
+          "name": "test-44100Hz-2ch-32bit-float-be.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-le.wav",
+          "name": "test-44100Hz-2ch-32bit-float-le.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-be-1ch-4bytes.wav",
+          "name": "test-44100Hz-be-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "size": 72,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00054931640625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "size": 1024,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-rf64.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-rf64.wav",
+          "size": 17756,
+          "size_mb": 0.02,
+          "estimated_duration": 0.135467529296875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes.wav",
+          "name": "test-44100Hz-le-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "name": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "size": 7792,
+          "size_mb": 0.01,
+          "estimated_duration": 0.0594482421875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-be-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-be-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "name": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "size": 70,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005340576171875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-2ch-1byteu.wav",
+          "name": "test-8000Hz-le-2ch-1byteu.wav",
+          "size": 1644,
+          "size_mb": 0.0,
+          "estimated_duration": 0.012542724609375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+          "size": 126,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0009613037109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-36bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-36bit.wav",
+          "size": 120,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00091552734375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-45bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-45bit.wav",
+          "size": 134,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0010223388671875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-53bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-53bit.wav",
+          "size": 150,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0011444091796875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-64bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-64bit.wav",
+          "size": 164,
+          "size_mb": 0.0,
+          "estimated_duration": 0.001251220703125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-4ch-9S-12bit.wav",
+          "name": "test-8000Hz-le-4ch-9S-12bit.wav",
+          "size": 116,
+          "size_mb": 0.0,
+          "estimated_duration": 0.000885009765625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-5ch-9S-5bit.wav",
+          "name": "test-8000Hz-le-5ch-9S-5bit.wav",
+          "size": 89,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00067901611328125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-be.wav",
+          "name": "test-44100Hz-2ch-32bit-float-be.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-le.wav",
+          "name": "test-44100Hz-2ch-32bit-float-le.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-be-1ch-4bytes.wav",
+          "name": "test-44100Hz-be-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "size": 72,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00054931640625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "size": 1024,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes.wav",
+          "name": "test-44100Hz-le-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "name": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "size": 7792,
+          "size_mb": 0.01,
+          "estimated_duration": 0.0594482421875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-be-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-be-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-10S-20bit-extra.wav",
+          "name": "test-8000Hz-le-1ch-10S-20bit-extra.wav",
+          "size": 74,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005645751953125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "name": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "size": 70,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005340576171875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-2ch-1byteu.wav",
+          "name": "test-8000Hz-le-2ch-1byteu.wav",
+          "size": 1644,
+          "size_mb": 0.0,
+          "estimated_duration": 0.012542724609375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-36bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-36bit.wav",
+          "size": 120,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00091552734375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-45bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-45bit.wav",
+          "size": 134,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0010223388671875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-53bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-53bit.wav",
+          "size": 150,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0011444091796875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-64bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-64bit.wav",
+          "size": 164,
+          "size_mb": 0.0,
+          "estimated_duration": 0.001251220703125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-4ch-9S-12bit.wav",
+          "name": "test-8000Hz-le-4ch-9S-12bit.wav",
+          "size": 116,
+          "size_mb": 0.0,
+          "estimated_duration": 0.000885009765625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-5ch-9S-5bit.wav",
+          "name": "test-8000Hz-le-5ch-9S-5bit.wav",
+          "size": 89,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00067901611328125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-1234Hz-le-1ch-10S-20bit-extra.wav",
+          "name": "test-1234Hz-le-1ch-10S-20bit-extra.wav",
+          "size": 74,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005645751953125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-be.wav",
+          "name": "test-44100Hz-2ch-32bit-float-be.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-le.wav",
+          "name": "test-44100Hz-2ch-32bit-float-le.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-be-1ch-4bytes.wav",
+          "name": "test-44100Hz-be-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "size": 72,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00054931640625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "size": 1024,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-rf64.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-rf64.wav",
+          "size": 17756,
+          "size_mb": 0.02,
+          "estimated_duration": 0.135467529296875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes.wav",
+          "name": "test-44100Hz-le-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "name": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "size": 7792,
+          "size_mb": 0.01,
+          "estimated_duration": 0.0594482421875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-be-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-be-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "name": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "size": 70,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005340576171875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-2ch-1byteu.wav",
+          "name": "test-8000Hz-le-2ch-1byteu.wav",
+          "size": 1644,
+          "size_mb": 0.0,
+          "estimated_duration": 0.012542724609375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+          "size": 126,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0009613037109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-36bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-36bit.wav",
+          "size": 120,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00091552734375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-45bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-45bit.wav",
+          "size": 134,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0010223388671875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-53bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-53bit.wav",
+          "size": 150,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0011444091796875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-64bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-64bit.wav",
+          "size": 164,
+          "size_mb": 0.0,
+          "estimated_duration": 0.001251220703125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-4ch-9S-12bit.wav",
+          "name": "test-8000Hz-le-4ch-9S-12bit.wav",
+          "size": 116,
+          "size_mb": 0.0,
+          "estimated_duration": 0.000885009765625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-5ch-9S-5bit.wav",
+          "name": "test-8000Hz-le-5ch-9S-5bit.wav",
+          "size": 89,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00067901611328125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\C0485.MP4_temp.wav",
+          "name": "C0485.MP4_temp.wav",
+          "size": 4500738,
+          "size_mb": 4.29,
+          "estimated_duration": 0.42922382354736327,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\DRLIN.mp4_temp.wav",
+          "name": "DRLIN.mp4_temp.wav",
+          "size": 1288952,
+          "size_mb": 1.23,
+          "estimated_duration": 0.12292404174804687,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\hutest.mp4",
+          "name": "hutest.mp4",
+          "size": 14548215,
+          "size_mb": 13.87,
+          "estimated_duration": 30,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\hutest.mp4_temp.wav",
+          "name": "hutest.mp4_temp.wav",
+          "size": 361208,
+          "size_mb": 0.34,
+          "estimated_duration": 2.75579833984375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-1234Hz-le-1ch-10S-20bit-extra.wav",
+          "name": "test-1234Hz-le-1ch-10S-20bit-extra.wav",
+          "size": 74,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005645751953125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-be.wav",
+          "name": "test-44100Hz-2ch-32bit-float-be.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-le.wav",
+          "name": "test-44100Hz-2ch-32bit-float-le.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-be-1ch-4bytes.wav",
+          "name": "test-44100Hz-be-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "size": 72,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00054931640625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "size": 1024,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-rf64.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-rf64.wav",
+          "size": 17756,
+          "size_mb": 0.02,
+          "estimated_duration": 0.135467529296875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes.wav",
+          "name": "test-44100Hz-le-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "name": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "size": 7792,
+          "size_mb": 0.01,
+          "estimated_duration": 0.0594482421875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-be-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-be-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "name": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "size": 70,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005340576171875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-2ch-1byteu.wav",
+          "name": "test-8000Hz-le-2ch-1byteu.wav",
+          "size": 1644,
+          "size_mb": 0.0,
+          "estimated_duration": 0.012542724609375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-rf64.wav",
+          "size": 126,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0009613037109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-36bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-36bit.wav",
+          "size": 120,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00091552734375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-45bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-45bit.wav",
+          "size": 134,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0010223388671875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-53bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-53bit.wav",
+          "size": 150,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0011444091796875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-64bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-64bit.wav",
+          "size": 164,
+          "size_mb": 0.0,
+          "estimated_duration": 0.001251220703125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-4ch-9S-12bit.wav",
+          "name": "test-8000Hz-le-4ch-9S-12bit.wav",
+          "size": 116,
+          "size_mb": 0.0,
+          "estimated_duration": 0.000885009765625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-5ch-9S-5bit.wav",
+          "name": "test-8000Hz-le-5ch-9S-5bit.wav",
+          "size": 89,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00067901611328125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-be.wav",
+          "name": "test-44100Hz-2ch-32bit-float-be.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-le.wav",
+          "name": "test-44100Hz-2ch-32bit-float-le.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-be-1ch-4bytes.wav",
+          "name": "test-44100Hz-be-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "size": 72,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00054931640625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "size": 1024,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes.wav",
+          "name": "test-44100Hz-le-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "name": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "size": 7792,
+          "size_mb": 0.01,
+          "estimated_duration": 0.0594482421875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-be-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-be-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-10S-20bit-extra.wav",
+          "name": "test-8000Hz-le-1ch-10S-20bit-extra.wav",
+          "size": 74,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005645751953125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "name": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "size": 70,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005340576171875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-2ch-1byteu.wav",
+          "name": "test-8000Hz-le-2ch-1byteu.wav",
+          "size": 1644,
+          "size_mb": 0.0,
+          "estimated_duration": 0.012542724609375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-36bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-36bit.wav",
+          "size": 120,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00091552734375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-45bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-45bit.wav",
+          "size": 134,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0010223388671875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-53bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-53bit.wav",
+          "size": 150,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0011444091796875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-64bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-64bit.wav",
+          "size": 164,
+          "size_mb": 0.0,
+          "estimated_duration": 0.001251220703125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-4ch-9S-12bit.wav",
+          "name": "test-8000Hz-le-4ch-9S-12bit.wav",
+          "size": 116,
+          "size_mb": 0.0,
+          "estimated_duration": 0.000885009765625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-5ch-9S-5bit.wav",
+          "name": "test-8000Hz-le-5ch-9S-5bit.wav",
+          "size": 89,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00067901611328125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-be.wav",
+          "name": "test-44100Hz-2ch-32bit-float-be.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-le.wav",
+          "name": "test-44100Hz-2ch-32bit-float-le.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-be-1ch-4bytes.wav",
+          "name": "test-44100Hz-be-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "size": 72,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00054931640625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "size": 1024,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes.wav",
+          "name": "test-44100Hz-le-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "name": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "size": 7792,
+          "size_mb": 0.01,
+          "estimated_duration": 0.0594482421875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-be-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-be-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-10S-20bit-extra.wav",
+          "name": "test-8000Hz-le-1ch-10S-20bit-extra.wav",
+          "size": 74,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005645751953125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "name": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "size": 70,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005340576171875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-2ch-1byteu.wav",
+          "name": "test-8000Hz-le-2ch-1byteu.wav",
+          "size": 1644,
+          "size_mb": 0.0,
+          "estimated_duration": 0.012542724609375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-36bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-36bit.wav",
+          "size": 120,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00091552734375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-45bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-45bit.wav",
+          "size": 134,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0010223388671875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-53bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-53bit.wav",
+          "size": 150,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0011444091796875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-64bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-64bit.wav",
+          "size": 164,
+          "size_mb": 0.0,
+          "estimated_duration": 0.001251220703125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-4ch-9S-12bit.wav",
+          "name": "test-8000Hz-le-4ch-9S-12bit.wav",
+          "size": 116,
+          "size_mb": 0.0,
+          "estimated_duration": 0.000885009765625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-5ch-9S-5bit.wav",
+          "name": "test-8000Hz-le-5ch-9S-5bit.wav",
+          "size": 89,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00067901611328125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_go_complete_package\\tests\\e2e\\test_data\\audio\\ultra_realistic_english.wav",
+          "name": "ultra_realistic_english.wav",
+          "size": 160044,
+          "size_mb": 0.15,
+          "estimated_duration": 0.015262985229492187,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_go_complete_package\\tests\\e2e\\test_data\\audio\\ultra_realistic_short.wav",
+          "name": "ultra_realistic_short.wav",
+          "size": 64044,
+          "size_mb": 0.06,
+          "estimated_duration": 0.488616943359375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\optimizations\\test_audio\\long_test.wav",
+          "name": "long_test.wav",
+          "size": 960044,
+          "size_mb": 0.92,
+          "estimated_duration": 7.324554443359375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\optimizations\\test_audio\\medium_test.wav",
+          "name": "medium_test.wav",
+          "size": 480044,
+          "size_mb": 0.46,
+          "estimated_duration": 3.662445068359375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\optimizations\\test_audio\\short_test.wav",
+          "name": "short_test.wav",
+          "size": 160044,
+          "size_mb": 0.15,
+          "estimated_duration": 1.221038818359375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-be.wav",
+          "name": "test-44100Hz-2ch-32bit-float-be.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-2ch-32bit-float-le.wav",
+          "name": "test-44100Hz-2ch-32bit-float-le.wav",
+          "size": 3586,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0273590087890625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-be-1ch-4bytes.wav",
+          "name": "test-44100Hz-be-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof-no-data.wav",
+          "size": 72,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00054931640625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-early-eof.wav",
+          "size": 1024,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes.wav",
+          "name": "test-44100Hz-le-1ch-4bytes.wav",
+          "size": 17720,
+          "size_mb": 0.02,
+          "estimated_duration": 0.13519287109375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "name": "test-48000Hz-2ch-64bit-float-le-wavex.wav",
+          "size": 7792,
+          "size_mb": 0.01,
+          "estimated_duration": 0.0594482421875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-be-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-be-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-10S-20bit-extra.wav",
+          "name": "test-8000Hz-le-1ch-10S-20bit-extra.wav",
+          "size": 74,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005645751953125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "name": "test-8000Hz-le-1ch-1byte-ulaw.wav",
+          "size": 70,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0005340576171875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-2ch-1byteu.wav",
+          "name": "test-8000Hz-le-2ch-1byteu.wav",
+          "size": 1644,
+          "size_mb": 0.0,
+          "estimated_duration": 0.012542724609375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-36bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-36bit.wav",
+          "size": 120,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00091552734375,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-45bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-45bit.wav",
+          "size": 134,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0010223388671875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-53bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-53bit.wav",
+          "size": 150,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0011444091796875,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-64bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-64bit.wav",
+          "size": 164,
+          "size_mb": 0.0,
+          "estimated_duration": 0.001251220703125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-4ch-9S-12bit.wav",
+          "name": "test-8000Hz-le-4ch-9S-12bit.wav",
+          "size": 116,
+          "size_mb": 0.0,
+          "estimated_duration": 0.000885009765625,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-5ch-9S-5bit.wav",
+          "name": "test-8000Hz-le-5ch-9S-5bit.wav",
+          "size": 89,
+          "size_mb": 0.0,
+          "estimated_duration": 0.00067901611328125,
+          "extension": ".wav"
+        }
+      ],
+      "total_duration": 262.3525716781616,
+      "total_size_mb": 130.16,
+      "recommended_for_performance_testing": {
+        "priority": "high",
+        "test_focus": "latency_optimization",
+        "expected_rtf_range": "0.05-0.2",
+        "performance_modes": [
+          "auto",
+          "gpu",
+          "cpu"
+        ],
+        "notes": "短片段測試啟動延遲和最小處理單元效能"
+      }
+    },
+    "medium": {
+      "count": 65,
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\DRLIN.mp4",
+          "name": "DRLIN.mp4",
+          "size": 93675713,
+          "size_mb": 89.34,
+          "estimated_duration": 178.67224311828613,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\DRLIN.mp4",
+          "name": "DRLIN.mp4",
+          "size": 93675713,
+          "size_mb": 89.34,
+          "estimated_duration": 178.67224311828613,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\Untitled Project 2\\C1317.MP4",
+          "name": "C1317.MP4",
+          "size": 109068488,
+          "size_mb": 104.02,
+          "estimated_duration": 208.03163146972656,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\LASIK\\F-LASIK.mp4",
+          "name": "F-LASIK.mp4",
+          "size": 56752833,
+          "size_mb": 54.12,
+          "estimated_duration": 108.24743843078613,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\LASIK\\LASIK手術流程動畫.mp4",
+          "name": "LASIK手術流程動畫.mp4",
+          "size": 37008859,
+          "size_mb": 35.29,
+          "estimated_duration": 70.58879661560059,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\LASIK\\Treatment_Animation_LASIK_EN_34_160_0032I.ogg",
+          "name": "Treatment_Animation_LASIK_EN_34_160_0032I.ogg",
+          "size": 15382528,
+          "size_mb": 14.67,
+          "estimated_duration": 88.01953125,
+          "extension": ".ogg"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SILK\\PP2023OTH4040_ELITA SILK 動畫 中文字幕.mp4",
+          "name": "PP2023OTH4040_ELITA SILK 動畫 中文字幕.mp4",
+          "size": 60346460,
+          "size_mb": 57.55,
+          "estimated_duration": 115.10173797607422,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SILK\\PP2023RF4011_SILK 手術流程 中文字幕.mp4",
+          "name": "PP2023RF4011_SILK 手術流程 中文字幕.mp4",
+          "size": 146296960,
+          "size_mb": 139.52,
+          "estimated_duration": 279.039306640625,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE\\596618802.707613.mp4",
+          "name": "596618802.707613.mp4",
+          "size": 71642325,
+          "size_mb": 68.32,
+          "estimated_duration": 136.6468906402588,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE\\SMILE.mp4",
+          "name": "SMILE.mp4",
+          "size": 54639146,
+          "size_mb": 52.11,
+          "estimated_duration": 104.21590042114258,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE\\Smile全飛秒 宣導影片-s.mp4",
+          "name": "Smile全飛秒 宣導影片-s.mp4",
+          "size": 32722497,
+          "size_mb": 31.21,
+          "estimated_duration": 62.41320991516113,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE\\SMILE微笑全飛秒治療模擬影片-字幕版本1.mp4",
+          "name": "SMILE微笑全飛秒治療模擬影片-字幕版本1.mp4",
+          "size": 17396036,
+          "size_mb": 16.59,
+          "estimated_duration": 33.18030548095703,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\VM800 完整的workflow.mp4",
+          "name": "VM800 完整的workflow.mp4",
+          "size": 51578136,
+          "size_mb": 49.19,
+          "estimated_duration": 98.37748718261719,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\VM800介紹影片.mp4",
+          "name": "VM800介紹影片.mp4",
+          "size": 84426612,
+          "size_mb": 80.52,
+          "estimated_duration": 161.0309829711914,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\老花雷射\\LASIK手術流程動畫.mp4",
+          "name": "LASIK手術流程動畫.mp4",
+          "size": 37008859,
+          "size_mb": 35.29,
+          "estimated_duration": 70.58879661560059,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0110.MP4",
+          "name": "C0110.MP4",
+          "size": 33690343,
+          "size_mb": 32.13,
+          "estimated_duration": 64.25922966003418,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0117.MP4",
+          "name": "C0117.MP4",
+          "size": 100805677,
+          "size_mb": 96.14,
+          "estimated_duration": 192.27157020568848,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0118.MP4",
+          "name": "C0118.MP4",
+          "size": 67248305,
+          "size_mb": 64.13,
+          "estimated_duration": 128.265962600708,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0119.MP4",
+          "name": "C0119.MP4",
+          "size": 100806561,
+          "size_mb": 96.14,
+          "estimated_duration": 192.27325630187988,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0121.MP4",
+          "name": "C0121.MP4",
+          "size": 67248893,
+          "size_mb": 64.13,
+          "estimated_duration": 128.2670841217041,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0122.MP4",
+          "name": "C0122.MP4",
+          "size": 134362461,
+          "size_mb": 128.14,
+          "estimated_duration": 256.27605628967285,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0123.MP4",
+          "name": "C0123.MP4",
+          "size": 67247129,
+          "size_mb": 64.13,
+          "estimated_duration": 128.26371955871582,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0126.MP4",
+          "name": "C0126.MP4",
+          "size": 67247425,
+          "size_mb": 64.13,
+          "estimated_duration": 128.26428413391113,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0128.MP4",
+          "name": "C0128.MP4",
+          "size": 100805089,
+          "size_mb": 96.14,
+          "estimated_duration": 192.27044868469238,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0133.MP4",
+          "name": "C0133.MP4",
+          "size": 100806561,
+          "size_mb": 96.14,
+          "estimated_duration": 192.27325630187988,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0135.MP4",
+          "name": "C0135.MP4",
+          "size": 134361581,
+          "size_mb": 128.14,
+          "estimated_duration": 256.274377822876,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0136.MP4",
+          "name": "C0136.MP4",
+          "size": 67247425,
+          "size_mb": 64.13,
+          "estimated_duration": 128.26428413391113,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0137.MP4",
+          "name": "C0137.MP4",
+          "size": 134362972,
+          "size_mb": 128.14,
+          "estimated_duration": 256.2770309448242,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0141.MP4",
+          "name": "C0141.MP4",
+          "size": 67247934,
+          "size_mb": 64.13,
+          "estimated_duration": 128.26525497436523,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0142.MP4",
+          "name": "C0142.MP4",
+          "size": 134362090,
+          "size_mb": 128.14,
+          "estimated_duration": 256.2753486633301,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0143.MP4",
+          "name": "C0143.MP4",
+          "size": 134363051,
+          "size_mb": 128.14,
+          "estimated_duration": 256.2771816253662,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0144.MP4",
+          "name": "C0144.MP4",
+          "size": 33692030,
+          "size_mb": 32.13,
+          "estimated_duration": 64.26244735717773,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0145.MP4",
+          "name": "C0145.MP4",
+          "size": 67248305,
+          "size_mb": 64.13,
+          "estimated_duration": 128.265962600708,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0147.MP4",
+          "name": "C0147.MP4",
+          "size": 100805089,
+          "size_mb": 96.14,
+          "estimated_duration": 192.27044868469238,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Alex MakeMusic - I Am Good.mp3",
+          "name": "Alex MakeMusic - I Am Good.mp3",
+          "size": 5430799,
+          "size_mb": 5.18,
+          "estimated_duration": 31.075281143188477,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\BASHAM - Every Part of Me.mp3",
+          "name": "BASHAM - Every Part of Me.mp3",
+          "size": 10537383,
+          "size_mb": 10.05,
+          "estimated_duration": 80.39385223388672,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\dazeychain - On My Mind.mp3",
+          "name": "dazeychain - On My Mind.mp3",
+          "size": 7078893,
+          "size_mb": 6.75,
+          "estimated_duration": 54.007667541503906,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Donner & Tie - Carioca Breeze.mp3",
+          "name": "Donner & Tie - Carioca Breeze.mp3",
+          "size": 5805929,
+          "size_mb": 5.54,
+          "estimated_duration": 44.29572296142578,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Earth Tone - A Window to Your World.mp3",
+          "name": "Earth Tone - A Window to Your World.mp3",
+          "size": 5660700,
+          "size_mb": 5.4,
+          "estimated_duration": 43.187713623046875,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\FASSounds - Sunshine.mp3",
+          "name": "FASSounds - Sunshine.mp3",
+          "size": 4806997,
+          "size_mb": 4.58,
+          "estimated_duration": 36.674476623535156,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Ikoliks - Feel the Air.mp3",
+          "name": "Ikoliks - Feel the Air.mp3",
+          "size": 4999259,
+          "size_mb": 4.77,
+          "estimated_duration": 38.141319274902344,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Jimit - Summer.mp3",
+          "name": "Jimit - Summer.mp3",
+          "size": 6254173,
+          "size_mb": 5.96,
+          "estimated_duration": 47.715553283691406,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Louis Adrien - Hopscotch.mp3",
+          "name": "Louis Adrien - Hopscotch.mp3",
+          "size": 6752597,
+          "size_mb": 6.44,
+          "estimated_duration": 51.518226623535156,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Louis Island - Stay.mp3",
+          "name": "Louis Island - Stay.mp3",
+          "size": 5648133,
+          "size_mb": 5.39,
+          "estimated_duration": 43.091835021972656,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Novembers - Just Ripe.mp3",
+          "name": "Novembers - Just Ripe.mp3",
+          "size": 5463202,
+          "size_mb": 5.21,
+          "estimated_duration": 41.68092346191406,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Out of Flux - The Great Wild.mp3",
+          "name": "Out of Flux - The Great Wild.mp3",
+          "size": 4264698,
+          "size_mb": 4.07,
+          "estimated_duration": 32.53706359863281,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\River Lume - A Life like This.mp3",
+          "name": "River Lume - A Life like This.mp3",
+          "size": 7650356,
+          "size_mb": 7.3,
+          "estimated_duration": 58.367584228515625,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Steven Beddall - Endless Desert.mp3",
+          "name": "Steven Beddall - Endless Desert.mp3",
+          "size": 8006481,
+          "size_mb": 7.64,
+          "estimated_duration": 61.08460235595703,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\The David Roy Collective - Your Light.mp3",
+          "name": "The David Roy Collective - Your Light.mp3",
+          "size": 4552824,
+          "size_mb": 4.34,
+          "estimated_duration": 34.73529052734375,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1076.MP4",
+          "name": "C1076.MP4",
+          "size": 67248013,
+          "size_mb": 64.13,
+          "estimated_duration": 128.26540565490723,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1077.MP4",
+          "name": "C1077.MP4",
+          "size": 67247717,
+          "size_mb": 64.13,
+          "estimated_duration": 128.2648410797119,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1078.MP4",
+          "name": "C1078.MP4",
+          "size": 67247129,
+          "size_mb": 64.13,
+          "estimated_duration": 128.26371955871582,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1079.MP4",
+          "name": "C1079.MP4",
+          "size": 100806265,
+          "size_mb": 96.14,
+          "estimated_duration": 192.27269172668457,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1086.MP4",
+          "name": "C1086.MP4",
+          "size": 100804542,
+          "size_mb": 96.13,
+          "estimated_duration": 192.26940536499023,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1091.MP4",
+          "name": "C1091.MP4",
+          "size": 134362169,
+          "size_mb": 128.14,
+          "estimated_duration": 256.27549934387207,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1092.MP4",
+          "name": "C1092.MP4",
+          "size": 67249189,
+          "size_mb": 64.13,
+          "estimated_duration": 128.2676486968994,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1093.MP4",
+          "name": "C1093.MP4",
+          "size": 33692405,
+          "size_mb": 32.13,
+          "estimated_duration": 64.26316261291504,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1098.MP4",
+          "name": "C1098.MP4",
+          "size": 33691442,
+          "size_mb": 32.13,
+          "estimated_duration": 64.26132583618164,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1100.MP4",
+          "name": "C1100.MP4",
+          "size": 67248601,
+          "size_mb": 64.13,
+          "estimated_duration": 128.26652717590332,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1101.MP4",
+          "name": "C1101.MP4",
+          "size": 134362461,
+          "size_mb": 128.14,
+          "estimated_duration": 256.27605628967285,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1102.MP4",
+          "name": "C1102.MP4",
+          "size": 134361794,
+          "size_mb": 128.14,
+          "estimated_duration": 256.27478408813477,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1113.MP4",
+          "name": "C1113.MP4",
+          "size": 134362757,
+          "size_mb": 128.14,
+          "estimated_duration": 256.27662086486816,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1117.MP4",
+          "name": "C1117.MP4",
+          "size": 100806853,
+          "size_mb": 96.14,
+          "estimated_duration": 192.27381324768066,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1118.MP4",
+          "name": "C1118.MP4",
+          "size": 100806561,
+          "size_mb": 96.14,
+          "estimated_duration": 192.27325630187988,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\DRLIN.mp4",
+          "name": "DRLIN.mp4",
+          "size": 93675713,
+          "size_mb": 89.34,
+          "estimated_duration": 178.67224311828613,
+          "extension": ".mp4"
+        }
+      ],
+      "total_duration": 8603.167819976807,
+      "total_size_mb": 4011.6299999999997,
+      "recommended_for_performance_testing": {
+        "priority": "high",
+        "test_focus": "standard_performance",
+        "expected_rtf_range": "0.1-0.5",
+        "performance_modes": [
+          "auto",
+          "gpu"
+        ],
+        "notes": "標準性能基準測試，最常見的使用場景"
+      }
+    },
+    "long": {
+      "count": 51,
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\C0485.MP4",
+          "name": "C0485.MP4",
+          "size": 302037223,
+          "size_mb": 288.05,
+          "estimated_duration": 576.0902843475342,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\20250319 張育成2025中職球星-幕後花絮 包框_工作區域 1.mp4",
+          "name": "20250319 張育成2025中職球星-幕後花絮 包框_工作區域 1.mp4",
+          "size": 218025783,
+          "size_mb": 207.93,
+          "estimated_duration": 415.8511791229248,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\240206_諾貝爾眼科＿兩位女兒手術訪談＿Bcopy.mp4",
+          "name": "240206_諾貝爾眼科＿兩位女兒手術訪談＿Bcopy.mp4",
+          "size": 1686067393,
+          "size_mb": 1607.96,
+          "estimated_duration": 1800,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\【近視與老花雷射手術】專訪 張朝凱｜趙少康時間 2024.02.05 (1080p).mp4",
+          "name": "【近視與老花雷射手術】專訪 張朝凱｜趙少康時間 2024.02.05 (1080p).mp4",
+          "size": 446455687,
+          "size_mb": 425.77,
+          "estimated_duration": 851.5466442108154,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\連祐暘醫師\\C0047.MP4",
+          "name": "C0047.MP4",
+          "size": 679579134,
+          "size_mb": 648.1,
+          "estimated_duration": 1296.1943321228027,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\連祐暘醫師\\C0048.MP4",
+          "name": "C0048.MP4",
+          "size": 276868354,
+          "size_mb": 264.04,
+          "estimated_duration": 528.0844764709473,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\連祐暘醫師\\C0412.MP4",
+          "name": "C0412.MP4",
+          "size": 906179667,
+          "size_mb": 864.2,
+          "estimated_duration": 1728.4005489349365,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SILK\\PP2023RF4074_SILK 患者形象影片 中文字幕.mp4",
+          "name": "PP2023RF4074_SILK 患者形象影片 中文字幕.mp4",
+          "size": 269399232,
+          "size_mb": 256.92,
+          "estimated_duration": 513.8382568359375,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0109.MP4",
+          "name": "C0109.MP4",
+          "size": 503492675,
+          "size_mb": 480.17,
+          "estimated_duration": 960.3360652923584,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0111.MP4",
+          "name": "C0111.MP4",
+          "size": 469935303,
+          "size_mb": 448.17,
+          "estimated_duration": 896.3304576873779,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0112.MP4",
+          "name": "C0112.MP4",
+          "size": 335706991,
+          "size_mb": 320.16,
+          "estimated_duration": 640.3102703094482,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0113.MP4",
+          "name": "C0113.MP4",
+          "size": 335706695,
+          "size_mb": 320.15,
+          "estimated_duration": 640.3097057342529,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0114.MP4",
+          "name": "C0114.MP4",
+          "size": 771949591,
+          "size_mb": 736.19,
+          "estimated_duration": 1472.3769969940186,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0115.MP4",
+          "name": "C0115.MP4",
+          "size": 738393983,
+          "size_mb": 704.19,
+          "estimated_duration": 1408.3747539520264,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0116.MP4",
+          "name": "C0116.MP4",
+          "size": 167918955,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2799892425537,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0120.MP4",
+          "name": "C0120.MP4",
+          "size": 201476327,
+          "size_mb": 192.14,
+          "estimated_duration": 384.2855968475342,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0124.MP4",
+          "name": "C0124.MP4",
+          "size": 167919247,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2805461883545,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0125.MP4",
+          "name": "C0125.MP4",
+          "size": 167920423,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2827892303467,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0127.MP4",
+          "name": "C0127.MP4",
+          "size": 167920423,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2827892303467,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0129.MP4",
+          "name": "C0129.MP4",
+          "size": 872621707,
+          "size_mb": 832.2,
+          "estimated_duration": 1664.39381980896,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0130.MP4",
+          "name": "C0130.MP4",
+          "size": 503490911,
+          "size_mb": 480.17,
+          "estimated_duration": 960.3327007293701,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0132.MP4",
+          "name": "C0132.MP4",
+          "size": 335705519,
+          "size_mb": 320.15,
+          "estimated_duration": 640.3074626922607,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0134.MP4",
+          "name": "C0134.MP4",
+          "size": 537049672,
+          "size_mb": 512.17,
+          "estimated_duration": 1024.3409576416016,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0138.MP4",
+          "name": "C0138.MP4",
+          "size": 201477716,
+          "size_mb": 192.14,
+          "estimated_duration": 384.28824615478516,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0139.MP4",
+          "name": "C0139.MP4",
+          "size": 906178708,
+          "size_mb": 864.2,
+          "estimated_duration": 1728.3987197875977,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0140.MP4",
+          "name": "C0140.MP4",
+          "size": 235033620,
+          "size_mb": 224.15,
+          "estimated_duration": 448.29105377197266,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0146.MP4",
+          "name": "C0146.MP4",
+          "size": 302147559,
+          "size_mb": 288.15,
+          "estimated_duration": 576.3007335662842,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1080.MP4",
+          "name": "C1080.MP4",
+          "size": 201477207,
+          "size_mb": 192.14,
+          "estimated_duration": 384.28727531433105,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1081.MP4",
+          "name": "C1081.MP4",
+          "size": 335705227,
+          "size_mb": 320.15,
+          "estimated_duration": 640.30690574646,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1082.MP4",
+          "name": "C1082.MP4",
+          "size": 335706148,
+          "size_mb": 320.15,
+          "estimated_duration": 640.3086624145508,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1083.MP4",
+          "name": "C1083.MP4",
+          "size": 201478383,
+          "size_mb": 192.14,
+          "estimated_duration": 384.28951835632324,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1084.MP4",
+          "name": "C1084.MP4",
+          "size": 939735904,
+          "size_mb": 896.2,
+          "estimated_duration": 1792.4039916992188,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1085.MP4",
+          "name": "C1085.MP4",
+          "size": 469934419,
+          "size_mb": 448.16,
+          "estimated_duration": 896.3287715911865,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1087.MP4",
+          "name": "C1087.MP4",
+          "size": 335704639,
+          "size_mb": 320.15,
+          "estimated_duration": 640.3057842254639,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1088.MP4",
+          "name": "C1088.MP4",
+          "size": 402821147,
+          "size_mb": 384.16,
+          "estimated_duration": 768.3203639984131,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1089.MP4",
+          "name": "C1089.MP4",
+          "size": 369262932,
+          "size_mb": 352.16,
+          "estimated_duration": 704.3131484985352,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1090.MP4",
+          "name": "C1090.MP4",
+          "size": 436376755,
+          "size_mb": 416.16,
+          "estimated_duration": 832.3226070404053,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1095.MP4",
+          "name": "C1095.MP4",
+          "size": 235033699,
+          "size_mb": 224.15,
+          "estimated_duration": 448.29120445251465,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1096.MP4",
+          "name": "C1096.MP4",
+          "size": 805506124,
+          "size_mb": 768.19,
+          "estimated_duration": 1536.381004333496,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1097.MP4",
+          "name": "C1097.MP4",
+          "size": 268592247,
+          "size_mb": 256.15,
+          "estimated_duration": 512.2990550994873,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1099.MP4",
+          "name": "C1099.MP4",
+          "size": 235033403,
+          "size_mb": 224.15,
+          "estimated_duration": 448.29063987731934,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1106.MP4",
+          "name": "C1106.MP4",
+          "size": 369263187,
+          "size_mb": 352.16,
+          "estimated_duration": 704.3136348724365,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1109.MP4",
+          "name": "C1109.MP4",
+          "size": 805505787,
+          "size_mb": 768.19,
+          "estimated_duration": 1536.3803615570068,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1110.MP4",
+          "name": "C1110.MP4",
+          "size": 201476248,
+          "size_mb": 192.14,
+          "estimated_duration": 384.2854461669922,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1111.MP4",
+          "name": "C1111.MP4",
+          "size": 704836023,
+          "size_mb": 672.18,
+          "estimated_duration": 1344.3680248260498,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1112.MP4",
+          "name": "C1112.MP4",
+          "size": 671276595,
+          "size_mb": 640.18,
+          "estimated_duration": 1280.3584957122803,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1114.MP4",
+          "name": "C1114.MP4",
+          "size": 469933580,
+          "size_mb": 448.16,
+          "estimated_duration": 896.3271713256836,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1115.MP4",
+          "name": "C1115.MP4",
+          "size": 268591951,
+          "size_mb": 256.15,
+          "estimated_duration": 512.298490524292,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1116.MP4",
+          "name": "C1116.MP4",
+          "size": 201478424,
+          "size_mb": 192.14,
+          "estimated_duration": 384.2895965576172,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1119.MP4",
+          "name": "C1119.MP4",
+          "size": 369263775,
+          "size_mb": 352.16,
+          "estimated_duration": 704.3147563934326,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\C0485.MP4",
+          "name": "C0485.MP4",
+          "size": 302037223,
+          "size_mb": 288.05,
+          "estimated_duration": 576.0902843475342,
+          "extension": ".mp4"
+        }
+      ],
+      "total_duration": 41771.58457183838,
+      "total_size_mb": 21593.75,
+      "recommended_for_performance_testing": {
+        "priority": "medium",
+        "test_focus": "memory_management",
+        "expected_rtf_range": "0.2-0.8",
+        "performance_modes": [
+          "gpu",
+          "cpu"
+        ],
+        "notes": "記憶體管理和長時間處理穩定性"
+      }
+    },
+    "very_long": {
+      "count": 31,
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\C1317.MP4",
+          "name": "C1317.MP4",
+          "size": 3389413148,
+          "size_mb": 3232.4,
+          "estimated_duration": 6464.792533874512,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\240112_諾貝爾Ｘ大師兄手術紀錄＿Acopy.mp4",
+          "name": "240112_諾貝爾Ｘ大師兄手術紀錄＿Acopy.mp4",
+          "size": 2510779329,
+          "size_mb": 2394.47,
+          "estimated_duration": 4788.931520462036,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\240123_諾貝爾眼科Ｘ大師兄_雷射手術紀錄 Final.mp4",
+          "name": "240123_諾貝爾眼科Ｘ大師兄_雷射手術紀錄 Final.mp4",
+          "size": 2513500591,
+          "size_mb": 2397.06,
+          "estimated_duration": 4794.121915817261,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\連祐暘醫師\\C0411.MP4",
+          "name": "C0411.MP4",
+          "size": 2282022513,
+          "size_mb": 2176.31,
+          "estimated_duration": 4352.6125202178955,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0131.MP4",
+          "name": "C0131.MP4",
+          "size": 3120955637,
+          "size_mb": 2976.38,
+          "estimated_duration": 5952.750467300415,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0148.MP4",
+          "name": "C0148.MP4",
+          "size": 973294119,
+          "size_mb": 928.21,
+          "estimated_duration": 1856.4112071990967,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1094.MP4",
+          "name": "C1094.MP4",
+          "size": 1308865822,
+          "size_mb": 1248.23,
+          "estimated_duration": 2496.463436126709,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1103.MP4",
+          "name": "C1103.MP4",
+          "size": 1208192487,
+          "size_mb": 1152.22,
+          "estimated_duration": 2304.444288253784,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1104.MP4",
+          "name": "C1104.MP4",
+          "size": 973293276,
+          "size_mb": 928.2,
+          "estimated_duration": 1856.4095993041992,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1105.MP4",
+          "name": "C1105.MP4",
+          "size": 2013565301,
+          "size_mb": 1920.29,
+          "estimated_duration": 3840.57102394104,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1107.MP4",
+          "name": "C1107.MP4",
+          "size": 1644437445,
+          "size_mb": 1568.26,
+          "estimated_duration": 3136.5155124664307,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1108.MP4",
+          "name": "C1108.MP4",
+          "size": 1107521547,
+          "size_mb": 1056.21,
+          "estimated_duration": 2112.429708480835,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1120.MP4",
+          "name": "C1120.MP4",
+          "size": 1745108130,
+          "size_mb": 1664.26,
+          "estimated_duration": 3328.5296058654785,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1121.MP4",
+          "name": "C1121.MP4",
+          "size": 1409536642,
+          "size_mb": 1344.24,
+          "estimated_duration": 2688.4777870178223,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1122.MP4",
+          "name": "C1122.MP4",
+          "size": 6308908329,
+          "size_mb": 6016.64,
+          "estimated_duration": 12033.287675857544,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1123.MP4",
+          "name": "C1123.MP4",
+          "size": 1476651974,
+          "size_mb": 1408.25,
+          "estimated_duration": 2816.4901237487793,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\C0475.MP4",
+          "name": "C0475.MP4",
+          "size": 12605849906,
+          "size_mb": 12021.88,
+          "estimated_duration": 24043.75058364868,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\C0488.MP4",
+          "name": "C0488.MP4",
+          "size": 8863954446,
+          "size_mb": 8453.33,
+          "estimated_duration": 16906.65139389038,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\C0489.MP4",
+          "name": "C0489.MP4",
+          "size": 23437233426,
+          "size_mb": 22351.49,
+          "estimated_duration": 44702.975131988525,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\C0490.MP4",
+          "name": "C0490.MP4",
+          "size": 6518968828,
+          "size_mb": 6216.97,
+          "estimated_duration": 12433.946281433105,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\吳明穎 醫師.mp4",
+          "name": "吳明穎 醫師.mp4",
+          "size": 4744560922,
+          "size_mb": 4524.77,
+          "estimated_duration": 9049.531787872314,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\徐昊 醫師.mp4",
+          "name": "徐昊 醫師.mp4",
+          "size": 4961299650,
+          "size_mb": 4731.46,
+          "estimated_duration": 9462.928104400635,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\曾俊夫 醫師.mp4",
+          "name": "曾俊夫 醫師.mp4",
+          "size": 3246508742,
+          "size_mb": 3096.11,
+          "estimated_duration": 6192.224010467529,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\林世強 醫師.mp4",
+          "name": "林世強 醫師.mp4",
+          "size": 5002444445,
+          "size_mb": 4770.7,
+          "estimated_duration": 9541.405572891235,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\林君曄 醫師.mp4",
+          "name": "林君曄 醫師.mp4",
+          "size": 5398832785,
+          "size_mb": 5148.73,
+          "estimated_duration": 10297.456331253052,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\梁仲斌 醫師.mp4",
+          "name": "梁仲斌 醫師.mp4",
+          "size": 4453445687,
+          "size_mb": 4247.14,
+          "estimated_duration": 8494.273542404175,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\王修含 醫師.mp4",
+          "name": "王修含 醫師.mp4",
+          "size": 3839960488,
+          "size_mb": 3662.07,
+          "estimated_duration": 7324.14338684082,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\王興良 醫師.mp4",
+          "name": "王興良 醫師.mp4",
+          "size": 5360643566,
+          "size_mb": 5112.31,
+          "estimated_duration": 10224.616176605225,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\莊子毅醫師(中間有斷).mp4",
+          "name": "莊子毅醫師(中間有斷).mp4",
+          "size": 5882446554,
+          "size_mb": 5609.94,
+          "estimated_duration": 11219.876392364502,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\鄭煜斌 醫師.mp4",
+          "name": "鄭煜斌 醫師.mp4",
+          "size": 6058457239,
+          "size_mb": 5777.8,
+          "estimated_duration": 11555.590131759644,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\陳昱璁 醫師.mp4",
+          "name": "陳昱璁 醫師.mp4",
+          "size": 4933660725,
+          "size_mb": 4705.11,
+          "estimated_duration": 9410.211038589478,
+          "extension": ".mp4"
+        }
+      ],
+      "total_duration": 265682.81879234314,
+      "total_size_mb": 132841.44,
+      "recommended_for_performance_testing": {
+        "priority": "low",
+        "test_focus": "stress_testing",
+        "expected_rtf_range": "0.5-1.5",
+        "performance_modes": [
+          "cpu"
+        ],
+        "notes": "壓力測試，驗證系統極限和穩定性"
+      }
+    },
+    "multilingual": {
+      "count": 16,
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\LASIK\\Treatment_Animation_LASIK_EN_34_160_0032I.ogg",
+          "name": "Treatment_Animation_LASIK_EN_34_160_0032I.ogg",
+          "size": 15382528,
+          "size_mb": 14.67,
+          "estimated_duration": 88.01953125,
+          "extension": ".ogg"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\smart_robotics_centralign_animation_4x3.mp4",
+          "name": "smart_robotics_centralign_animation_4x3.mp4",
+          "size": 900402,
+          "size_mb": 0.86,
+          "estimated_duration": 1.7173805236816406,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\smart_robotics_easy-patient-access_animation_4x3-1.mp4",
+          "name": "smart_robotics_easy-patient-access_animation_4x3-1.mp4",
+          "size": 2273474,
+          "size_mb": 2.17,
+          "estimated_duration": 4.336307525634766,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Ikoliks - Feel the Air.mp3",
+          "name": "Ikoliks - Feel the Air.mp3",
+          "size": 4999259,
+          "size_mb": 4.77,
+          "estimated_duration": 38.141319274902344,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Louis Adrien - Hopscotch.mp3",
+          "name": "Louis Adrien - Hopscotch.mp3",
+          "size": 6752597,
+          "size_mb": 6.44,
+          "estimated_duration": 51.518226623535156,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Steven Beddall - Endless Desert.mp3",
+          "name": "Steven Beddall - Endless Desert.mp3",
+          "size": 8006481,
+          "size_mb": 7.64,
+          "estimated_duration": 61.08460235595703,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\tests\\e2e\\test_data\\audio\\ultra_realistic_english.wav",
+          "name": "ultra_realistic_english.wav",
+          "size": 160044,
+          "size_mb": 0.15,
+          "estimated_duration": 0.015262985229492187,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\installer_output\\files\\_internal\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\temp_venv\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\dist_final\\win-unpacked\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_go_complete_package\\tests\\e2e\\test_data\\audio\\ultra_realistic_english.wav",
+          "name": "ultra_realistic_english.wav",
+          "size": 160044,
+          "size_mb": 0.15,
+          "estimated_duration": 0.015262985229492187,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\srt-go-minimalist\\resources\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "name": "test-8000Hz-le-3ch-5S-24bit-inconsistent.wav",
+          "size": 90,
+          "size_mb": 0.0,
+          "estimated_duration": 0.0006866455078125,
+          "extension": ".wav"
+        }
+      ],
+      "total_duration": 244.85338668823243,
+      "total_size_mb": 36.85,
+      "recommended_for_performance_testing": {
+        "priority": "medium",
+        "test_focus": "specialized_scenarios",
+        "expected_rtf_range": "0.1-1.0",
+        "performance_modes": [
+          "auto"
+        ],
+        "notes": "multilingual 專用測試場景"
+      }
+    },
+    "quality_tests": {
+      "count": 1,
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\VM800 完整的workflow.mp4",
+          "name": "VM800 完整的workflow.mp4",
+          "size": 51578136,
+          "size_mb": 49.19,
+          "estimated_duration": 98.37748718261719,
+          "extension": ".mp4"
+        }
+      ],
+      "total_duration": 98.37748718261719,
+      "total_size_mb": 49.19,
+      "recommended_for_performance_testing": {
+        "priority": "medium",
+        "test_focus": "specialized_scenarios",
+        "expected_rtf_range": "0.1-1.0",
+        "performance_modes": [
+          "auto"
+        ],
+        "notes": "quality_tests 專用測試場景"
+      }
+    },
+    "special_cases": {
+      "count": 1,
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\TV NoiseWB.mp4",
+          "name": "TV NoiseWB.mp4",
+          "size": 12678121,
+          "size_mb": 12.09,
+          "estimated_duration": 24.181596755981445,
+          "extension": ".mp4"
+        }
+      ],
+      "total_duration": 24.181596755981445,
+      "total_size_mb": 12.09,
+      "recommended_for_performance_testing": {
+        "priority": "medium",
+        "test_focus": "specialized_scenarios",
+        "expected_rtf_range": "0.1-1.0",
+        "performance_modes": [
+          "auto"
+        ],
+        "notes": "special_cases 專用測試場景"
+      }
+    }
+  },
+  "performance_test_plan": {
+    "quick_validation": {
+      "description": "快速驗證所有性能模式",
+      "duration": "5-10分鐘",
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        }
+      ]
+    },
+    "standard_benchmark": {
+      "description": "標準性能基準測試",
+      "duration": "15-30分鐘",
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Alex MakeMusic - I Am Good.mp3",
+          "name": "Alex MakeMusic - I Am Good.mp3",
+          "size": 5430799,
+          "size_mb": 5.18,
+          "estimated_duration": 31.075281143188477,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Out of Flux - The Great Wild.mp3",
+          "name": "Out of Flux - The Great Wild.mp3",
+          "size": 4264698,
+          "size_mb": 4.07,
+          "estimated_duration": 32.53706359863281,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE\\SMILE微笑全飛秒治療模擬影片-字幕版本1.mp4",
+          "name": "SMILE微笑全飛秒治療模擬影片-字幕版本1.mp4",
+          "size": 17396036,
+          "size_mb": 16.59,
+          "estimated_duration": 33.18030548095703,
+          "extension": ".mp4"
+        }
+      ]
+    },
+    "comprehensive_test": {
+      "description": "全面性能和穩定性測試",
+      "duration": "1-2小時",
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\portable_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Alex MakeMusic - I Am Good.mp3",
+          "name": "Alex MakeMusic - I Am Good.mp3",
+          "size": 5430799,
+          "size_mb": 5.18,
+          "estimated_duration": 31.075281143188477,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Out of Flux - The Great Wild.mp3",
+          "name": "Out of Flux - The Great Wild.mp3",
+          "size": 4264698,
+          "size_mb": 4.07,
+          "estimated_duration": 32.53706359863281,
+          "extension": ".mp3"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0116.MP4",
+          "name": "C0116.MP4",
+          "size": 167918955,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2799892425537,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0124.MP4",
+          "name": "C0124.MP4",
+          "size": 167919247,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2805461883545,
+          "extension": ".mp4"
+        }
+      ]
+    },
+    "stress_test": {
+      "description": "壓力測試和極限情況",
+      "duration": "2-4小時",
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\C0485.MP4",
+          "name": "C0485.MP4",
+          "size": 302037223,
+          "size_mb": 288.05,
+          "estimated_duration": 576.0902843475342,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\20250319 張育成2025中職球星-幕後花絮 包框_工作區域 1.mp4",
+          "name": "20250319 張育成2025中職球星-幕後花絮 包框_工作區域 1.mp4",
+          "size": 218025783,
+          "size_mb": 207.93,
+          "estimated_duration": 415.8511791229248,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\240206_諾貝爾眼科＿兩位女兒手術訪談＿Bcopy.mp4",
+          "name": "240206_諾貝爾眼科＿兩位女兒手術訪談＿Bcopy.mp4",
+          "size": 1686067393,
+          "size_mb": 1607.96,
+          "estimated_duration": 1800,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\【近視與老花雷射手術】專訪 張朝凱｜趙少康時間 2024.02.05 (1080p).mp4",
+          "name": "【近視與老花雷射手術】專訪 張朝凱｜趙少康時間 2024.02.05 (1080p).mp4",
+          "size": 446455687,
+          "size_mb": 425.77,
+          "estimated_duration": 851.5466442108154,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\連祐暘醫師\\C0047.MP4",
+          "name": "C0047.MP4",
+          "size": 679579134,
+          "size_mb": 648.1,
+          "estimated_duration": 1296.1943321228027,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\連祐暘醫師\\C0048.MP4",
+          "name": "C0048.MP4",
+          "size": 276868354,
+          "size_mb": 264.04,
+          "estimated_duration": 528.0844764709473,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\連祐暘醫師\\C0412.MP4",
+          "name": "C0412.MP4",
+          "size": 906179667,
+          "size_mb": 864.2,
+          "estimated_duration": 1728.4005489349365,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SILK\\PP2023RF4074_SILK 患者形象影片 中文字幕.mp4",
+          "name": "PP2023RF4074_SILK 患者形象影片 中文字幕.mp4",
+          "size": 269399232,
+          "size_mb": 256.92,
+          "estimated_duration": 513.8382568359375,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0109.MP4",
+          "name": "C0109.MP4",
+          "size": 503492675,
+          "size_mb": 480.17,
+          "estimated_duration": 960.3360652923584,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0111.MP4",
+          "name": "C0111.MP4",
+          "size": 469935303,
+          "size_mb": 448.17,
+          "estimated_duration": 896.3304576873779,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0112.MP4",
+          "name": "C0112.MP4",
+          "size": 335706991,
+          "size_mb": 320.16,
+          "estimated_duration": 640.3102703094482,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0113.MP4",
+          "name": "C0113.MP4",
+          "size": 335706695,
+          "size_mb": 320.15,
+          "estimated_duration": 640.3097057342529,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0114.MP4",
+          "name": "C0114.MP4",
+          "size": 771949591,
+          "size_mb": 736.19,
+          "estimated_duration": 1472.3769969940186,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0115.MP4",
+          "name": "C0115.MP4",
+          "size": 738393983,
+          "size_mb": 704.19,
+          "estimated_duration": 1408.3747539520264,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0116.MP4",
+          "name": "C0116.MP4",
+          "size": 167918955,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2799892425537,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0120.MP4",
+          "name": "C0120.MP4",
+          "size": 201476327,
+          "size_mb": 192.14,
+          "estimated_duration": 384.2855968475342,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0124.MP4",
+          "name": "C0124.MP4",
+          "size": 167919247,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2805461883545,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0125.MP4",
+          "name": "C0125.MP4",
+          "size": 167920423,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2827892303467,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0127.MP4",
+          "name": "C0127.MP4",
+          "size": 167920423,
+          "size_mb": 160.14,
+          "estimated_duration": 320.2827892303467,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0129.MP4",
+          "name": "C0129.MP4",
+          "size": 872621707,
+          "size_mb": 832.2,
+          "estimated_duration": 1664.39381980896,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0130.MP4",
+          "name": "C0130.MP4",
+          "size": 503490911,
+          "size_mb": 480.17,
+          "estimated_duration": 960.3327007293701,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0132.MP4",
+          "name": "C0132.MP4",
+          "size": 335705519,
+          "size_mb": 320.15,
+          "estimated_duration": 640.3074626922607,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0134.MP4",
+          "name": "C0134.MP4",
+          "size": 537049672,
+          "size_mb": 512.17,
+          "estimated_duration": 1024.3409576416016,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0138.MP4",
+          "name": "C0138.MP4",
+          "size": 201477716,
+          "size_mb": 192.14,
+          "estimated_duration": 384.28824615478516,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0139.MP4",
+          "name": "C0139.MP4",
+          "size": 906178708,
+          "size_mb": 864.2,
+          "estimated_duration": 1728.3987197875977,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0140.MP4",
+          "name": "C0140.MP4",
+          "size": 235033620,
+          "size_mb": 224.15,
+          "estimated_duration": 448.29105377197266,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0146.MP4",
+          "name": "C0146.MP4",
+          "size": 302147559,
+          "size_mb": 288.15,
+          "estimated_duration": 576.3007335662842,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1080.MP4",
+          "name": "C1080.MP4",
+          "size": 201477207,
+          "size_mb": 192.14,
+          "estimated_duration": 384.28727531433105,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1081.MP4",
+          "name": "C1081.MP4",
+          "size": 335705227,
+          "size_mb": 320.15,
+          "estimated_duration": 640.30690574646,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1082.MP4",
+          "name": "C1082.MP4",
+          "size": 335706148,
+          "size_mb": 320.15,
+          "estimated_duration": 640.3086624145508,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1083.MP4",
+          "name": "C1083.MP4",
+          "size": 201478383,
+          "size_mb": 192.14,
+          "estimated_duration": 384.28951835632324,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1084.MP4",
+          "name": "C1084.MP4",
+          "size": 939735904,
+          "size_mb": 896.2,
+          "estimated_duration": 1792.4039916992188,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1085.MP4",
+          "name": "C1085.MP4",
+          "size": 469934419,
+          "size_mb": 448.16,
+          "estimated_duration": 896.3287715911865,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1087.MP4",
+          "name": "C1087.MP4",
+          "size": 335704639,
+          "size_mb": 320.15,
+          "estimated_duration": 640.3057842254639,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1088.MP4",
+          "name": "C1088.MP4",
+          "size": 402821147,
+          "size_mb": 384.16,
+          "estimated_duration": 768.3203639984131,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1089.MP4",
+          "name": "C1089.MP4",
+          "size": 369262932,
+          "size_mb": 352.16,
+          "estimated_duration": 704.3131484985352,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1090.MP4",
+          "name": "C1090.MP4",
+          "size": 436376755,
+          "size_mb": 416.16,
+          "estimated_duration": 832.3226070404053,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1095.MP4",
+          "name": "C1095.MP4",
+          "size": 235033699,
+          "size_mb": 224.15,
+          "estimated_duration": 448.29120445251465,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1096.MP4",
+          "name": "C1096.MP4",
+          "size": 805506124,
+          "size_mb": 768.19,
+          "estimated_duration": 1536.381004333496,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1097.MP4",
+          "name": "C1097.MP4",
+          "size": 268592247,
+          "size_mb": 256.15,
+          "estimated_duration": 512.2990550994873,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1099.MP4",
+          "name": "C1099.MP4",
+          "size": 235033403,
+          "size_mb": 224.15,
+          "estimated_duration": 448.29063987731934,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1106.MP4",
+          "name": "C1106.MP4",
+          "size": 369263187,
+          "size_mb": 352.16,
+          "estimated_duration": 704.3136348724365,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1109.MP4",
+          "name": "C1109.MP4",
+          "size": 805505787,
+          "size_mb": 768.19,
+          "estimated_duration": 1536.3803615570068,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1110.MP4",
+          "name": "C1110.MP4",
+          "size": 201476248,
+          "size_mb": 192.14,
+          "estimated_duration": 384.2854461669922,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1111.MP4",
+          "name": "C1111.MP4",
+          "size": 704836023,
+          "size_mb": 672.18,
+          "estimated_duration": 1344.3680248260498,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1112.MP4",
+          "name": "C1112.MP4",
+          "size": 671276595,
+          "size_mb": 640.18,
+          "estimated_duration": 1280.3584957122803,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1114.MP4",
+          "name": "C1114.MP4",
+          "size": 469933580,
+          "size_mb": 448.16,
+          "estimated_duration": 896.3271713256836,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1115.MP4",
+          "name": "C1115.MP4",
+          "size": 268591951,
+          "size_mb": 256.15,
+          "estimated_duration": 512.298490524292,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1116.MP4",
+          "name": "C1116.MP4",
+          "size": 201478424,
+          "size_mb": 192.14,
+          "estimated_duration": 384.2895965576172,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1119.MP4",
+          "name": "C1119.MP4",
+          "size": 369263775,
+          "size_mb": 352.16,
+          "estimated_duration": 704.3147563934326,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\test_VIDEO\\C0485.MP4",
+          "name": "C0485.MP4",
+          "size": 302037223,
+          "size_mb": 288.05,
+          "estimated_duration": 576.0902843475342,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\C1317.MP4",
+          "name": "C1317.MP4",
+          "size": 3389413148,
+          "size_mb": 3232.4,
+          "estimated_duration": 6464.792533874512,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\240112_諾貝爾Ｘ大師兄手術紀錄＿Acopy.mp4",
+          "name": "240112_諾貝爾Ｘ大師兄手術紀錄＿Acopy.mp4",
+          "size": 2510779329,
+          "size_mb": 2394.47,
+          "estimated_duration": 4788.931520462036,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\240123_諾貝爾眼科Ｘ大師兄_雷射手術紀錄 Final.mp4",
+          "name": "240123_諾貝爾眼科Ｘ大師兄_雷射手術紀錄 Final.mp4",
+          "size": 2513500591,
+          "size_mb": 2397.06,
+          "estimated_duration": 4794.121915817261,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\連祐暘醫師\\C0411.MP4",
+          "name": "C0411.MP4",
+          "size": 2282022513,
+          "size_mb": 2176.31,
+          "estimated_duration": 4352.6125202178955,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0131.MP4",
+          "name": "C0131.MP4",
+          "size": 3120955637,
+          "size_mb": 2976.38,
+          "estimated_duration": 5952.750467300415,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0148.MP4",
+          "name": "C0148.MP4",
+          "size": 973294119,
+          "size_mb": 928.21,
+          "estimated_duration": 1856.4112071990967,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1094.MP4",
+          "name": "C1094.MP4",
+          "size": 1308865822,
+          "size_mb": 1248.23,
+          "estimated_duration": 2496.463436126709,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1103.MP4",
+          "name": "C1103.MP4",
+          "size": 1208192487,
+          "size_mb": 1152.22,
+          "estimated_duration": 2304.444288253784,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1104.MP4",
+          "name": "C1104.MP4",
+          "size": 973293276,
+          "size_mb": 928.2,
+          "estimated_duration": 1856.4095993041992,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1105.MP4",
+          "name": "C1105.MP4",
+          "size": 2013565301,
+          "size_mb": 1920.29,
+          "estimated_duration": 3840.57102394104,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1107.MP4",
+          "name": "C1107.MP4",
+          "size": 1644437445,
+          "size_mb": 1568.26,
+          "estimated_duration": 3136.5155124664307,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1108.MP4",
+          "name": "C1108.MP4",
+          "size": 1107521547,
+          "size_mb": 1056.21,
+          "estimated_duration": 2112.429708480835,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1120.MP4",
+          "name": "C1120.MP4",
+          "size": 1745108130,
+          "size_mb": 1664.26,
+          "estimated_duration": 3328.5296058654785,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1121.MP4",
+          "name": "C1121.MP4",
+          "size": 1409536642,
+          "size_mb": 1344.24,
+          "estimated_duration": 2688.4777870178223,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1122.MP4",
+          "name": "C1122.MP4",
+          "size": 6308908329,
+          "size_mb": 6016.64,
+          "estimated_duration": 12033.287675857544,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\術後\\C1123.MP4",
+          "name": "C1123.MP4",
+          "size": 1476651974,
+          "size_mb": 1408.25,
+          "estimated_duration": 2816.4901237487793,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\C0475.MP4",
+          "name": "C0475.MP4",
+          "size": 12605849906,
+          "size_mb": 12021.88,
+          "estimated_duration": 24043.75058364868,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\C0488.MP4",
+          "name": "C0488.MP4",
+          "size": 8863954446,
+          "size_mb": 8453.33,
+          "estimated_duration": 16906.65139389038,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\C0489.MP4",
+          "name": "C0489.MP4",
+          "size": 23437233426,
+          "size_mb": 22351.49,
+          "estimated_duration": 44702.975131988525,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\C0490.MP4",
+          "name": "C0490.MP4",
+          "size": 6518968828,
+          "size_mb": 6216.97,
+          "estimated_duration": 12433.946281433105,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\吳明穎 醫師.mp4",
+          "name": "吳明穎 醫師.mp4",
+          "size": 4744560922,
+          "size_mb": 4524.77,
+          "estimated_duration": 9049.531787872314,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\徐昊 醫師.mp4",
+          "name": "徐昊 醫師.mp4",
+          "size": 4961299650,
+          "size_mb": 4731.46,
+          "estimated_duration": 9462.928104400635,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\曾俊夫 醫師.mp4",
+          "name": "曾俊夫 醫師.mp4",
+          "size": 3246508742,
+          "size_mb": 3096.11,
+          "estimated_duration": 6192.224010467529,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\林世強 醫師.mp4",
+          "name": "林世強 醫師.mp4",
+          "size": 5002444445,
+          "size_mb": 4770.7,
+          "estimated_duration": 9541.405572891235,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\林君曄 醫師.mp4",
+          "name": "林君曄 醫師.mp4",
+          "size": 5398832785,
+          "size_mb": 5148.73,
+          "estimated_duration": 10297.456331253052,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\梁仲斌 醫師.mp4",
+          "name": "梁仲斌 醫師.mp4",
+          "size": 4453445687,
+          "size_mb": 4247.14,
+          "estimated_duration": 8494.273542404175,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\王修含 醫師.mp4",
+          "name": "王修含 醫師.mp4",
+          "size": 3839960488,
+          "size_mb": 3662.07,
+          "estimated_duration": 7324.14338684082,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\王興良 醫師.mp4",
+          "name": "王興良 醫師.mp4",
+          "size": 5360643566,
+          "size_mb": 5112.31,
+          "estimated_duration": 10224.616176605225,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\莊子毅醫師(中間有斷).mp4",
+          "name": "莊子毅醫師(中間有斷).mp4",
+          "size": 5882446554,
+          "size_mb": 5609.94,
+          "estimated_duration": 11219.876392364502,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\鄭煜斌 醫師.mp4",
+          "name": "鄭煜斌 醫師.mp4",
+          "size": 6058457239,
+          "size_mb": 5777.8,
+          "estimated_duration": 11555.590131759644,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\0713微整\\錄影\\713錄影分段\\陳昱璁 醫師.mp4",
+          "name": "陳昱璁 醫師.mp4",
+          "size": 4933660725,
+          "size_mb": 4705.11,
+          "estimated_duration": 9410.211038589478,
+          "extension": ".mp4"
+        }
+      ]
+    }
+  },
+  "recommended_test_sequence": [
+    {
+      "phase": "smoke_test",
+      "description": "快速煙霧測試 - 驗證基本功能",
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt中文final_copy\\venv310\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "name": "test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav",
+          "size": 13,
+          "size_mb": 0.0,
+          "estimated_duration": 9.918212890625e-05,
+          "extension": ".wav"
+        }
+      ],
+      "performance_modes": [
+        "auto"
+      ],
+      "expected_duration": "1-2分鐘"
+    },
+    {
+      "phase": "performance_modes",
+      "description": "性能模式驗證 - 測試所有模式",
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\MUSIC\\Alex MakeMusic - I Am Good.mp3",
+          "name": "Alex MakeMusic - I Am Good.mp3",
+          "size": 5430799,
+          "size_mb": 5.18,
+          "estimated_duration": 31.075281143188477,
+          "extension": ".mp3"
+        }
+      ],
+      "performance_modes": [
+        "auto",
+        "gpu",
+        "cpu"
+      ],
+      "expected_duration": "5-10分鐘"
+    },
+    {
+      "phase": "duration_range",
+      "description": "時長範圍測試 - 不同時長檔案",
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\mini_python\\Lib\\site-packages\\scipy\\io\\tests\\data\\test-8000Hz-le-3ch-5S-64bit.wav",
+          "name": "test-8000Hz-le-3ch-5S-64bit.wav",
+          "size": 164,
+          "size_mb": 0.0,
+          "estimated_duration": 0.001251220703125,
+          "extension": ".wav"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\少鹽\\20241203 少鹽 PS啦啦隊 101 SILK 呂醫師\\C1077.MP4",
+          "name": "C1077.MP4",
+          "size": 67247717,
+          "size_mb": 64.13,
+          "estimated_duration": 128.2648410797119,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\20240127 小珍奶_SMILE PRO\\C0113.MP4",
+          "name": "C0113.MP4",
+          "size": 335706695,
+          "size_mb": 320.15,
+          "estimated_duration": 640.3097057342529,
+          "extension": ".mp4"
+        }
+      ],
+      "performance_modes": [
+        "auto"
+      ],
+      "expected_duration": "10-20分鐘"
+    },
+    {
+      "phase": "quality_special",
+      "description": "品質和特殊情況測試",
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\VM800 完整的workflow.mp4",
+          "name": "VM800 完整的workflow.mp4",
+          "size": 51578136,
+          "size_mb": 49.19,
+          "estimated_duration": 98.37748718261719,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\桌面\\素材\\TV NoiseWB.mp4",
+          "name": "TV NoiseWB.mp4",
+          "size": 12678121,
+          "size_mb": 12.09,
+          "estimated_duration": 24.181596755981445,
+          "extension": ".mp4"
+        }
+      ],
+      "performance_modes": [
+        "auto"
+      ],
+      "expected_duration": "5-15分鐘"
+    },
+    {
+      "phase": "multilingual",
+      "description": "多語言支援測試",
+      "files": [
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\LASIK\\Treatment_Animation_LASIK_EN_34_160_0032I.ogg",
+          "name": "Treatment_Animation_LASIK_EN_34_160_0032I.ogg",
+          "size": 15382528,
+          "size_mb": 14.67,
+          "estimated_duration": 88.01953125,
+          "extension": ".ogg"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\smart_robotics_centralign_animation_4x3.mp4",
+          "name": "smart_robotics_centralign_animation_4x3.mp4",
+          "size": 900402,
+          "size_mb": 0.86,
+          "estimated_duration": 1.7173805236816406,
+          "extension": ".mp4"
+        },
+        {
+          "path": "C:\\Users\\USER-ART0\\Desktop\\醫管\\SMILE PRO\\smart_robotics_easy-patient-access_animation_4x3-1.mp4",
+          "name": "smart_robotics_easy-patient-access_animation_4x3-1.mp4",
+          "size": 2273474,
+          "size_mb": 2.17,
+          "estimated_duration": 4.336307525634766,
+          "extension": ".mp4"
+        }
+      ],
+      "performance_modes": [
+        "auto"
+      ],
+      "expected_duration": "10-30分鐘"
+    }
+  ]
+}

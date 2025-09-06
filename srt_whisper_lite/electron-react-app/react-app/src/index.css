@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局樣式 */
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  body {
+    @apply font-sans antialiased bg-background text-text-primary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* 改善文字渲染 */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* 極簡組件樣式 */
+@layer components {
+  /* 按鈕基礎樣式 */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus-ring;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-900 hover:bg-gray-200 active:bg-gray-300;
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent text-gray-600 hover:bg-gray-100 hover:text-gray-900;
+  }
+  
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600 active:bg-red-700;
+  }
+  
+  /* 按鈕尺寸 */
+  .btn-sm {
+    @apply px-3 py-1.5 text-sm;
+  }
+  
+  .btn-md {
+    @apply px-4 py-2 text-base;
+  }
+  
+  .btn-lg {
+    @apply px-6 py-3 text-lg;
+  }
+  
+  /* 卡片樣式 */
+  .card {
+    @apply bg-white rounded-xl border border-gray-200 shadow-card transition-all duration-200;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-card-hover;
+  }
+  
+  .card-focus {
+    @apply focus-within:shadow-card-focus focus-within:border-primary-200;
+  }
+  
+  /* 輸入框樣式 */
+  .input {
+    @apply w-full px-3 py-2 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder-gray-500 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors duration-200;
+  }
+  
+  .input-error {
+    @apply border-red-300 focus:border-red-500 focus:ring-red-200;
+  }
+  
+  /* 標籤樣式 */
+  .label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  /* 區域標題 */
+  .section-title {
+    @apply text-2xl font-semibold text-gray-900 mb-2;
+  }
+  
+  .section-subtitle {
+    @apply text-gray-600 mb-6;
+  }
+  
+  /* 進度條 */
+  .progress-bar {
+    @apply w-full bg-gray-200 rounded-full h-2 overflow-hidden;
+  }
+  
+  .progress-fill {
+    @apply h-full bg-primary-500 transition-all duration-300 ease-out;
+  }
+  
+  /* 拖拽區域 */
+  .dropzone {
+    @apply border-2 border-dashed border-gray-300 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors duration-200 cursor-pointer;
+  }
+  
+  .dropzone-active {
+    @apply border-primary-400 bg-primary-50;
+  }
+  
+  /* Toast 通知 */
+  .toast {
+    @apply fixed top-4 right-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50;
+  }
+  
+  .toast-success {
+    @apply border-green-200 bg-green-50;
+  }
+  
+  .toast-error {
+    @apply border-red-200 bg-red-50;
+  }
+  
+  .toast-warning {
+    @apply border-yellow-200 bg-yellow-50;
+  }
+  
+  /* 檔案列表項目 */
+  .file-item {
+    @apply flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-150;
+  }
+  
+  /* 設置項目 */
+  .setting-item {
+    @apply space-y-2;
+  }
+  
+  /* 狀態指示器 */
+  .status-dot {
+    @apply w-2 h-2 rounded-full;
+  }
+  
+  .status-processing {
+    @apply bg-primary-500 animate-pulse;
+  }
+  
+  .status-success {
+    @apply bg-green-500;
+  }
+  
+  .status-error {
+    @apply bg-red-500;
+  }
+  
+  .status-idle {
+    @apply bg-gray-400;
+  }
+}
+
+/* 工具類 */
+@layer utilities {
+  /* 漸變文字 */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent;
+  }
+  
+  /* 毛玻璃效果（備用） */
+  .glass {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  /* 響應式隱藏 */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* 選中狀態 */
+  .selected {
+    @apply ring-2 ring-primary-500 ring-offset-2;
+  }
+}
+
+/* 動畫優化 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 打印樣式 */
+@media print {
+  * {
+    @apply text-black bg-white;
+  }
+}

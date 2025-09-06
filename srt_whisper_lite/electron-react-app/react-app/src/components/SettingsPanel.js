@@ -1,0 +1,911 @@
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Settings, FolderOpen, Info, Zap, Globe, FileText, Languages, Mic, Cpu, Gauge, MessageSquare, Send, User, Mail, Type, FileText as Text } from 'lucide-react';
+import clsx from 'clsx';
+import { useI18n } from '../i18n/I18nContext';
+
+const SettingsPanel = ({ settings, onSettingsChange }) => {
+  const { t, locale, setLocale, supportedLanguages } = useI18n();
+  const [isSelectingFolder, setIsSelectingFolder] = useState(false);
+  const languageSelectRef = React.useRef(null);
+  
+  // Feedback form state
+  const [feedbackForm, setFeedbackForm] = useState({
+    title: '',
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [feedbackErrors, setFeedbackErrors] = useState({});
+  const [isSubmittingFeedback, setIsSubmittingFeedback] = useState(false);
+  const [feedbackSubmitted, setFeedbackSubmitted] = useState(false);
+  const [feedbackError, setFeedbackError] = useState(null);
+  
+  // 調試：檢查settings變更
+  React.useEffect(() => {
+    // Debug log removed for production('Settings changed in SettingsPanel:', settings);
+    // 強制同步select的value
+    if (languageSelectRef.current) {
+      languageSelectRef.current.value = settings.language;
+      // Debug log removed for production('Forced select value to:', settings.language);
+    }
+  }, [settings]);
+  
+  
+
+  // 固定使用 LARGE 模型 - 不需要選項
+
+  // 語言選項 - 音訊語言（語音識別）- 根據決策限制為中英日韓
+  const languageOptions = [
+    { value: 'auto', flag: '🌐' },
+    { value: 'zh', flag: '🇨🇳' },  // 中文
+    { value: 'en', flag: '🇺🇸' },  // 英文
+    { value: 'ja', flag: '🇯🇵' },  // 日文
+    { value: 'ko', flag: '🇰🇷' }   // 韓文
+  ];
+
+  // 動態輸出選項生成邏輯 - 根據決策移除翻譯功能
+  const getOutputOptions = (audioLanguage) => {
+    switch(audioLanguage) {
+      case 'zh':
+        return [
+          { value: 'zh-TW', label: t('languages.zh-TW'), flag: '🇹🇼' },
+          { value: 'zh-CN', label: t('languages.zh-CN'), flag: '🇨🇳' }
+        ];
+        
+      case 'en':
+        return [
+          { value: 'same', label: t('settings.keepOriginal') + '（English）' }
+        ];
+        
+      default: // ja, ko 等
+        return [
+          { value: 'same', label: t('settings.keepOriginal') }
+        ];
+    }
+  };
+
+  // 獲取第二級選單標題 - 固定為「輸出選項」
+  const getOutputSectionTitle = (audioLanguage) => {
+    return t('settings.outputOptions'); // 統一使用「輸出選項」標題
+  };
+
+  // 獲取第二級選單說明
+  const getOutputSectionDescription = (audioLanguage) => {
+    if (audioLanguage === 'zh') return t('settings.chineseOptionsDesc');
+    if (audioLanguage === 'en') return t('settings.englishOptionsDesc');
+    return t('settings.translationOptionsDesc');
+  };
+
+  // 輸出格式選項
+  const formatOptions = [
+    { value: 'srt' },
+    { value: 'vtt' },
+    { value: 'txt' }
+  ];
+
+  // 處理設置變更
+  const handleSettingChange = (key, value) => {
+    // Debug log removed for production('handleSettingChange called with:', { key, value });
+    // Debug log removed for production('Current settings:', settings);
+    const newSettings = { ...settings, [key]: value };
+    // Debug log removed for production('New settings will be:', newSettings);
+    // Debug log removed for production('onSettingsChange function:', onSettingsChange);
+    onSettingsChange(newSettings);
+  };
+
+  // 處理語言選擇變更
+  const handleLanguageChange = (e) => {
+    // Debug log removed for production('=== handleLanguageChange triggered ===');
+    // Debug log removed for production('Event:', e);
+    // Debug log removed for production('Target:', e.target);
+    // Debug log removed for production('Target value:', e.target.value);
+    // Debug log removed for production('Current settings.language:', settings.language);
+    
+    const newLanguage = e.target.value;
+    // Debug log removed for production('New language will be:', newLanguage);
+    
+    // 強制阻止默認行為和冒泡
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // 設定預設輸出選項
+    let defaultOutput = 'same';
+    if (newLanguage === 'zh') {
+      defaultOutput = 'zh-TW'; // 預設繁體中文
+    }
+    
+    // Debug log removed for production('Calling handleSettingChange with:', newLanguage);
+    // Debug log removed for production('About to call onSettingsChange directly');
+    
+    // 直接調用父組件的設置更新函數
+    const newSettings = {
+      ...settings,
+      language: newLanguage,
+      outputLanguage: defaultOutput
+    };
+    
+    // Debug log removed for production('New complete settings object:', newSettings);
+    onSettingsChange(newSettings);
+    
+    // 強制更新 DOM 元素
+    setTimeout(() => {
+      if (languageSelectRef.current) {
+        languageSelectRef.current.value = newLanguage;
+        // Debug log removed for production('Force updated select value to:', newLanguage);
+      }
+    }, 10);
+  };
+
+  // 處理輸出語言變更
+  const handleOutputLanguageChange = (e) => {
+    handleSettingChange('outputLanguage', e.target.value);
+  };
+
+  // 選擇輸出資料夾
+  const handleSelectFolder = async () => {
+    if (window.electronAPI) {
+      setIsSelectingFolder(true);
+      try {
+        const result = await window.electronAPI.selectFolder();
+        if (result) {
+          handleSettingChange('customDir', result);
+        }
+      } catch (error) {
+        console.error('Folder selection failed:', error);
+      } finally {
+        setIsSelectingFolder(false);
+      }
+    }
+  };
+
+  // 驗證email格式
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  // 處理回報表單送出
+  const handleFeedbackSubmit = async () => {
+    // 重置錯誤
+    setFeedbackErrors({});
+    setFeedbackError(null);
+    
+    // 驗證必填欄位
+    const errors = {};
+    if (!feedbackForm.title.trim()) {
+      errors.title = t('settings.feedbackRequired') || '此欄位為必填';
+    }
+    if (!feedbackForm.name.trim()) {
+      errors.name = t('settings.feedbackRequired') || '此欄位為必填';
+    }
+    if (!feedbackForm.email.trim()) {
+      errors.email = t('settings.feedbackRequired') || '此欄位為必填';
+    } else if (!isValidEmail(feedbackForm.email.trim())) {
+      errors.email = '請輸入有效的電子信箱格式';
+    }
+    if (!feedbackForm.message.trim()) {
+      errors.message = t('settings.feedbackRequired') || '此欄位為必填';
+    }
+
+    // 如果有錯誤，顯示錯誤並停止送出
+    if (Object.keys(errors).length > 0) {
+      setFeedbackErrors(errors);
+      return;
+    }
+
+    setIsSubmittingFeedback(true);
+
+    try {
+      // 準備Discord webhook資料
+      const discordPayload = {
+        embeds: [{
+          title: '🎯 SRT GO 用戶回報',
+          color: 3447003, // 藍色
+          fields: [
+            {
+              name: '📝 標題',
+              value: feedbackForm.title.trim(),
+              inline: false
+            },
+            {
+              name: '👤 聯絡人',
+              value: feedbackForm.name.trim(),
+              inline: true
+            },
+            {
+              name: '📧 聯絡信箱',
+              value: feedbackForm.email.trim(),
+              inline: true
+            },
+            {
+              name: '💬 詳細內容',
+              value: feedbackForm.message.trim(),
+              inline: false
+            },
+            {
+              name: '⚙️ 系統資訊',
+              value: `語言: ${locale}\\nUser-Agent: ${navigator.userAgent.substring(0, 100)}`,
+              inline: false
+            }
+          ],
+          timestamp: new Date().toISOString(),
+          footer: {
+            text: 'SRT GO v2.2.1 用戶回報系統'
+          }
+        }]
+      };
+
+      // 送出到Discord webhook
+      const webhookUrl = 'https://discord.com/api/webhooks/1413541953316065382/-WyvN6D6EsZ3kgXsLyxxyX_-mHy14a13hcbFDwcDsZ6dfBMeKlkqNklnTfPll7qGcb13';
+      
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(discordPayload)
+      });
+
+      if (response.ok) {
+        // 送出成功
+        setFeedbackSubmitted(true);
+        setFeedbackForm({ title: '', name: '', email: '', message: '' });
+        setFeedbackErrors({});
+      } else {
+        throw new Error(`Discord webhook failed with status: ${response.status}`);
+      }
+
+    } catch (error) {
+      console.error('送出回報時發生錯誤:', error);
+      setFeedbackError(error.message);
+    } finally {
+      setIsSubmittingFeedback(false);
+    }
+  };
+
+
+  return (
+    <div className="p-6">
+      <div className="mb-6">
+        <h2 className="section-title">{t('settings.title')}</h2>
+        <p className="section-subtitle">
+          {t('settings.subtitle')}
+        </p>
+      </div>
+
+      <div className="space-y-8">
+        {/* 介面語言設定 - 移到最上方 */}
+        <div className="setting-item">
+          <div className="flex items-center space-x-2 mb-3">
+            <Languages className="w-5 h-5 text-primary-500" />
+            <label className="text-lg font-medium text-gray-900">{t('settings.interfaceLanguage')}</label>
+          </div>
+          <p className="text-sm text-gray-600 mb-4">
+            {t('settings.interfaceLanguageDescription')}
+          </p>
+          
+          <div className="grid grid-cols-2 gap-3">
+            {supportedLanguages.map((lang) => (
+              <label
+                key={lang.code}
+                className={clsx(
+                  'flex items-center p-3 border rounded-lg cursor-pointer transition-all duration-200',
+                  locale === lang.code
+                    ? 'border-primary-300 bg-primary-50 ring-2 ring-primary-200'
+                    : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                )}
+              >
+                <input
+                  type="radio"
+                  name="interfaceLanguage"
+                  value={lang.code}
+                  checked={locale === lang.code}
+                  onChange={(e) => setLocale(e.target.value)}
+                  className="sr-only"
+                />
+                
+                <div className="flex items-center space-x-3 flex-1">
+                  <span className="text-xl">{lang.flag}</span>
+                  <span className="font-medium text-gray-900">{lang.name}</span>
+                </div>
+                
+                {locale === lang.code && (
+                  <div className="w-3 h-3 bg-primary-500 rounded-full" />
+                )}
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {/* AI 模型資訊 - 固定使用 LARGE 模型 */}
+        <div className="setting-item">
+          <div className="flex items-center space-x-2 mb-3">
+            <Zap className="w-5 h-5 text-primary-500" />
+            <label className="text-lg font-medium text-gray-900">{t('settings.aiModel')}</label>
+          </div>
+          <div className="p-4 bg-primary-50 border border-primary-200 rounded-lg">
+            <div className="flex items-center justify-between mb-2">
+              <span className="font-medium text-gray-900">{t('models.large.name')}</span>
+              <span className="text-xs text-primary-600 bg-primary-100 px-2 py-1 rounded">
+                {t('settings.professionalVersion')}
+              </span>
+            </div>
+            <p className="text-sm text-gray-600">{t('models.large.description')}</p>
+          </div>
+        </div>
+
+        {/* 第一級：音訊語言設定 */}
+        <div className="setting-item">
+          <div className="flex items-center space-x-2 mb-3">
+            <Mic className="w-5 h-5 text-primary-500" />
+            <label className="text-lg font-medium text-gray-900">{t('settings.audioLanguage')}</label>
+          </div>
+          <p className="text-sm text-gray-600 mb-4">
+            {t('settings.audioLanguageDesc')}
+          </p>
+          <select
+            ref={languageSelectRef}
+            value={settings.language}
+            onChange={handleLanguageChange}
+            className="input w-full"
+          >
+            {languageOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.flag} {t(`languages.${option.value}`)}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* 第二級：動態輸出選項 */}
+        {settings.language && settings.language !== 'auto' && (
+          <div className="setting-item">
+            <div className="flex items-center space-x-2 mb-3">
+              <Globe className="w-5 h-5 text-primary-500" />
+              <label className="text-lg font-medium text-gray-900">
+                {getOutputSectionTitle(settings.language)}
+              </label>
+            </div>
+            <p className="text-sm text-gray-600 mb-4">
+              {getOutputSectionDescription(settings.language)}
+            </p>
+            <select
+              value={settings.outputLanguage}
+              onChange={handleOutputLanguageChange}
+              className="input w-full"
+            >
+              {getOutputOptions(settings.language).map(option => (
+                <option key={option.value} value={option.value}>
+                  {option.flag && `${option.flag} `}{option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        {/* 自動檢測的特殊處理 - 移除翻譯選項 */}
+        {settings.language === 'auto' && (
+          <div className="setting-item">
+            <div className="flex items-center space-x-2 mb-3">
+              <Globe className="w-5 h-5 text-primary-500" />
+              <label className="text-lg font-medium text-gray-900">{t('settings.autoDetectOutput')}</label>
+            </div>
+            <p className="text-sm text-gray-600 mb-4">
+              {t('settings.autoDetectDesc')}
+            </p>
+            <select
+              value={settings.outputLanguage}
+              onChange={handleOutputLanguageChange}
+              className="input w-full"
+            >
+              <option value="same">{t('settings.keepOriginal')}</option>
+            </select>
+          </div>
+        )}
+
+        {/* 輸出格式設定 */}
+        <div className="setting-item">
+          <div className="flex items-center space-x-2 mb-3">
+            <FileText className="w-5 h-5 text-primary-500" />
+            <label className="text-lg font-medium text-gray-900">{t('settings.outputFormat')}</label>
+          </div>
+          <p className="text-sm text-gray-600 mb-4">
+            {t('settings.formatDescription')}
+          </p>
+          
+          <div className="grid grid-cols-2 gap-3">
+            {formatOptions.map((option) => (
+              <label
+                key={option.value}
+                className={clsx(
+                  'flex items-center p-3 border rounded-lg cursor-pointer transition-all duration-200',
+                  settings.outputFormat === option.value
+                    ? 'border-primary-300 bg-primary-50 ring-2 ring-primary-200'
+                    : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+                )}
+              >
+                <input
+                  type="radio"
+                  name="format"
+                  value={option.value}
+                  checked={settings.outputFormat === option.value}
+                  onChange={(e) => handleSettingChange('outputFormat', e.target.value)}
+                  className="sr-only"
+                />
+                
+                <div className="flex-1">
+                  <div className="font-medium text-gray-900 mb-1">
+                    {t(`formats.${option.value}.name`)}
+                  </div>
+                  <p className="text-xs text-gray-600">{t(`formats.${option.value}.description`)}</p>
+                </div>
+                
+                {settings.outputFormat === option.value && (
+                  <div className="ml-2 w-3 h-3 bg-primary-500 rounded-full" />
+                )}
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {/* 輸出資料夾設定 */}
+        <div className="setting-item">
+          <div className="flex items-center space-x-2 mb-3">
+            <FolderOpen className="w-5 h-5 text-primary-500" />
+            <label className="text-lg font-medium text-gray-900">{t('settings.outputFolder')}</label>
+          </div>
+          <p className="text-sm text-gray-600 mb-4">
+            {t('settings.folderDescription')}
+          </p>
+          
+          <div className="flex space-x-3">
+            <input
+              type="text"
+              value={settings.customDir}
+              onChange={(e) => handleSettingChange('customDir', e.target.value)}
+              placeholder={t('settings.useDefault')}
+              className="input flex-1"
+              readOnly
+            />
+            <button
+              onClick={handleSelectFolder}
+              disabled={isSelectingFolder}
+              className="btn btn-secondary btn-md flex-shrink-0"
+            >
+              {isSelectingFolder ? (
+                <div className="w-4 h-4 border-2 border-gray-400 border-t-transparent rounded-full animate-spin" />
+              ) : (
+                <FolderOpen className="w-4 h-4" />
+              )}
+              <span className="ml-2">{t('settings.select')}</span>
+            </button>
+          </div>
+        </div>
+
+        {/* 性能優化模式 - NEW */}
+        <div className="setting-item">
+          <div className="flex items-center space-x-2 mb-3">
+            <Gauge className="w-5 h-5 text-primary-500" />
+            <label className="text-lg font-medium text-gray-900">{t('settings.performanceMode') || '性能優化模式'}</label>
+          </div>
+          <p className="text-sm text-gray-600 mb-4">
+            {t('settings.performanceModeDesc') || '選擇最適合您硬體的性能優化模式'}
+          </p>
+          
+          <div className="space-y-3">
+            {/* 自動模式 */}
+            <label
+              className={clsx(
+                'flex items-start p-4 border rounded-lg cursor-pointer transition-all duration-200',
+                (!settings.performanceMode || settings.performanceMode === 'auto')
+                  ? 'border-primary-300 bg-primary-50 ring-2 ring-primary-200'
+                  : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+              )}
+            >
+              <input
+                type="radio"
+                name="performanceMode"
+                value="auto"
+                checked={!settings.performanceMode || settings.performanceMode === 'auto'}
+                onChange={(e) => handleSettingChange('performanceMode', e.target.value)}
+                className="sr-only"
+              />
+              
+              <div className="flex-1">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-medium text-gray-900">
+                    🤖 {t('settings.performanceAuto') || '智能自動'}
+                  </span>
+                  <span className="text-xs text-green-600 bg-green-100 px-2 py-1 rounded">
+                    {t('settings.recommended') || '推薦'}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600">
+                  {t('settings.performanceAutoDesc') || '自動檢測您的硬體並選擇最佳配置'}
+                </p>
+                <div className="mt-2 text-xs text-gray-500">
+                  • {t('settings.autoDetectGPU') || '自動檢測 CUDA GPU'}<br/>
+                  • {t('settings.autoSelectCompute') || '智能選擇 Float16 (GPU) 或 INT8 (CPU)'}<br/>
+                  • {t('settings.targetRTF') || '目標 RTF'}: ≤0.135
+                </div>
+              </div>
+              
+              {(!settings.performanceMode || settings.performanceMode === 'auto') && (
+                <div className="ml-4 w-3 h-3 bg-primary-500 rounded-full flex-shrink-0 mt-1" />
+              )}
+            </label>
+
+            {/* GPU 優化模式 */}
+            <label
+              className={clsx(
+                'flex items-start p-4 border rounded-lg cursor-pointer transition-all duration-200',
+                settings.performanceMode === 'gpu'
+                  ? 'border-primary-300 bg-primary-50 ring-2 ring-primary-200'
+                  : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+              )}
+            >
+              <input
+                type="radio"
+                name="performanceMode"
+                value="gpu"
+                checked={settings.performanceMode === 'gpu'}
+                onChange={(e) => handleSettingChange('performanceMode', e.target.value)}
+                className="sr-only"
+              />
+              
+              <div className="flex-1">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-medium text-gray-900">
+                    ⚡ {t('settings.performanceGPU') || 'GPU 加速'}
+                  </span>
+                  <span className="text-xs text-blue-600 bg-blue-100 px-2 py-1 rounded">
+                    {t('settings.fastest') || '最快'}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600">
+                  {t('settings.performanceGPUDesc') || '使用 NVIDIA GPU 加速，獲得最佳性能'}
+                </p>
+                <div className="mt-2 text-xs text-gray-500">
+                  • {t('settings.requiresCUDA') || '需要 NVIDIA GPU (CUDA 11.8+)'}<br/>
+                  • {t('settings.useFloat16') || '使用 Float16 計算'}<br/>
+                  • {t('settings.expectedRTF') || '預期 RTF'}: ≤0.067 ({t('settings.improvement96') || '96.7% 提升'})
+                </div>
+              </div>
+              
+              {settings.performanceMode === 'gpu' && (
+                <div className="ml-4 w-3 h-3 bg-primary-500 rounded-full flex-shrink-0 mt-1" />
+              )}
+            </label>
+
+            {/* CPU 優化模式 */}
+            <label
+              className={clsx(
+                'flex items-start p-4 border rounded-lg cursor-pointer transition-all duration-200',
+                settings.performanceMode === 'cpu'
+                  ? 'border-primary-300 bg-primary-50 ring-2 ring-primary-200'
+                  : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+              )}
+            >
+              <input
+                type="radio"
+                name="performanceMode"
+                value="cpu"
+                checked={settings.performanceMode === 'cpu'}
+                onChange={(e) => handleSettingChange('performanceMode', e.target.value)}
+                className="sr-only"
+              />
+              
+              <div className="flex-1">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-medium text-gray-900">
+                    💻 {t('settings.performanceCPU') || 'CPU 優化'}
+                  </span>
+                  <span className="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">
+                    {t('settings.balanced') || '平衡'}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600">
+                  {t('settings.performanceCPUDesc') || '使用 CPU 處理，不需要特殊硬體'}
+                </p>
+                <div className="mt-2 text-xs text-gray-500">
+                  • {t('settings.worksEverywhere') || '適用於所有設備'}<br/>
+                  • {t('settings.useINT8') || '使用 INT8 量化優化'}<br/>
+                  • {t('settings.expectedRTFCPU') || '預期 RTF'}: ≤0.135 ({t('settings.improvement50') || '50.4% 提升'})
+                </div>
+              </div>
+              
+              {settings.performanceMode === 'cpu' && (
+                <div className="ml-4 w-3 h-3 bg-primary-500 rounded-full flex-shrink-0 mt-1" />
+              )}
+            </label>
+
+            {/* 性能狀態指示器 */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-4 p-3 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg"
+            >
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+                  <span className="text-sm font-medium text-gray-700">
+                    {t('settings.currentStatus') || '當前狀態'}
+                  </span>
+                </div>
+                <span className="text-sm text-gray-600">
+                  {settings.performanceMode === 'gpu' 
+                    ? (t('settings.gpuMode') || 'GPU Float16 模式')
+                    : settings.performanceMode === 'cpu'
+                    ? (t('settings.cpuMode') || 'CPU INT8 模式')
+                    : (t('settings.autoMode') || '智能自動模式')}
+                </span>
+              </div>
+              
+              {/* RTF 性能指標 */}
+              <div className="mt-3 grid grid-cols-3 gap-2 text-xs">
+                <div className="text-center">
+                  <div className="font-medium text-gray-700">{t('settings.baseline') || '基準'}</div>
+                  <div className="text-gray-500">RTF: 2.012</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-medium text-gray-700">{t('settings.target') || '目標'}</div>
+                  <div className="text-green-600">RTF: ≤0.135</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-medium text-gray-700">{t('settings.best') || '最佳'}</div>
+                  <div className="text-blue-600">RTF: ≤0.067</div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* 進階選項 */}
+        <div className="setting-item">
+          <div className="flex items-center space-x-2 mb-3">
+            <Settings className="w-5 h-5 text-primary-500" />
+            <label className="text-lg font-medium text-gray-900">{t('settings.advanced')}</label>
+          </div>
+          
+          <div className="space-y-4">
+            <label className="flex items-center space-x-3">
+              <input
+                type="checkbox"
+                checked={settings.enableCorrections}
+                onChange={(e) => handleSettingChange('enableCorrections', e.target.checked)}
+                className="rounded border-gray-300 text-primary-500 focus:ring-primary-200"
+              />
+              <div>
+                <div className="font-medium text-gray-900">{t('settings.enableCorrections')}</div>
+                <div className="text-sm text-gray-600">{t('settings.correctionsDescription')}</div>
+              </div>
+            </label>
+            
+            <label className="flex items-center space-x-3">
+              <input
+                type="checkbox"
+                checked={settings.enable_gpu !== false}
+                onChange={(e) => handleSettingChange('enable_gpu', e.target.checked)}
+                className="rounded border-gray-300 text-primary-500 focus:ring-primary-200"
+              />
+              <div>
+                <div className="font-medium text-gray-900">{t('settings.enableGpuAcceleration')}</div>
+                <div className="text-sm text-gray-600">{t('settings.gpuAccelerationDesc')}</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        {/* 建議與bug回報區塊 */}
+        <div className="setting-item">
+          <div className="flex items-center space-x-2 mb-3">
+            <MessageSquare className="w-5 h-5 text-primary-500" />
+            <label className="text-lg font-medium text-gray-900">{t('settings.feedback') || '建議與bug回報'}</label>
+          </div>
+          <p className="text-sm text-gray-600 mb-4">
+            {t('settings.feedbackSubtitle') || '向開發團隊回報問題或提供改進建議，幫助我們改善產品'}
+          </p>
+          
+          {feedbackSubmitted ? (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="p-4 bg-green-50 border border-green-200 rounded-lg text-center"
+            >
+              <div className="flex items-center justify-center space-x-2 mb-2">
+                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div className="font-medium text-green-900">{t('settings.feedbackSuccess') || '回報已送出'}</div>
+              </div>
+              <p className="text-sm text-green-700">{t('settings.feedbackSuccessMessage') || '感謝您的回報！我們會盡快處理您的意見。'}</p>
+              <button
+                onClick={() => {
+                  setFeedbackSubmitted(false);
+                  setFeedbackForm({ title: '', name: '', email: '', message: '' });
+                  setFeedbackErrors({});
+                }}
+                className="mt-3 text-sm text-green-600 hover:text-green-700 underline"
+              >
+                {t('settings.submitAnotherReport')}
+              </button>
+            </motion.div>
+          ) : feedbackError ? (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="p-4 bg-red-50 border border-red-200 rounded-lg"
+            >
+              <div className="flex items-center space-x-2 mb-2">
+                <div className="w-5 h-5 bg-red-500 rounded-full flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+                <div className="font-medium text-red-900">{t('settings.feedbackError') || '送出失敗'}</div>
+              </div>
+              <p className="text-sm text-red-700 mb-3">{t('settings.feedbackErrorMessage') || '送出過程中發生錯誤，請稍後再試。'}</p>
+              <button
+                onClick={() => setFeedbackError(null)}
+                className="text-sm text-red-600 hover:text-red-700 underline"
+              >
+                {t('settings.retrySubmission')}
+              </button>
+            </motion.div>
+          ) : (
+            <div className="space-y-4">
+              <div>
+                <div className="flex items-center space-x-2 mb-2">
+                  <Type className="w-4 h-4 text-gray-500" />
+                  <label className="text-sm font-medium text-gray-700">
+                    {t('settings.feedbackTitle') || '標題'} <span className="text-red-500">*</span>
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  value={feedbackForm.title}
+                  onChange={(e) => {
+                    setFeedbackForm(prev => ({ ...prev, title: e.target.value }));
+                    if (feedbackErrors.title) {
+                      setFeedbackErrors(prev => ({ ...prev, title: null }));
+                    }
+                  }}
+                  placeholder={t('settings.feedbackTitlePlaceholder') || '請簡述您的問題或建議'}
+                  className={clsx(
+                    'input w-full',
+                    feedbackErrors.title ? 'border-red-300 focus:ring-red-200' : ''
+                  )}
+                />
+                {feedbackErrors.title && (
+                  <p className="text-sm text-red-600 mt-1">{feedbackErrors.title}</p>
+                )}
+              </div>
+
+              <div>
+                <div className="flex items-center space-x-2 mb-2">
+                  <User className="w-4 h-4 text-gray-500" />
+                  <label className="text-sm font-medium text-gray-700">
+                    {t('settings.feedbackName') || '怎麼稱呼您'} <span className="text-red-500">*</span>
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  value={feedbackForm.name}
+                  onChange={(e) => {
+                    setFeedbackForm(prev => ({ ...prev, name: e.target.value }));
+                    if (feedbackErrors.name) {
+                      setFeedbackErrors(prev => ({ ...prev, name: null }));
+                    }
+                  }}
+                  placeholder={t('settings.feedbackNamePlaceholder') || '您的稱呼或暱稱'}
+                  className={clsx(
+                    'input w-full',
+                    feedbackErrors.name ? 'border-red-300 focus:ring-red-200' : ''
+                  )}
+                />
+                {feedbackErrors.name && (
+                  <p className="text-sm text-red-600 mt-1">{feedbackErrors.name}</p>
+                )}
+              </div>
+
+              <div>
+                <div className="flex items-center space-x-2 mb-2">
+                  <Mail className="w-4 h-4 text-gray-500" />
+                  <label className="text-sm font-medium text-gray-700">
+                    {t('settings.feedbackEmail') || '聯絡信箱'} <span className="text-red-500">*</span>
+                  </label>
+                </div>
+                <input
+                  type="email"
+                  value={feedbackForm.email}
+                  onChange={(e) => {
+                    setFeedbackForm(prev => ({ ...prev, email: e.target.value }));
+                    if (feedbackErrors.email) {
+                      setFeedbackErrors(prev => ({ ...prev, email: null }));
+                    }
+                  }}
+                  placeholder={t('settings.feedbackEmailPlaceholder') || '您的電子信箱'}
+                  className={clsx(
+                    'input w-full',
+                    feedbackErrors.email ? 'border-red-300 focus:ring-red-200' : ''
+                  )}
+                />
+                {feedbackErrors.email && (
+                  <p className="text-sm text-red-600 mt-1">{feedbackErrors.email}</p>
+                )}
+              </div>
+
+              <div>
+                <div className="flex items-center space-x-2 mb-2">
+                  <Text className="w-4 h-4 text-gray-500" />
+                  <label className="text-sm font-medium text-gray-700">
+                    {t('settings.feedbackMessage') || '詳細內容'} <span className="text-red-500">*</span>
+                  </label>
+                </div>
+                <textarea
+                  value={feedbackForm.message}
+                  onChange={(e) => {
+                    setFeedbackForm(prev => ({ ...prev, message: e.target.value }));
+                    if (feedbackErrors.message) {
+                      setFeedbackErrors(prev => ({ ...prev, message: null }));
+                    }
+                  }}
+                  placeholder={t('settings.feedbackMessagePlaceholder') || '請詳細描述您遇到的問題或改進建議...'}
+                  rows={4}
+                  className={clsx(
+                    'input w-full resize-none',
+                    feedbackErrors.message ? 'border-red-300 focus:ring-red-200' : ''
+                  )}
+                />
+                {feedbackErrors.message && (
+                  <p className="text-sm text-red-600 mt-1">{feedbackErrors.message}</p>
+                )}
+              </div>
+
+              <button
+                onClick={handleFeedbackSubmit}
+                disabled={isSubmittingFeedback}
+                className={clsx(
+                  'w-full btn btn-primary btn-lg flex items-center justify-center space-x-2',
+                  isSubmittingFeedback ? 'opacity-70 cursor-not-allowed' : ''
+                )}
+              >
+                {isSubmittingFeedback ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                    <span>{t('settings.feedbackSubmitting') || '送出中...'}</span>
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-4 h-4" />
+                    <span>{t('settings.feedbackSubmit') || '送出回報'}</span>
+                  </>
+                )}
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* 提醒訊息 */
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex items-start space-x-3 p-4 bg-blue-50 border border-blue-200 rounded-lg"
+        >
+          <Info className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+          <div className="text-sm">
+            <div className="font-medium text-blue-900 mb-1">{t('settings.tip')}</div>
+            <div className="text-blue-700">
+              {t('settings.modelDownloadTip')}
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default SettingsPanel;

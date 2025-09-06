@@ -1,0 +1,435 @@
+{
+  "timestamp": "C:\\Users\\USER-ART0\\Desktop\\SRTGO\\srt_whisper_lite\\electron-react-app\\python",
+  "python_analysis": {
+    "total_files": 42,
+    "imports_analysis": {
+      "unique_imports": 48,
+      "most_used_imports": {
+        "pathlib": 33,
+        "logging": 26,
+        "os": 22,
+        "sys": 22,
+        "typing": 20,
+        "json": 16,
+        "traceback": 15,
+        "time": 14,
+        "faster_whisper": 10,
+        "numpy": 9
+      },
+      "single_use_imports": [
+        "scipy.signal",
+        "scipy.cluster.vq",
+        "sklearn.preprocessing",
+        "scipy.io.wavfile",
+        "psutil",
+        "ast",
+        "collections",
+        "huggingface_hub",
+        "ctranslate2",
+        "zipfile",
+        "config_manager",
+        "gc",
+        "semantic_processor",
+        "intelligent_interlude_filter"
+      ]
+    },
+    "unused_files": [
+      "audio_processor.py",
+      "calculate_int16_package_size.py",
+      "check_model_sizes.py",
+      "code_review_analyzer.py",
+      "compare_results.py",
+      "create_ultimate_pr_version.py",
+      "direct_srt_comparison.py",
+      "download_standard_int8.py",
+      "enhanced_detector_comparison_analysis.py",
+      "final_comparison_report.py",
+      "final_integration_test.py",
+      "i18n.py",
+      "official_model_manager.py",
+      "segment_12_analysis_simple.py",
+      "simple_interlude_corrector.py",
+      "simple_srt_analysis.py",
+      "subtitle_comparison_analysis.py",
+      "subtitle_comparison_simple.py",
+      "threshold_optimization_analysis.py"
+    ],
+    "code_quality_issues": {
+      "long_functions": [
+        {
+          "file": "adaptive_voice_detector.py",
+          "function": "_extract_segment_features",
+          "lines": 100
+        },
+        {
+          "file": "adaptive_voice_detector.py",
+          "function": "_analyze_segment_voice_content",
+          "lines": 51
+        },
+        {
+          "file": "adaptive_voice_detector.py",
+          "function": "_find_precise_voice_boundaries",
+          "lines": 89
+        },
+        {
+          "file": "audio_processor.py",
+          "function": "process_audio",
+          "lines": 51
+        },
+        {
+          "file": "code_review_analyzer.py",
+          "function": "check_python_code_quality",
+          "lines": 58
+        },
+        {
+          "file": "electron_backend.py",
+          "function": "detect_gpu_support",
+          "lines": 120
+        },
+        {
+          "file": "electron_backend.py",
+          "function": "file_progress_callback",
+          "lines": 57
+        },
+        {
+          "file": "enhanced_detector_comparison_analysis.py",
+          "function": "analyze_enhancement_effects",
+          "lines": 106
+        },
+        {
+          "file": "enhanced_detector_comparison_analysis.py",
+          "function": "display_comparison_results",
+          "lines": 60
+        },
+        {
+          "file": "enhanced_lightweight_voice_detector.py",
+          "function": "__init__",
+          "lines": 55
+        },
+        {
+          "file": "enhanced_lightweight_voice_detector.py",
+          "function": "_detect_interlude_enhanced",
+          "lines": 58
+        },
+        {
+          "file": "final_comparison_report.py",
+          "function": "generate_final_report",
+          "lines": 145
+        },
+        {
+          "file": "final_integration_test.py",
+          "function": "test_file_processing",
+          "lines": 63
+        },
+        {
+          "file": "final_integration_test.py",
+          "function": "test_gui_backend_integration",
+          "lines": 62
+        },
+        {
+          "file": "final_integration_test.py",
+          "function": "test_system_stability",
+          "lines": 62
+        },
+        {
+          "file": "intelligent_interlude_filter.py",
+          "function": "_calculate_segment_features",
+          "lines": 53
+        },
+        {
+          "file": "large_v3_int8_model_manager.py",
+          "function": "__init__",
+          "lines": 61
+        },
+        {
+          "file": "large_v3_int8_model_manager.py",
+          "function": "download_model",
+          "lines": 58
+        },
+        {
+          "file": "large_v3_int8_model_manager.py",
+          "function": "_download_file_with_resume",
+          "lines": 111
+        },
+        {
+          "file": "lightweight_voice_detector.py",
+          "function": "detect_voice_segments",
+          "lines": 76
+        },
+        {
+          "file": "lightweight_voice_detector.py",
+          "function": "_load_audio_lightweight",
+          "lines": 53
+        },
+        {
+          "file": "lightweight_voice_detector.py",
+          "function": "_correct_interlude_timing",
+          "lines": 53
+        },
+        {
+          "file": "official_model_manager.py",
+          "function": "_download_file_with_resume",
+          "lines": 63
+        },
+        {
+          "file": "simplified_subtitle_core.py",
+          "function": "model_progress",
+          "lines": 89
+        },
+        {
+          "file": "simplified_subtitle_core.py",
+          "function": "generate_subtitle",
+          "lines": 413
+        },
+        {
+          "file": "simplified_subtitle_core.py",
+          "function": "_generate_translated_subtitle",
+          "lines": 214
+        },
+        {
+          "file": "simplified_subtitle_core.py",
+          "function": "_analyze_subtitle_quality",
+          "lines": 175
+        },
+        {
+          "file": "subeasy_multilayer_filter.py",
+          "function": "apply_multilayer_filter",
+          "lines": 53
+        },
+        {
+          "file": "subeasy_multilayer_filter.py",
+          "function": "_load_audio_simple",
+          "lines": 91
+        },
+        {
+          "file": "subeasy_multilayer_filter.py",
+          "function": "_layer5_decision_fusion",
+          "lines": 82
+        },
+        {
+          "file": "subtitle_comparison_simple.py",
+          "function": "_generate_single_subtitle",
+          "lines": 51
+        },
+        {
+          "file": "subtitle_comparison_simple.py",
+          "function": "_analyze_differences_simple",
+          "lines": 81
+        },
+        {
+          "file": "subtitle_formatter.py",
+          "function": "segments_to_srt",
+          "lines": 53
+        },
+        {
+          "file": "test_enhanced_integration.py",
+          "function": "test_content_type_detection",
+          "lines": 84
+        },
+        {
+          "file": "test_enhanced_integration.py",
+          "function": "test_fallback_mechanisms",
+          "lines": 52
+        },
+        {
+          "file": "test_enhanced_integration.py",
+          "function": "generate_integration_report",
+          "lines": 65
+        },
+        {
+          "file": "test_enhanced_integration_simple.py",
+          "function": "test_content_type_detection",
+          "lines": 87
+        },
+        {
+          "file": "test_enhanced_integration_simple.py",
+          "function": "test_threshold_specialization",
+          "lines": 51
+        },
+        {
+          "file": "test_enhanced_integration_simple.py",
+          "function": "test_fallback_mechanisms",
+          "lines": 52
+        },
+        {
+          "file": "test_enhanced_integration_simple.py",
+          "function": "generate_integration_report",
+          "lines": 65
+        },
+        {
+          "file": "threshold_optimization_analysis.py",
+          "function": "generate_optimization_report",
+          "lines": 65
+        }
+      ],
+      "high_complexity_files": [
+        {
+          "file": "adaptive_voice_detector.py",
+          "lines": 632
+        },
+        {
+          "file": "code_review_analyzer.py",
+          "lines": 524
+        },
+        {
+          "file": "enhanced_lightweight_voice_detector.py",
+          "lines": 646
+        },
+        {
+          "file": "simplified_subtitle_core.py",
+          "lines": 1452
+        },
+        {
+          "file": "subeasy_multilayer_filter.py",
+          "lines": 596
+        }
+      ],
+      "deprecated_patterns": [],
+      "encoding_issues": [
+        {
+          "file": "audio_processor.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "calculate_int16_package_size.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "check_model_sizes.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "compare_results.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "config_manager.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "create_ultimate_pr_version.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "download_standard_int8.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "i18n.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "large_v3_int8_model_manager.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "official_model_manager.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "semantic_processor.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "simplified_subtitle_core.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "subeasy_multilayer_filter.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "subtitle_formatter.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "test_existing_model.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "test_fixed_timestamps.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "test_int16_comparison.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "test_int8_model.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "test_large_video.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "test_real_differences.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "test_standard_model.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "test_video_processing.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        },
+        {
+          "file": "test_video_simple.py",
+          "issue": "Missing UTF-8 encoding declaration"
+        }
+      ]
+    },
+    "function_analysis": {
+      "total_functions": 294,
+      "classes": 19,
+      "average_function_length": 38.22108843537415,
+      "function_distribution": {
+        "medium": 114,
+        "long": 129,
+        "short": 51
+      }
+    }
+  },
+  "javascript_analysis": {
+    "total_files": 0,
+    "unused_files": [],
+    "package_json_analysis": {
+      "package_json_count": 0,
+      "dependencies_summary": {},
+      "potential_unused_deps": []
+    }
+  },
+  "dependency_analysis": {
+    "python_requirements": {
+      "requirements_files": 0,
+      "total_requirements": 0,
+      "requirements_details": []
+    },
+    "node_modules_size": {
+      "node_modules_directories": 0,
+      "estimated_total_size_mb": 0
+    },
+    "duplicate_dependencies": []
+  },
+  "cleanup_recommendations": [
+    {
+      "category": "Python Files",
+      "action": "Remove unused Python files",
+      "files": [
+        "audio_processor.py",
+        "calculate_int16_package_size.py",
+        "check_model_sizes.py",
+        "code_review_analyzer.py",
+        "compare_results.py"
+      ],
+      "impact": "Reduce package size and complexity"
+    },
+    {
+      "category": "Code Quality",
+      "action": "Refactor long functions",
+      "details": "Found 41 functions >50 lines",
+      "impact": "Improve maintainability"
+    }
+  ]
+}

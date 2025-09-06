@@ -1,0 +1,37 @@
+{
+  "embeds": [{
+    "title": "🐛 SRT GO Bug 回報",
+    "color": 15158332,
+    "fields": [
+      {
+        "name": "📝 標題",
+        "value": "處理長影片時記憶體使用過高",
+        "inline": false
+      },
+      {
+        "name": "👤 聯絡人",
+        "value": "影片工作者",
+        "inline": true
+      },
+      {
+        "name": "📧 聯絡信箱",
+        "value": "video.editor@company.com",
+        "inline": true
+      },
+      {
+        "name": "💬 詳細內容",
+        "value": "【問題描述】\\n處理超過2小時的影片檔案時，軟體記憶體使用量會持續上升，最終導致系統變慢或當機。\\n\\n【重現步驟】\\n1. 選擇一個2小時以上的MP4檔案\\n2. 使用Large模型進行轉錄\\n3. 觀察工作管理員中的記憶體使用量\\n4. 約30-40分鐘後記憶體使用超過8GB\\n\\n【預期行為】\\n記憶體使用量應該保持穩定，不應該持續增長\\n\\n【實際行為】\\n記憶體持續增長直到系統資源不足\\n\\n【系統環境】\\n- Windows 11\\n- 16GB RAM\\n- 檔案大小: 3.2GB\\n- SRT GO v2.2.1",
+        "inline": false
+      },
+      {
+        "name": "⚙️ 系統資訊", 
+        "value": "語言: en\\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\\n優先級: 高",
+        "inline": false
+      }
+    ],
+    "timestamp": "2025-09-05T15:53:00.000Z",
+    "footer": {
+      "text": "SRT GO v2.2.1 用戶回報系統 - Bug回報"
+    }
+  }]
+}

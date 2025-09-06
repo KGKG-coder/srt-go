@@ -1,0 +1,25 @@
+# Web 服務依賴清單 - 智能字幕生成器
+# 包含 Web 界面和 API 服務所需的依賴
+
+# ===== 核心依賴 =====
+faster-whisper>=1.0.0      # 語音識別引擎
+numpy>=1.24.0              # 數值計算
+soundfile>=0.12.0          # 音頻文件讀取
+
+# ===== Flask Web 服務 =====
+flask>=2.0.0              # Web 框架
+flask-cors>=3.0.0         # 跨域支持
+werkzeug>=2.0.0           # WSGI 工具
+
+# ===== FastAPI 服務 =====
+fastapi>=0.100.0          # 現代 API 框架
+uvicorn>=0.20.0           # ASGI 服務器
+pydantic>=2.0.0           # 數據驗證
+python-multipart>=0.0.6   # 文件上傳支持
+
+# ===== 音頻處理增強 =====
+scipy>=1.10.0             # 信號處理
+noisereduce>=3.0.0        # 降噪功能
+
+# ===== 工具庫 =====
+tqdm>=4.65.0              # 進度條顯示
